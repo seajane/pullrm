@@ -50,7 +50,7 @@ def dataset_input(argv):
 
 # take inputs 
 input_csv,window,gene_folder,output_gbk_path,Entrez_email = dataset_input(sys.argv[1:])
-print(input_csv,window,gene_folder,output_gbk_path,Entrez_email)
+#print(input_csv,window,gene_folder,output_gbk_path,Entrez_email)
 # Grab file names and locations
 xldoc = pd.read_csv(input_csv)
 
