@@ -1,5 +1,4 @@
 #!/bin/python
-
 import os
 from Bio import SeqIO, Entrez
 from Bio.Seq import Seq
@@ -9,7 +8,8 @@ from Bio.SeqFeature import BeforePosition, AfterPosition
 import pandas as pd
 import re
 
-# first argument will be the name of the csv file containing the file names and locations
+# first argument is the name of the csv file containing the file names and locations
+
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
 ### genome_id - the NCBI identifier for the organism's sequence
 ### genome_name - Genus species name of the organism
@@ -19,9 +19,42 @@ import re
 # another argument will be the folder containing genbank files
 # another argument will be the window for searching from the contig_start and contig_end
 
+import sys,getopt
+def dataset_input(argv):
+    #get inputs
+    input_csv = ''
+    gene_folder = ''
+    Entrez_email = ''
+    output_gbk_path = ''
+    window = ''
+    try:
+        opts, args = getopt.getopt(argv, "hi:w:g:o:m:", ["help", "input_csv=","window=", "gene_folder=","output_gbk_path=", "entrez_email="])
+    except getopt.GetoptError:
+        print('Error! Usage: python pullrm.py -i <input OCTAPUS csv> -w <contig_search_window> -g <gene_folder> -o <output gbk path> -m <email for ncbi search>' )
+        print('   or: python pullrm.py --input_csv <OTU csv> --window <contig_search_window> --gene_folder <gene_folder> --output <output gbk path> --email <email for ncbi search>')
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt in ("-h", "--help"):
+            print('Usage: python pullrm.py -i <input OCTAPUS csv> -w <contig_search_window> -g <gene_folder> -o <output gbk path> -m <email for ncbi search>' )
+            print('   or: python pullrm.py --input_csv <OTU csv> --window <contig_search_window> --gene_folder <gene_folder> --output <output gbk path> --email <email for ncbi search>')
+            sys.exit()
+        elif opt in ("-i", "--input_csv"):
+            input_csv = arg
+        elif opt in ("-w", "--window"):
+            window = arg       
+        elif opt in ("-g", "--gene_folder"):
+            gene_folder = arg            
+        elif opt in ("-o", "--output"):
+            output_gbk_path = arg
+        elif opt in ("-m", "--email"):
+            Entrez_email = arg            
+    return input_csv,window,gene_folder,output_gbk_path,Entrez_email
 
+# take inputs 
+input_csv,window,gene_folder,output_gbk_path,Entrez_email = dataset_input(sys.argv[1:])
+#print(input_csv,window,gene_folder,output_gbk_path,Entrez_email)
 # Grab file names and locations
-xldoc = pd.read_csv('./OctapusORFpull_Test_HB.csv')
+xldoc = pd.read_csv(input_csv)
 
 # contig name has the genbank file names
 df = xldoc[['genome_id', 'genome_name', 'contig_name', 'contig_start', 'contig_end']]
@@ -33,7 +66,7 @@ dfe = df.loc[:,('contig_start', 'contig_end')].max(axis =1)
 df = df.assign(search_end = dfe)
 
 # create a new genbank file and folder
-gene_folder = "./genebank_files/01_Subset_genbank"
+gene_folder = gene_folder
 if not os.path.exists(gene_folder):
     os.mkdir(gene_folder)
 
@@ -51,10 +84,9 @@ if len(df3) > 0:
     query_list = df3.loc[:, 'contig_name'].to_list()
     # Hanrui's code for downloading genbank files
     #############################################################################
-    Entrez.email = "hwu@fredhutch.org"
+    Entrez.email = Entrez_email
 
     def gbk_download(query,output_path):
-
         filename = output_path+'/'+query+'.gbk'
         print("query :",query)
         # Downloading...
@@ -65,10 +97,9 @@ if len(df3) > 0:
         out_handle.close()
         net_handle.close()
         print ("Saved")
-
         return
 
-    output_path = '/fh/fast/johnston_c/grp/lab/hwu/030221_gbk/genebank_files'
+    output_path = output_gbk_path
     n=1
     for each_query in query_list:
         gbk_download(each_query,output_path)
@@ -126,8 +157,9 @@ with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
         ftx = feature_extract(row)
         if ftx is not None:
             # find the region within 1000 bases of start and/or 1000 bases of stop
-            find_gene1 = ftx[ftx['stop'] < (row['search_end'] + 1000)]
-            find_gene = find_gene1[find_gene1['start'] > (row['search_start'] - 1000)]
+            # HW: change 1000 to outside argument 'window'
+            find_gene1 = ftx[ftx['stop'] < (row['search_end'] + window)]
+            find_gene = find_gene1[find_gene1['start'] > (row['search_start'] - window)]
             seq1 = str(find_gene['cds'])
             regex = re.compile('[^A-Z]')
             seq1 = regex.sub('', seq1)
@@ -145,3 +177,4 @@ with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
             SeqIO.write(sr, output_handle, 'fasta')
 
 os.chdir(rp)
+
