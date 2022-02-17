@@ -76,7 +76,11 @@ if len(df3) > 0:
         print (' ')
         n+=1
     ###############################################################################
-
+    # now remake df2 with new files
+    contents = os.listdir('./genebank_files')
+    indices = [i for i, element in enumerate(fileList) if element in contents]
+    df2 = df.loc[indices]
+    df2 = df2.reset_index(drop = True)
 # extract CDS
 
 def feature_extract (dfrow):
