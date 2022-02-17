@@ -7,8 +7,7 @@ from Bio.SeqFeature import SeqFeature, FeatureLocation
 from Bio.SeqFeature import BeforePosition, AfterPosition
 import pandas as pd
 import re
-
-# first argument is the name of the csv file containing the file names and locations
+import sys,getopt
 
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
 ### genome_id - the NCBI identifier for the organism's sequence
@@ -16,10 +15,8 @@ import re
 ### contig_name - Genbank identifier used to locate the genbank file
 ### contig_start - start of the contig provided to determine neighborhood of gene
 ### contig_end - end of the contig provided to determine neighborhood of the gene
-# another argument will be the folder containing genbank files
-# another argument will be the window for searching from the contig_start and contig_end
 
-import sys,getopt
+# allows the python code to accept arguments
 def dataset_input(argv):
     #get inputs
     input_csv = ''
@@ -41,16 +38,16 @@ def dataset_input(argv):
         elif opt in ("-i", "--input_csv"):
             input_csv = arg
         elif opt in ("-w", "--window"):
-            window = arg       
+            window = arg
         elif opt in ("-g", "--gene_folder"):
-            gene_folder = arg            
+            gene_folder = arg
         elif opt in ("-o", "--output"):
             output_gbk_path = arg
         elif opt in ("-m", "--email"):
-            Entrez_email = arg            
-    return input_csv,window,gene_folder,output_gbk_path,Entrez_email
+            Entrez_email = arg
+    return input_csv,int(window),gene_folder,output_gbk_path,Entrez_email
 
-# take inputs 
+# take inputs
 input_csv,window,gene_folder,output_gbk_path,Entrez_email = dataset_input(sys.argv[1:])
 #print(input_csv,window,gene_folder,output_gbk_path,Entrez_email)
 # Grab file names and locations
@@ -151,7 +148,7 @@ def feature_extract (dfrow):
 
 # use feature_extract parse through df2
 rp = os.getcwd()
-os.chdir(rp+'/genebank_files')
+os.chdir(rp + '/genebank_files')
 with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
     for index, row in df2.iterrows():
         ftx = feature_extract(row)
@@ -177,4 +174,3 @@ with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
             SeqIO.write(sr, output_handle, 'fasta')
 
 os.chdir(rp)
-
