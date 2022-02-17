@@ -7,7 +7,9 @@ from Bio.SeqFeature import SeqFeature, FeatureLocation
 from Bio.SeqFeature import BeforePosition, AfterPosition
 import pandas as pd
 import re
+
 # first argument is the name of the csv file containing the file names and locations
+
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
 ### genome_id - the NCBI identifier for the organism's sequence
 ### genome_name - Genus species name of the organism
@@ -105,7 +107,11 @@ if len(df3) > 0:
         print (' ')
         n+=1
     ###############################################################################
-
+    # now remake df2 with new files
+    contents = os.listdir('./genebank_files')
+    indices = [i for i, element in enumerate(fileList) if element in contents]
+    df2 = df.loc[indices]
+    df2 = df2.reset_index(drop = True)
 # extract CDS
 
 def feature_extract (dfrow):
@@ -114,6 +120,13 @@ def feature_extract (dfrow):
     if lgb < 2:
         print("No CDS found for %s." % gb.id)
         new_cds = None
+        # put files into a new folder
+        no_cds_folder = "./for_prokka"
+        if not os.path.exists(no_cds_folder):
+            os.mkdir(no_cds_folder)
+        op = "./" + dfrow['contig_filename']
+        np = "./" + no_cds_folder + "/" + dfrow['contig_filename']
+        os.rename(op, np)
     else:
         count = 1
         new_cds = pd.DataFrame()
@@ -128,7 +141,8 @@ def feature_extract (dfrow):
                 product = feature.qualifiers['product']
                 new_val = pd.DataFrame({'description':[dfrow['genome_name']],\
                 'gb':[dfrow['genome_id']],'emb':[gb.id], 'start':[start], \
-                'stop':[stop], 'strand':[strand], 'product':[product], 'cds':[cds]})
+                'stop':[stop], 'strand':[strand], 'product':[product], \
+                'cds':[cds], 'contig_filename':[dfrow['contig_filename']]})
                 new_cds = new_cds.append(new_val, ignore_index = True)
                 count+=1
         print('%d CDS features collected for %s' % (count, gb.id))
@@ -155,8 +169,8 @@ with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
             prod1 = re.sub(r"\d+ ","", find_gene['product'].to_string())
             start1 = re.sub(r"\d+ ","", find_gene['start'].to_string())
             stop1 = re.sub(r"\d+ ","", find_gene['stop'].to_string())
-            id1 = 'gb|'+ gb1.strip() + '|emb|' + emb1.strip()
-            name1 = desc1.strip()
+            id1 = desc1.strip() + "_" + ftx['contig_filename']
+            name1 = 'gb|'+ gb1.strip() + '|emb|' + emb1.strip()
             desc2 = prod1.strip() + '_' + start1.strip() + '_' + stop1.strip()
             sr = SeqRecord(Seq(seq1), id = id1, name = name1, description = desc2)
             print(sr)
