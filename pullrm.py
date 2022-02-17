@@ -7,7 +7,8 @@ from Bio.SeqFeature import SeqFeature, FeatureLocation
 from Bio.SeqFeature import BeforePosition, AfterPosition
 import pandas as pd
 import re
-import sys,getopt
+import sys
+import getopt
 
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
 ### genome_id - the NCBI identifier for the organism's sequence
@@ -62,14 +63,9 @@ df = df.assign(search_start = dfs)
 dfe = df.loc[:,('contig_start', 'contig_end')].max(axis =1)
 df = df.assign(search_end = dfe)
 
-# create a new genbank file and folder
-gene_folder = gene_folder
-if not os.path.exists(gene_folder):
-    os.mkdir(gene_folder)
-
 # Check to see if files are in the folder
 fileList = df['contig_filename']
-contents = os.listdir('./genebank_files')
+contents = os.listdir('./' + output_gbk_path)
 indices = [i for i, element in enumerate(fileList) if element in contents]
 indices2 = [i for i, element in enumerate(fileList) if element not in contents]
 df2 = df.loc[indices]
@@ -105,7 +101,7 @@ if len(df3) > 0:
         n+=1
     ###############################################################################
     # now remake df2 with new files
-    contents = os.listdir('./genebank_files')
+    contents = os.listdir('./' + 'output_gbk_path')
     indices = [i for i, element in enumerate(fileList) if element in contents]
     df2 = df.loc[indices]
     df2 = df2.reset_index(drop = True)
@@ -146,10 +142,16 @@ def feature_extract (dfrow):
     return new_cds
 
 
-# use feature_extract parse through df2
+# create a new genbank file and folder
 rp = os.getcwd()
-os.chdir(rp + '/genebank_files')
-with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
+orp = rp + "/" + output_gbk_path + "/"+ gene_folder
+if not os.path.exists(orp):
+    os.mkdir(orp)
+
+# use feature_extract parse through df
+os.chdir(orp)
+ofn = orp + "/" + input_csv[:-4] + ".fasta"
+with open(ofn, "w") as output_handle:
     for index, row in df2.iterrows():
         ftx = feature_extract(row)
         if ftx is not None:
@@ -167,7 +169,7 @@ with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
             start1 = re.sub(r"\d+ ","", find_gene['start'].to_string())
             stop1 = re.sub(r"\d+ ","", find_gene['stop'].to_string())
             id1 = desc1.strip() + "_" + ftx['contig_filename']
-            name1 = 'gb|'+ gb1.strip() + '|emb|' + emb1.strip()
+            name1 = 'gb|' + gb1.strip() + '|emb|' + emb1.strip()
             desc2 = prod1.strip() + '_' + start1.strip() + '_' + stop1.strip()
             sr = SeqRecord(Seq(seq1), id = id1, name = name1, description = desc2)
             print(sr)
