@@ -9,7 +9,7 @@ from Bio.SeqFeature import BeforePosition, AfterPosition
 import pandas as pd
 import re
 
-# first argument is the name of the csv file containing the file names and locations
+# first argument will be the name of the csv file containing the file names and locations
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
 ### genome_id - the NCBI identifier for the organism's sequence
 ### genome_name - Genus species name of the organism
@@ -125,8 +125,8 @@ with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
             prod1 = re.sub(r"\d+ ","", find_gene['product'].to_string())
             start1 = re.sub(r"\d+ ","", find_gene['start'].to_string())
             stop1 = re.sub(r"\d+ ","", find_gene['stop'].to_string())
-            id1 = 'gb|'+ gb1.strip() + '|emb|' + emb1.strip()
-            name1 = desc1.strip()
+            id1 = desc1.strip()
+            name1 = 'gb|'+ gb1.strip() + '|emb|' + emb1.strip()
             desc2 = prod1.strip() + '_' + start1.strip() + '_' + stop1.strip()
             sr = SeqRecord(Seq(seq1), id = id1, name = name1, description = desc2)
             print(sr)
