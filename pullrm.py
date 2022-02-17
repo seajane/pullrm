@@ -89,6 +89,7 @@ def feature_extract (dfrow):
     if lgb < 2:
         print("No CDS found for %s." % gb.id)
         new_cds = None
+        # put files into a new folder
     else:
         count = 1
         new_cds = pd.DataFrame()
@@ -103,7 +104,8 @@ def feature_extract (dfrow):
                 product = feature.qualifiers['product']
                 new_val = pd.DataFrame({'description':[dfrow['genome_name']],\
                 'gb':[dfrow['genome_id']],'emb':[gb.id], 'start':[start], \
-                'stop':[stop], 'strand':[strand], 'product':[product], 'cds':[cds]})
+                'stop':[stop], 'strand':[strand], 'product':[product], \
+                'cds':[cds], 'contig_filename':[dfrow['contig_filename']]})
                 new_cds = new_cds.append(new_val, ignore_index = True)
                 count+=1
         print('%d CDS features collected for %s' % (count, gb.id))
@@ -129,7 +131,7 @@ with open("./01_Subset_genbank/fullcds.fasta", "w") as output_handle:
             prod1 = re.sub(r"\d+ ","", find_gene['product'].to_string())
             start1 = re.sub(r"\d+ ","", find_gene['start'].to_string())
             stop1 = re.sub(r"\d+ ","", find_gene['stop'].to_string())
-            id1 = desc1.strip()
+            id1 = desc1.strip() + "_" + ftx['contig_filename']
             name1 = 'gb|'+ gb1.strip() + '|emb|' + emb1.strip()
             desc2 = prod1.strip() + '_' + start1.strip() + '_' + stop1.strip()
             sr = SeqRecord(Seq(seq1), id = id1, name = name1, description = desc2)
