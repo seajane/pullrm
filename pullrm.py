@@ -90,6 +90,12 @@ def feature_extract (dfrow):
         print("No CDS found for %s." % gb.id)
         new_cds = None
         # put files into a new folder
+        no_cds_folder = "./for_prokka"
+        if not os.path.exists(no_cds_folder):
+            os.mkdir(no_cds_folder)
+        op = "./" + dfrow['contig_filename']
+        np = "./" + no_cds_folder + "/" + dfrow['contig_filename']
+        os.rename(op, np)
     else:
         count = 1
         new_cds = pd.DataFrame()
