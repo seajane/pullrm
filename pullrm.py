@@ -1,14 +1,11 @@
 #!/bin/python
-import os
+
 from Bio import SeqIO, Entrez
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
-from Bio.SeqFeature import SeqFeature, FeatureLocation
-from Bio.SeqFeature import BeforePosition, AfterPosition
+from Bio.SeqFeature import SeqFeature
 import pandas as pd
-import re
-import sys
-import getopt
+import os, re, sys, getopt
 
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
 ### genome_id - the NCBI identifier for the organism's sequence
@@ -51,6 +48,11 @@ def dataset_input(argv):
 # take inputs
 input_csv,window,gene_folder,output_gbk_path,Entrez_email = dataset_input(sys.argv[1:])
 #print(input_csv,window,gene_folder,output_gbk_path,Entrez_email)
+#input_csv = "OctapusORFpull_Test_HB.csv"
+#window = 1000
+#output_gbk_path = "genebank_files"
+#gene_folder = "test01"
+#Entrez_email = "hwu@fredhutch.org"
 # Grab file names and locations
 xldoc = pd.read_csv(input_csv)
 
@@ -73,34 +75,33 @@ df2 = df2.reset_index(drop = True)
 print("Found %d files in folder" % (len(df2)))
 df3 = df.loc[indices2]
 
+# if on mac and get this error: "urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)":
+# 1. Open Finder and navigated to Applications, Python 3.XX
+# 2. Double-click on Install Certificates.command file
+
+def gbk_download(query,output_path):
+    filename = output_path+'/'+query+'.gbk'
+    print("Query :",query)
+    # Downloading...
+    print("Downloading :",query)
+    net_handle = Entrez.efetch(db="nucleotide",id=query,rettype="gb", retmode="text")
+    out_handle = open(filename, "w")
+    out_handle.write(net_handle.read())
+    out_handle.close()
+    net_handle.close()
+    print ("Saved")
+    return
+
 if len(df3) > 0:
     query_list = df3.loc[:, 'contig_name'].to_list()
-    # Hanrui's code for downloading genbank files
-    #############################################################################
     Entrez.email = Entrez_email
-
-    def gbk_download(query,output_path):
-        filename = output_path+'/'+query+'.gbk'
-        print("query :",query)
-        # Downloading...
-        print("Downloading ",query)
-        net_handle = Entrez.efetch(db="nucleotide",id=query,rettype="gb", retmode="text")
-        out_handle = open(filename, "w")
-        out_handle.write(net_handle.read())
-        out_handle.close()
-        net_handle.close()
-        print ("Saved")
-        return
-
-    output_path = output_gbk_path
+    output_path = os.getcwd()+ "/"+ output_gbk_path
     n=1
     for each_query in query_list:
         gbk_download(each_query,output_path)
         print ("count ",n)
         print (' ')
         n+=1
-    ###############################################################################
-    # now remake df2 with new files
     contents = os.listdir('./' + 'output_gbk_path')
     indices = [i for i, element in enumerate(fileList) if element in contents]
     df2 = df.loc[indices]
@@ -114,7 +115,7 @@ def feature_extract (dfrow):
         print("No CDS found for %s." % gb.id)
         new_cds = None
         # put files into a new folder
-        no_cds_folder = "./for_prokka"
+        no_cds_folder = "../for_prokka"
         if not os.path.exists(no_cds_folder):
             os.mkdir(no_cds_folder)
         op = "./" + dfrow['contig_filename']
@@ -134,8 +135,7 @@ def feature_extract (dfrow):
                 product = feature.qualifiers['product']
                 new_val = pd.DataFrame({'description':[dfrow['genome_name']],\
                 'gb':[dfrow['genome_id']],'emb':[gb.id], 'start':[start], \
-                'stop':[stop], 'strand':[strand], 'product':[product], \
-                'cds':[cds], 'contig_filename':[dfrow['contig_filename']]})
+                'stop':[stop], 'strand':[strand], 'product':[product], 'cds':[cds], 'contig_filename':[dfrow['contig_filename']]})
                 new_cds = new_cds.append(new_val, ignore_index = True)
                 count+=1
         print('%d CDS features collected for %s' % (count, gb.id))
@@ -144,12 +144,12 @@ def feature_extract (dfrow):
 
 # create a new genbank file and folder
 rp = os.getcwd()
-orp = rp + "/" + output_gbk_path + "/"+ gene_folder
+orp = rp + "/" + gene_folder
 if not os.path.exists(orp):
     os.mkdir(orp)
 
 # use feature_extract parse through df
-os.chdir(orp)
+os.chdir(rp + "/" + output_gbk_path)
 ofn = orp + "/" + input_csv[:-4] + ".fasta"
 with open(ofn, "w") as output_handle:
     for index, row in df2.iterrows():
@@ -168,11 +168,12 @@ with open(ofn, "w") as output_handle:
             prod1 = re.sub(r"\d+ ","", find_gene['product'].to_string())
             start1 = re.sub(r"\d+ ","", find_gene['start'].to_string())
             stop1 = re.sub(r"\d+ ","", find_gene['stop'].to_string())
-            id1 = desc1.strip() + "_" + ftx['contig_filename']
+            id1 = desc1.strip().replace(" ", "_")
             name1 = 'gb|' + gb1.strip() + '|emb|' + emb1.strip()
             desc2 = prod1.strip() + '_' + start1.strip() + '_' + stop1.strip()
-            sr = SeqRecord(Seq(seq1), id = id1, name = name1, description = desc2)
+            sr = SeqRecord(Seq(seq1), id = id1, description = desc2)
             print(sr)
             SeqIO.write(sr, output_handle, 'fasta')
+
 
 os.chdir(rp)

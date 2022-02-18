@@ -1,0 +1,80 @@
+LOCUS       GG700527             1884085 bp    DNA     linear   CON 17-SEP-2013
+DEFINITION  Anaerococcus vaginalis ATCC 51170 genomic scaffold SCAFFOLD1, whole
+            genome shotgun sequence.
+ACCESSION   GG700527 ACXU01000000
+VERSION     GG700527.1
+DBLINK      BioProject: PRJNA38727
+            BioSample: SAMN00120584
+KEYWORDS    WGS.
+SOURCE      Anaerococcus vaginalis ATCC 51170
+  ORGANISM  Anaerococcus vaginalis ATCC 51170
+            Bacteria; Firmicutes; Tissierellia; Tissierellales;
+            Peptoniphilaceae; Anaerococcus.
+REFERENCE   1  (bases 1 to 1884085)
+  AUTHORS   Muzny,D., Qin,X., Deng,J., Jiang,H., Liu,Y., Qu,J., Song,X.-Z.,
+            Zhang,L., Thornton,R., Coyle,M., Francisco,L., Jackson,L.,
+            Javaid,M., Korchina,V., Kovar,C., Mata,R., Mathew,T., Ngo,R.,
+            Nguyen,L., Nguyen,N., Okwuonu,G., Ongeri,F., Pham,C., Simmons,D.,
+            Wilczek-Boney,K., Hale,W., Jakkamsetti,A., Pham,P., Ruth,R., San
+            Lucas,F., Warren,J., Zhang,J., Zhao,Z., Zhou,C., Zhu,D., Lee,S.,
+            Bess,C., Blankenburg,K., Forbes,L., Fu,Q., Gubbala,S., Hirani,K.,
+            Jayaseelan,J.C., Lara,F., Munidasa,M., Palculict,T., Patil,S.,
+            Pu,L.-L., Saada,N., Tang,L., Weissenberger,G., Zhu,Y., Hemphill,L.,
+            Shang,Y., Youmans,B., Ayvaz,T., Ross,M., Santibanez,J., Aqrawi,P.,
+            Gross,S., Joshi,V., Fowler,G., Nazareth,L., Reid,J., Worley,K.,
+            Petrosino,J., Highlander,S., Gibbs,R. and Gibbs,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-AUG-2009) Human Genome Sequencing Center, Baylor
+            College of Medicine, One Baylor Plaza, Houston, TX 77030, USA
+COMMENT     This sequence is generated as a part of the Human Microbiome
+            Project (HMP), funded by the National Institutes of Health (NIH),
+            National Human Genome Research Institute (NHGRI) Large-Scale
+            Sequencing Research Network and the National Institute of Allergy
+            and Infectious Diseases (NIAID) Microbial Genome Sequencing Centers
+            Program.  The mission of the HMP is to generate resources to enable
+            the characterization of the human microbiota, the microbial
+            communities living within human bodies, and analyze the role of
+            these organisms in human health and disease.
+             The sequenced strain was obtained from ATCC.  The sequence
+            generated included at least 10 fold coverage of Roche/454
+            Lifesciences FLX fragment data and at least 8 fold clone coverage
+            of Roche/454 Lifesciences paired-end data.
+             The Roche/454 Lifesciences sequence was assembled using the
+            Roche/454 Lifescience Newbler assembler.  The contigs from the
+            Newbler assembly were aligned to the Illumina/Solexa data with
+            mapping tools such as Mosaic and Crossmatch and these data were
+            used for error correction for this version of the draft assembly.
+            This draft assembly meets the HMP draft quality standards (more
+            than 90% of the genome is included in contigs, more than 90% of a
+            core set of bacterial genes are found with > 30% identity and > 30%
+            length; more than 90% of the bases in the assembly have more than 5
+            fold sequence coverage, the contig N50 length is greater than 5kb,
+            the scaffold N50 length is greater than 20kb, and there is less
+            than 1 gap per 5kb).
+             This is a reference genome for the Human Microbiome Project. This
+            project is co-owned with the Human Microbiome Project DACC.
+             Genome Coverage: 35x
+             Sequencing Technology: 454.
+FEATURES             Location/Qualifiers
+     source          1..1884085
+                     /organism="Anaerococcus vaginalis ATCC 51170"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="SCAFFOLD1"
+                     /strain="ATCC 51170"
+                     /culture_collection="ATCC:51170"
+                     /type_material="type strain of Anaerococcus vaginalis"
+                     /db_xref="taxon:655811"
+CONTIG      join(ACXU01000002.1:1..50057,gap(1610),ACXU01000003.1:1..6902,
+            gap(1605),ACXU01000004.1:1..142096,gap(1182),
+            ACXU01000005.1:1..328184,gap(343),ACXU01000006.1:1..100125,gap(50),
+            ACXU01000007.1:1..9545,gap(814),ACXU01000008.1:1..10434,gap(74),
+            ACXU01000009.1:1..51625,gap(177),ACXU01000010.1:1..23433,gap(1610),
+            ACXU01000011.1:1..131275,gap(50),ACXU01000012.1:1..85974,gap(1182),
+            ACXU01000013.1:1..61297,gap(50),ACXU01000014.1:1..63039,gap(177),
+            ACXU01000015.1:1..112543,gap(3434),ACXU01000016.1:1..1479,gap(572),
+            ACXU01000017.1:1..84464,gap(57),ACXU01000018.1:1..9908,gap(74),
+            ACXU01000019.1:1..35911,gap(484),ACXU01000020.1:1..78613,gap(50),
+            ACXU01000021.1:1..240737,gap(1232),ACXU01000022.1:1..61893,
+            gap(1604),ACXU01000023.1:1..72938,gap(50),ACXU01000024.1:1..105132)
+//
+

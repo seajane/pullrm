@@ -1,0 +1,107 @@
+LOCUS       DAXV01000041            3436 bp    DNA     linear   ENV 10-OCT-2017
+DEFINITION  MAG TPA_asm: Acidilobaceae archaeon UBA158 UBA158_contig_6612,
+            whole genome shotgun sequence.
+ACCESSION   DAXV01000041 DAXV01000000
+VERSION     DAXV01000041.1
+DBLINK      BioProject: PRJNA348753
+            BioSample: SAMN06027508
+            Sequence Read Archive: SRR5036791
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG; Third Party Data; TPA;
+            TPA:assembly.
+SOURCE      Acidilobaceae archaeon UBA158 (hot springs metagenome)
+  ORGANISM  Acidilobaceae archaeon UBA158
+            Archaea; Crenarchaeota; Thermoprotei; Acidilobales; Acidilobaceae.
+REFERENCE   1  (bases 1 to 3436)
+  AUTHORS   Parks,D.H., Rinke,C., Chuvochina,M., Chaumeil,P.A., Woodcroft,B.J.,
+            Evans,P.N., Hugenholtz,P. and Tyson,G.W.
+  TITLE     Recovery of nearly 8,000 metagenome-assembled genomes substantially
+            expands the tree of life
+  JOURNAL   Nat Microbiol (2017) In press
+   PUBMED   28894102
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (bases 1 to 3436)
+  AUTHORS   Parks,D.H., Hugenholtz,P. and Tyson,G.W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-NOV-2016) School of Chemistry and Molecular
+            Biosciences, University of Queensland, Chemistry Bld, Cooper Road,
+            St Lucia, Brisbane, Queensland 4072, Australia
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Method       :: CLC de novo assembler v. 4.4.1
+            Genome Coverage       :: 68.23x
+            Sequencing Technology :: Illumina HiSeq 2000
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3436
+                     /organism="Acidilobaceae archaeon UBA158"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="UBA158_contig_6612"
+                     /isolate="UBA158"
+                     /isolation_source="water"
+                     /db_xref="taxon:1915614"
+                     /environmental_sample
+                     /country="Taiwan: Shi-Huang-Ping hot spring"
+                     /metagenome_source="hot springs metagenome"
+                     /note="Genome binned from sequencing reads available in
+                     SRX532417;
+                     metagenomic"
+ORIGIN      
+        1 aaatctgggg tgatagtata aaaatggtat aattttttag ctgaaggtat tcccgatgtg
+       61 tggaactcgt acaggacttc tctattgatc tctgataacc ctagtatcac tagcatgttc
+      121 aatcgcctct tcaacttcct taatagcctg cttaattagg tatcttgctt tctttctcaa
+      181 cttaaaatat tctctaataa gtgttgtaat ttttttttgt tgttcttttg gaatcttggg
+      241 tattagtaaa tctccaaata tagatttagg aacagcagac attatagcac cagttgtttg
+      301 ctgttctaat tgtcttttga aaataggcgt tcgaaataac aaaaatagaa attctggata
+      361 atcttcttta cttctaacaa caaagcaacc tgtagtagtc aattgttcat ctaactcttc
+      421 aggaacaagg gcgattttat caaatgttcc tgccaaagaa gatataacaa tatctttttc
+      481 tcttatcaac atcctagctc tgcttggtac ttgccatcca tagaattcgt cccactcaaa
+      541 tatttctcca cttttgttaa ttttggctat aggaacatat ctaaatatct tagttttgtt
+      601 ttcttcatta gttggatcta ctttttcatt tgaaatttct atgacttctt tcaaaggctt
+      661 tatttcaaaa ggagatcttt caagtagttt aataatacct aaatattttg gatggtagtg
+      721 tccggcatca aatctaaaag cctttactac atttttgaaa tttgtttcat atcctttttc
+      781 ttcctctaat ttttcaattt cttcttttgt tattcctaga agttggtaaa gtaattgttc
+      841 ggcttgttgg tatttttgct cagatttata tagatttttg aacgcatcac ttacgatttt
+      901 tcttatatcc tgtataaaat tattagaaaa gagaggcacc ctaatattaa ggatatcaac
+      961 taaatttgct cttggtcgag tagaaccgat gcctataaac caaacttgat tgtaaccata
+     1021 tttacttacc aaatacgccc aaagaacgaa tggatcaaat ttcgattctt ctacttctag
+     1081 tactataaat tctgtagagc aaataccata ttttatgtat tctggaataa ttacaacttt
+     1141 atttaaataa gttcttattt ttgaaaaaag tatattctta gagctaaata caaatttaac
+     1201 actatctaga tcccccccaa atacctgata gaaaaaagct ccaacccccc ctttagggac
+     1261 attttttaac tctaaataaa gaaatttatc attaaaatgg ttttttggat ctaataattc
+     1321 tctttttact ctacttatgg atccaagtaa tgttatgttc tctgttaatt tccgtactct
+     1381 ttctatggtt tccattctga ccggatgata gtatggtgct tccaatctat catcgattgt
+     1441 aatatcagaa tatcttactt ctgatatcgc taccattttt acctcctaaa actccatttt
+     1501 gtgtttattc ttgaattcct taaacttatc tacaattatt ggtatatctg tttctattaa
+     1561 aggactcccc ccttcatctt cgagaatttt tccatctttg cctcttctga aaatttttcg
+     1621 tcctcttaca tcgtacccta tcttttctgc tgttgccata aaaacagaat agtcttcttt
+     1681 ctttaatttc tctagttctt ccacaggaag tttttgtaaa aacaatatag atgctttaac
+     1741 tccagcccca tatggtataa atgtctctgg gggtaaagaa actacagcta aaattcgtga
+     1801 atgatctatt atccattgtc taacgtatcc aagggtagaa ttagtcaata taccatctgg
+     1861 taaaacaata gccattcttc cataatcttt taaaagttgc caacatctct caataaacaa
+     1921 aatttctgga gtttgctctc ttaacaatcg gcttgtttta atccacttac ctcttttttt
+     1981 atcaaatccc catttgtggc ccaaatcaaa ttgtcttaat attcttgaat cgttaatttt
+     2041 accctttgat ccgaaaggcg gatttgttaa aactatttca aacttattag gttctggtct
+     2101 cgctggtttt ggtacccctt ctttttctga aattttcttt aactcatcaa aaggcaatag
+     2161 actattggta gagaaaatat tagaataacc atcatcaaat aaaaccatat acattttggc
+     2221 aactttcact aaatcttggt ttatatcgat tcctgctatg tgtgcttttg cgtaatcagc
+     2281 aacaccacga gaatctaaac cccatctttg tttcacccat tccattgccc aaattagaaa
+     2341 tctaccactt ccacaagcag gatcaataat ggattcgtga taatcaggat ttagcatagc
+     2401 aactgcaagc tctattgcgg ggtgaggagt aaagaattct cctctgtcgc ctctcatgtt
+     2461 ttcgtgtata aaagtttgaa aggctacacc ttttacgtca tctcttattt tcataaagga
+     2521 aatttcttgc aatctcctta ctacctcccc catagaaagt ggttttaaca ataatcgttc
+     2581 tccatcatca aaaatttctg ggtacaagcg tttagcttcg ttccataatt tttctattct
+     2641 ttgaataaag gatttagatt caccagcttc tcttaattct tcatattctc tttcagaaat
+     2701 ccagaaccaa acctcttctc ttggagactt ttcatcaaca attttcataa agattagttt
+     2761 gatgatttct ccaaacaatt tttctttcaa aaatccttca ttagcatata aataattatg
+     2821 aatctcatca aaacgaactt taagattgaa tgtaggcttt aattgcgttt tggttaattg
+     2881 cttttctaaa tcctcgaatt tctccccata tcttgggatt ctgcttatct cttggaattc
+     2941 atgaggtttt ctcaatcttc gtaagaaggt tatatctcta ccgttgtacc atataccgaa
+     3001 ctctgctgtc gtggcgttaa tataactttc taactgctct ataccatctt ttatgtgttc
+     3061 tcttttgact tctataacaa tatatgcatt tttattagga tcttttgact ttttatctct
+     3121 aaaaactaca atatcagccc ttcctaattt ttgactacca aactgaatct ctacctctat
+     3181 atcaattaaa tctttaggat acccccaatc ttcaactaat cttctttcaa tctcctgtct
+     3241 tctctcctct tctggagttt tttccaaaat ttttccagtt atgaaatctt taacaaatcc
+     3301 ctctttaatt tctttagttt ctataatttc tctctctaaa ttcagttgtt ttttatccat
+     3361 tatggcacac ctccattttt tcctatttta aacccgtctc ccccgattgc gattaactcg
+     3421 gttatatccg aattat
+//
+

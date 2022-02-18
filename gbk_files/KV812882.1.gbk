@@ -1,0 +1,103 @@
+LOCUS       KV812882             1099608 bp    DNA     linear   CON 21-OCT-2016
+DEFINITION  Rothia sp. HMSC068E02 genomic scaffold Scaffold53, whole genome
+            shotgun sequence.
+ACCESSION   KV812882 LTWL01000000
+VERSION     KV812882.1
+DBLINK      BioProject: PRJNA300073
+            BioSample: SAMN04480346
+KEYWORDS    WGS; HIGH_QUALITY_DRAFT.
+SOURCE      Rothia sp. HMSC068E02
+  ORGANISM  Rothia sp. HMSC068E02
+            Bacteria; Actinobacteria; Micrococcales; Micrococcaceae; Rothia;
+            unclassified Rothia (in: Bacteria).
+REFERENCE   1  (bases 1 to 1099608)
+  AUTHORS   Mitreva,M., Pepin,K.H., Mihindukulasuriya,K.A., Fulton,R.,
+            Fronick,C., O'Laughlin,M., Miner,T., Herter,B., Rosa,B.A.,
+            Cordes,M., Tomlinson,C., Wollam,A., Palsikar,V.B., Mardis,E.R. and
+            Wilson,R.K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-FEB-2016) McDonnell Genome Institute, Washington
+            University School of Medicine, 4444 Forest Park, St. Louis, MO
+            63108, USA
+COMMENT     The WUSC is a large strain collection isolated from clinical
+            samples. Each sample is associated with metadata, including source,
+            isolation site, 16s rRNA, metabolic, and other phenotypic
+            information. The goal is to sample an adequate number of important,
+            yet minor species, further adding to the catelogue of sequenced
+            bacterial genomes and improving the diversity of the genomes
+            available to the public. WGS will be preformed on approximely 550
+            isolates. Samples were selected based on RDP analysis at the genus
+            level. This is a reference genomes for the Human Microbiome Project
+            and the work was funded by the National Institutes of Health (NIH)
+            grant U54 HG004968.
+            Annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (released 2013). Information about the Pipeline can be
+            found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: High-Quality Draft
+            Current Finishing Status :: High-Quality Draft
+            Assembly Method          :: Velvet v. 1.1.06
+            Genome Coverage          :: 174x
+            Sequencing Technology    :: Illumina
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI
+            Annotation Date                   :: 03/03/2016 07:51:51
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS+
+            Annotation Software revision      :: 3.1
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+                                                 repeat_region
+            Genes (total)                     :: 1,795
+            CDS (total)                       :: 1,735
+            Genes (coding)                    :: 1,703
+            CDS (coding)                      :: 1,703
+            Genes (RNA)                       :: 60
+            rRNAs                             :: 5, 1, 1 (5S, 16S, 23S)
+            complete rRNAs                    :: 5, 1 (5S, 16S)
+            partial rRNAs                     :: 1 (23S)
+            tRNAs                             :: 50
+            ncRNAs                            :: 3
+            Pseudo Genes (total)              :: 32
+            Pseudo Genes (ambiguous residues) :: 0 of 32
+            Pseudo Genes (frameshifted)       :: 4 of 32
+            Pseudo Genes (incomplete)         :: 28 of 32
+            Pseudo Genes (internal stop)      :: 1 of 32
+            Pseudo Genes (multiple problems)  :: 1 of 32
+            CRISPR Arrays                     :: 1
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1099608
+                     /organism="Rothia sp. HMSC068E02"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="Scaffold53"
+                     /strain="HMSC068E02"
+                     /isolation_source="nasal"
+                     /host="Homo sapiens"
+                     /db_xref="HMP:2919"
+                     /db_xref="taxon:1739423"
+CONTIG      join(LTWL01000033.1:1..58991,gap(unk100),LTWL01000044.1:1..42083,
+            gap(unk100),LTWL01000051.1:1..19966,gap(unk100),
+            LTWL01000056.1:1..183361,gap(unk100),LTWL01000057.1:1..30164,
+            gap(unk100),LTWL01000058.1:1..111786,gap(unk100),
+            LTWL01000059.1:1..54257,gap(unk100),LTWL01000060.1:1..17184,
+            gap(unk100),LTWL01000034.1:1..136407,gap(unk100),
+            LTWL01000035.1:1..103027,gap(unk100),LTWL01000036.1:1..2630,
+            gap(unk100),LTWL01000037.1:1..64280,gap(unk100),
+            LTWL01000038.1:1..89826,gap(unk100),LTWL01000039.1:1..85071,
+            gap(unk100),LTWL01000040.1:1..39658,gap(unk100),
+            LTWL01000041.1:1..15806,gap(unk100),LTWL01000042.1:1..14912,
+            gap(unk100),LTWL01000043.1:1..15160,gap(unk100),
+            LTWL01000045.1:1..247,gap(unk100),LTWL01000046.1:1..211,
+            gap(unk100),LTWL01000047.1:1..301,gap(unk100),
+            LTWL01000048.1:1..244,gap(unk100),LTWL01000049.1:1..246,
+            gap(unk100),LTWL01000050.1:1..237,gap(unk100),
+            LTWL01000052.1:1..250,gap(unk100),LTWL01000053.1:1..531,
+            gap(unk100),LTWL01000054.1:1..241,gap(unk100),
+            LTWL01000055.1:1..9831)
+//
+

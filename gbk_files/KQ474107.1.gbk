@@ -1,0 +1,41 @@
+LOCUS       KQ474107              103649 bp    DNA     linear   CON 21-OCT-2015
+DEFINITION  Aquimarina longa SW024 genomic scaffold scaffold17, whole genome
+            shotgun sequence.
+ACCESSION   KQ474107 AVQK01000000
+VERSION     KQ474107.1
+DBLINK      BioProject: PRJNA213436
+            BioSample: SAMN04202543
+KEYWORDS    WGS.
+SOURCE      Aquimarina longa SW024
+  ORGANISM  Aquimarina longa SW024
+            Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales;
+            Flavobacteriaceae; Aquimarina.
+REFERENCE   1  (bases 1 to 103649)
+  AUTHORS   Xu,T., Yu,M., Lin,H., Zhang,Z., Liu,J. and Zhang,X.H.
+  TITLE     Genomic insight into Aquimarina longa SW024(T): its
+            ultra-oligotrophic adapting mechanisms and biogeochemical functions
+  JOURNAL   BMC Genomics 16 (1), 772 (2015)
+   PUBMED   26459873
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 103649)
+  AUTHORS   Xu,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-FEB-2014) Ocean University of China, College of
+            Marine Life Sciences, 5 Yushan Road, Qingdao, Shandong 266003,
+            China
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Method       :: Velvet v. 1.2.10
+            Genome Coverage       :: 204.6x
+            Sequencing Technology :: Illumina HiSeq
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..103649
+                     /organism="Aquimarina longa SW024"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="scaffold17"
+                     /strain="SW024"
+                     /type_material="type strain of Aquimarina longa"
+                     /db_xref="taxon:1379258"
+CONTIG      join(AVQK01000027.1:1..2596,gap(1),AVQK01000028.1:1..101052)
+//
+

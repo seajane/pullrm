@@ -1,0 +1,200 @@
+LOCUS       DTWT01001231            4506 bp    DNA     linear   ENV 04-MAY-2020
+DEFINITION  MAG TPA_asm: Armatimonadetes bacterium isolate UWMA-0172
+            k99_2882622, whole genome shotgun sequence.
+ACCESSION   DTWT01001231 DTWT01000000
+VERSION     DTWT01001231.1
+DBLINK      BioProject: PRJNA522654
+            BioSample: SAMN10967514
+            Sequence Read Archive: SRR8626257
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG; Third Party Data; TPA;
+            TPA:assembly.
+SOURCE      Armatimonadetes bacterium (marine metagenome)
+  ORGANISM  Armatimonadetes bacterium
+            Bacteria; Armatimonadetes.
+REFERENCE   1  (bases 1 to 4506)
+  AUTHORS   Zhou,Z., Tran,P.Q., Kieft,K. and Anantharaman,K.
+  TITLE     Genome diversification in globally distributed novel marine
+            Proteobacteria is linked to environmental adaptation
+  JOURNAL   bioRxivorg, doi 10.1101/814418 (2019)
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 4506)
+  AUTHORS   Zhou,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2019) Department of Bacteriology, University of
+            Wisconsin-Madison, 4545 Microbial Sciences Building, 1550 Linden
+            Drive, Madison, WI 53706, USA
+COMMENT     Annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (released 2013). Information about the Pipeline can be
+            found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Method        :: SPAdes v. 3.12.0
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 20.51x
+            Sequencing Technology  :: Illumina HiSeq 2000
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI
+            Annotation Date                   :: 03/20/2019 18:01:42
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS-2+
+            Annotation Software revision      :: 4.8
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+                                                 repeat_region
+            Genes (total)                     :: 3,150
+            CDSs (total)                      :: 3,141
+            Genes (coding)                    :: 3,083
+            CDSs (with protein)               :: 3,083
+            Genes (RNA)                       :: 9
+            rRNAs                             :: 1 (5S)
+            complete rRNAs                    :: 1 (5S)
+            tRNAs                             :: 8
+            ncRNAs                            :: 0
+            Pseudo Genes (total)              :: 58
+            CDSs (without protein)            :: 58
+            Pseudo Genes (ambiguous residues) :: 0 of 58
+            Pseudo Genes (frameshifted)       :: 11 of 58
+            Pseudo Genes (incomplete)         :: 42 of 58
+            Pseudo Genes (internal stop)      :: 7 of 58
+            Pseudo Genes (multiple problems)  :: 2 of 58
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..4506
+                     /organism="Armatimonadetes bacterium"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="k99_2882622"
+                     /isolate="UWMA-0172"
+                     /isolation_source="Mid-Cayman Rise Vent Fluids"
+                     /db_xref="taxon:2033014"
+                     /environmental_sample
+                     /country="Atlantic Ocean: Mid Cayman Rise"
+                     /lat_lon="18.375 N 81.7976 W"
+                     /collection_date="2017-04-15"
+                     /metagenome_source="marine metagenome"
+                     /note="metagenomic"
+     gene            999..2966
+                     /locus_tag="EYP10_10155"
+     CDS             999..2966
+                     /locus_tag="EYP10_10155"
+                     /inference="COORDINATES: protein motif:HMM:PF13588.4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="N-6 DNA methylase"
+                     /protein_id="HID07496.1"
+                     /translation="MIITTEESITLIPPGKLRCVITGKLRKDTSEEHVRQRIARSLIE
+                     DYGYDRSDIAVEFSIKMGRSRKRVDIAIFLPRAEHKQENVKIIIECKREDVRPTDRDN
+                     GVEQLKSYLAACPNARFGMWVGSELQVWERLVSPTREISFEEATDIPRFGYDAPQPIT
+                     FAELVPAQEELIAVFKRCHNYIYGNQGLQKEPAFQELLKLIFCKVYDEEYTTSGTMRF
+                     FVGNEDRRSEIGQRRLQKTIEELFDDVKERYPYIFNPDERIRLDNRVLAYVVSELQRY
+                     SLLQTQADVKGTAYEQLVGSNLRGDRGEFFTPRNVCEMAARMVLATYQQEKWLQLRIL
+                     DPACGTGGFLVAVMNIWREHLQAIQFKKWPNNESKALEETVRILRDTADRYLMGIDFN
+                     PVLVRAAQMNLVMHGDGSTNVYHANSLLPPGEWSDKVKEKIKPGSFDIILTNPPFGSK
+                     IPIDDPHILEQFELARFEMENGVRRASMPPEQLFIERCLYLLKPGGRVAIVLPDSILS
+                     NPGLAFIRRWILKRARIIASVDLPQVTFEPYTGTQTSVLLLQKKTSQEMAVEQELGKP
+                     RDYEVFMTTPEAVGHDRRGEILYLRTPEGELIEYEDEITITRRNAEGQLITERRRQKV
+                     REKFDQLPEVVRYFAEWVGKPERMRWLNGRN"
+     gene            2953..4476
+                     /locus_tag="EYP10_10160"
+     CDS             2953..4476
+                     /locus_tag="EYP10_10160"
+                     /inference="COORDINATES: protein motif:HMM:PF01420.17"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="restriction endonuclease subunit S"
+                     /protein_id="HID07497.1"
+                     /translation="MAVTDASLKTLERVLTREERRQKFADLGWWVSIPLTIVPAHWLY
+                     DGEQRLDARSYAQEAATALRIVRDSGLDVAPLDKIVSEIFILGRFRRVYATNIEAGWP
+                     YLSASEVFEFRPTSDRWLAKDHAPRRADDHFARTGWILISASGTVGRTVLATKRLEKF
+                     FLTHDLLRVVPGQSPPVGYLYAYLSSWIGQALISKDQYGSAIKHLEPHHLAGVPVPLL
+                     PGDEQQAIHDEIMRAYALRDEANGLLDEADEMLHKELGLPRFDESFVPYLPLPLCQQT
+                     NRPEIPRPKAFTVHASELNERLDASYHVPVARTVIELLHKGRCAPFRLRKLTDDIRIP
+                     PRFKRIYVQKEYGVPFLRPSHLPQMRPYDLGYISRLTKVLDSLVLHKGEVLITTDGTV
+                     GRISIVTSRTAGWAGSNNIARVTCGTRNYENGFLAAFLSTPYGFYQLTREIYGGVVDH
+                     LNESHLESILVPIPPQNTQAAIGERVVRAYEMKDEATEIEEKAIHRLESALQRRVAG"
+ORIGIN      
+        1 ctcattggtc aggtaaaaga cacagtcgtt ctcagagagc cagtgaacca cgaagcattc
+       61 gcgaccatat cttgggatcc ctcaatcagg gaccgggttt acatttctgg ggagcatatc
+      121 gctgttcggg aggttcacga tgaggactcg atctggcagg ccatagaaga gcactttcaa
+      181 tccggggggc aagatgttcc atcgggcctc cgcgaggcta ttgggatcgc tctcgacaag
+      241 ctccaagagc aagcgatcgc ggaagttgaa atacccccct tcggaacacc acttggaaat
+      301 ggggttacag atgccattgt tcgagtccta cgtgagcaac gggaccacta ctatgaggct
+      361 ctcactagct acaaaagtgg cgaagatcta ttcgcactca acgaggttct ccgcatcgct
+      421 tacaactttg caagcgacgc tataggatac ataaggctca tagtctccat ttgtgacctc
+      481 aaacccattg ttctctgggg aactatcgct gagcactatt cactgtctga agcattccga
+      541 cggctcccgt ggacacgttc tcggaataag ccctccctgc gcaactatca gctcaccatc
+      601 gcagatgcac gcaacagcac attccacgat ctctttccgt ttagaaagac acttcggata
+      661 ccacttcctg acgatgccct gcaaggggcc gaactacgct tattctctga gcatacgcgc
+      721 aaaaaagata accaattaac gtttaaggat aaggaactcg tcgacatcct cacggagttc
+      781 acacgcgccc gggaacgaag ggtctcggat cgtttttggc atcaaaacct tcaagtgatg
+      841 gatgccacga tcgctctatt tgccaagacc ggtgattttc tcaaagttct gcatgcagaa
+      901 atggggaata agcaccaatc cagtcaaaag gcgggctaac ggcctgcttc cttaagctga
+      961 acagggtggc ctgacaatca acatagtcga ggtgaattat gataataaca accgaggaat
+     1021 ctattaccct cattccaccc ggcaaattgc gttgcgtgat tacaggcaaa ctccgtaagg
+     1081 atacctcaga agaacacgtt aggcagcgca tcgctcgaag tctgatagaa gactatggct
+     1141 atgaccggtc tgacattgcc gttgaattca gcatcaaaat gggccgcagc agaaagcgcg
+     1201 tggacattgc cattttcctg ccacgtgccg agcacaagca agaaaatgtc aagatcatca
+     1261 tcgaatgcaa acgtgaagat gtccgtccca ccgaccgaga caacggtgtg gagcaactga
+     1321 aatcgtatct ggccgcttgt ccaaatgcac gctttggtat gtgggttggt tccgagctac
+     1381 aggtttggga gcggcttgtt tccccaacga gggaaatatc gttcgaggaa gctacggaca
+     1441 ttccccgctt tggctacgat gcgccccagc ctatcacttt tgctgagttg gttcctgcgc
+     1501 aggaagaact catcgcagtc ttcaagcgtt gtcacaatta catttatggc aatcagggat
+     1561 tgcagaaaga gccggctttc caggaactgc tcaagctgat attctgcaaa gtctacgacg
+     1621 aggaatatac aacctccggg actatgcgct tttttgtcgg caacgaagac cgccgttccg
+     1681 aaatcggaca gcggcggttg cagaagacaa ttgaagaact attcgatgat gtcaaagaac
+     1741 gctatccgta catttttaac ccagacgagc gaatccgcct ggataatcgc gttctggcct
+     1801 atgtagtcag cgaattacaa cgatattcgc tcctacaaac ccaagcagat gtaaagggca
+     1861 cggcatacga gcaactggta gggagtaacc tgcgcggtga tcggggggag ttctttaccc
+     1921 ctcgcaacgt ctgtgaaatg gctgcacgga tggtgttggc gacttatcaa caggaaaagt
+     1981 ggcttcaact acgcattctc gatcccgctt gcggcacggg cggatttctc gtagccgtaa
+     2041 tgaatatctg gcgtgagcat ctacaagcaa tccagttcaa gaaatggccc aataacgaga
+     2101 gcaaggcgct tgaagaaacc gtccgcatct tgcgtgatac tgccgaccga tacttgatgg
+     2161 gcatcgattt taacccagtt ctggtgcggg ccgcgcagat gaacctggta atgcacggcg
+     2221 atggctcgac caatgtgtac cacgccaact cgctgctgcc gccaggcgag tggtcggaca
+     2281 aggtaaagga aaagatcaaa cccggtagtt tcgatatcat cttgaccaat cctccctttg
+     2341 gctccaagat tcccattgac gacccgcaca ttctggagca gtttgaactg gcccggtttg
+     2401 aaatggaaaa cggagtgcgc cgggcatcta tgccgccgga gcagctgttc atcgaacgat
+     2461 gtttgtacct gctcaaaccc ggcgggcggg ttgccatcgt actcccggat agcattctat
+     2521 ctaatccagg tctggccttc attcggcgct ggattctcaa acgagctaga atcattgcca
+     2581 gtgtagactt gcctcaagtc acctttgagc catacaccgg cacgcaaacc agcgtcttgc
+     2641 tcttgcagaa aaagacctct caggagatgg cggtggaaca ggaattgggc aagccgcgcg
+     2701 actatgaggt ctttatgacc acgcctgaag ccgtcggcca cgaccggcgc ggagaaattc
+     2761 tttacttacg tacccctgag ggcgaattga ttgaatatga agatgagatt accataactc
+     2821 ggaggaatgc tgaaggacaa ttgatcactg aacggcggcg acagaaggtg cgcgaaaagt
+     2881 ttgaccagtt gcctgaagta gtgcgttact ttgccgagtg ggttggcaaa ccagaacgga
+     2941 tgaggtggct caatggccgt aactgatgct tctctcaaaa ccctagagcg cgttctcacc
+     3001 cgcgaagaac gccgtcagaa atttgccgac ctgggctggt gggtttccat tccgctcacc
+     3061 atcgtacccg ctcactggct ttatgacggc gagcaacgac ttgatgcgag gagttacgct
+     3121 caagaggctg cgacggcttt acggatcgtg agagatagtg ggctcgatgt agcccctctg
+     3181 gataaaattg tatctgagat cttcatatta ggccgcttcc gccgagttta tgcgacaaac
+     3241 atagaggccg gatggcccta tctgagtgca tctgaagttt tcgagtttcg accgacaagt
+     3301 gatcgctggc ttgcaaagga ccacgctccg agacgagcag atgatcattt tgcaagaaca
+     3361 gggtggatat tgatttctgc atcaggtacg gttggacgga ccgtgctggc taccaaacgg
+     3421 cttgaaaagt tctttctaac tcacgattta cttcgggttg tccctggcca atcacctcca
+     3481 gttgggtact tgtatgccta tctttctagt tggatcggac aggccctgat atcgaaagac
+     3541 caatacggtt ctgccatcaa acacctggaa ccgcatcacc tggcaggcgt gcccgtgcca
+     3601 ctgttgcctg gtgatgaaca acaggcgatt cacgacgaga ttatgcgggc ctatgctctc
+     3661 cgcgatgagg ctaatggcct gttggacgag gcggatgaga tgttacacaa agagctgggc
+     3721 ctacctcgtt tcgacgaaag ctttgtgcct tatttgcctt tgccactttg tcagcagacc
+     3781 aatcggccag agataccgcg cccaaaagca ttcaccgtcc acgcttcgga gctgaatgag
+     3841 cggttggatg catcctatca tgtgccggtg gcgcgaacgg tgatcgagtt actacataaa
+     3901 gggcggtgcg cccccttccg cttacgaaaa ctcaccgatg atattcgcat ccctccgcgc
+     3961 ttcaagcgca tttatgtgca gaaagaatac ggtgtaccgt ttctacgtcc atcacacctc
+     4021 ccgcagatga ggccctacga cttggggtac atttctcgac tcacaaaagt tctcgattct
+     4081 ttggttttgc acaagggaga ggtgttgata accacggatg gtaccgttgg gcgaatatct
+     4141 attgtaacga gccgaactgc agggtgggca ggaagtaata acatcgcccg cgttacttgc
+     4201 ggcactcgga attatgaaaa cggcttcttg gcggcgttct tgagcacgcc atatggcttc
+     4261 tatcaactga cacgcgaaat ctatggcgga gttgttgacc acctcaatga atcacacctt
+     4321 gagtccattt tggttccaat ccctccccaa aatacccagg cagccattgg ggagcgcgtc
+     4381 gtcagggcat acgagatgaa ggacgaagcg accgagattg aagagaaggc cattcacaga
+     4441 ttggagtcgg cattgcagag gcgagtagcg ggctaacaag cggttccagc cgacacgctc
+     4501 cgcttc
+//
+

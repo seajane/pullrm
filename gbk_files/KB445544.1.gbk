@@ -1,0 +1,92 @@
+LOCUS       KB445544             2766977 bp    DNA     linear   CON 19-MAR-2015
+DEFINITION  Treponema denticola ASLM genomic scaffold supercont1.1, whole
+            genome shotgun sequence.
+ACCESSION   KB445544 AGDR01000000
+VERSION     KB445544.1
+DBLINK      BioProject: PRJNA64905
+            BioSample: SAMN02596717
+KEYWORDS    WGS; HIGH_QUALITY_DRAFT.
+SOURCE      Treponema denticola ASLM
+  ORGANISM  Treponema denticola ASLM
+            Bacteria; Spirochaetes; Spirochaetales; Treponemataceae; Treponema.
+REFERENCE   1  (bases 1 to 2766977)
+  AUTHORS   Earl,A., Ward,D., Feldgarden,M., Gevers,D., Blanton,J.M.,
+            Fenno,C.J., Baranova,O.V., Mathney,J., Dewhirst,F.E., Izard,J.,
+            Young,S.K., Zeng,Q., Gargeya,S., Fitzgerald,M., Haas,B.,
+            Abouelleil,A., Alvarado,L., Arachchi,H.M., Berlin,A., Chapman,S.B.,
+            Gearin,G., Goldberg,J., Griggs,A., Gujja,S., Hansen,M., Heiman,D.,
+            Howarth,C., Larimer,J., Lui,A., MacDonald,P.J.P., McCowen,C.,
+            Montmayeur,A., Murphy,C., Neiman,D., Pearson,M., Priest,M.,
+            Roberts,A., Saif,S., Shea,T., Sisk,P., Stolte,C., Sykes,S.,
+            Wortman,J., Nusbaum,C. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     The Genome Sequence of Treponema denticola ASLM
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2766977)
+  AUTHORS   Earl,A., Ward,D., Feldgarden,M., Gevers,D., Blanton,J.M.,
+            Fenno,C.J., Baranova,O.V., Mathney,J., Dewhirst,F.E., Izard,J.,
+            Young,S.K., Zeng,Q., Gargeya,S., Fitzgerald,M., Haas,B.,
+            Abouelleil,A., Alvarado,L., Arachchi,H.M., Berlin,A., Chapman,S.B.,
+            Gearin,G., Goldberg,J., Griggs,A., Gujja,S., Hansen,M., Heiman,D.,
+            Howarth,C., Larimer,J., Lui,A., MacDonald,P.J.P., McCowen,C.,
+            Montmayeur,A., Murphy,C., Neiman,D., Pearson,M., Priest,M.,
+            Roberts,A., Saif,S., Shea,T., Sisk,P., Stolte,C., Sykes,S.,
+            Wortman,J., Nusbaum,C. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-JAN-2012) Broad Institute of MIT and Harvard, 7
+            Cambridge Center, Cambridge, MA 02142, USA
+COMMENT     This is a reference genome for the Human Microbiome Project. This
+            project is co-owned with the Human Microbiome Project DACC.
+            Source DNA provided by Jessica M. Blanton, Christopher J. Fenno,
+            Oxana V. Baranova, Jennifer MJ Mathney, Floyd E. Dewhirst, and
+            Jacques Izard. (Molecular Genetics, The Forsyth Institute, Boston,
+            MA 02115, USA).
+            Bacteria provided by Jessica M. Blanton, Christopher J. Fenno,
+            Oxana V. Baranova, Jennifer MJ Mathney, Floyd E. Dewhirst, and
+            Jacques Izard. (Molecular Genetics, The Forsyth Institute, Boston,
+            MA 02115, USA).
+            Please be aware that the annotation is done automatically with
+            little or no manual curation.
+            Gene Calling Method: Prodigal.
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: High-Quality Draft
+            Current Finishing Status :: High-Quality Draft
+            Assembly Method          :: ALLPATHS v. R37753
+            Assembly Name            :: Trep_dent_ASLM_V1
+            Genome Coverage          :: 200x
+            Sequencing Technology    :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2766977
+                     /organism="Treponema denticola ASLM"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="supercont1.1"
+                     /strain="ASLM"
+                     /db_xref="HMP:9729"
+                     /db_xref="taxon:999427"
+CONTIG      join(AGDR01000001.1:1..9629,gap(501),AGDR01000002.1:1..19658,
+            gap(6509),AGDR01000003.1:1..52340,gap(100),AGDR01000004.1:1..158,
+            gap(253),AGDR01000005.1:1..37074,gap(100),AGDR01000006.1:1..4443,
+            gap(100),AGDR01000007.1:1..17899,gap(100),AGDR01000008.1:1..185791,
+            gap(100),AGDR01000009.1:1..136796,gap(1149),AGDR01000010.1:1..8667,
+            gap(100),AGDR01000011.1:1..184162,gap(177),AGDR01000012.1:1..50913,
+            gap(119),AGDR01000013.1:1..47650,gap(340),AGDR01000014.1:1..79644,
+            gap(100),AGDR01000015.1:1..16815,gap(237),AGDR01000016.1:1..9927,
+            gap(509),AGDR01000017.1:1..9247,gap(100),AGDR01000018.1:1..16240,
+            gap(100),AGDR01000019.1:1..8365,gap(201),AGDR01000020.1:1..16879,
+            gap(787),AGDR01000021.1:1..222392,gap(100),AGDR01000022.1:1..7723,
+            gap(100),AGDR01000023.1:1..78030,gap(255),AGDR01000024.1:1..23500,
+            gap(100),AGDR01000025.1:1..43528,gap(100),AGDR01000026.1:1..59372,
+            gap(1465),AGDR01000027.1:1..75629,gap(100),
+            AGDR01000028.1:1..118355,gap(100),AGDR01000029.1:1..39249,gap(100),
+            AGDR01000030.1:1..103550,gap(100),AGDR01000031.1:1..42404,gap(100),
+            AGDR01000032.1:1..153038,gap(100),AGDR01000033.1:1..165669,
+            gap(742),AGDR01000034.1:1..86421,gap(100),AGDR01000035.1:1..54751,
+            gap(100),AGDR01000036.1:1..58299,gap(717),AGDR01000037.1:1..94197,
+            gap(188),AGDR01000038.1:1..184364,gap(100),AGDR01000039.1:1..10024,
+            gap(100),AGDR01000040.1:1..164907,gap(456),AGDR01000041.1:1..43709,
+            gap(100),AGDR01000042.1:1..8564)
+//
+

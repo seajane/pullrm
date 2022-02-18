@@ -1,0 +1,86 @@
+LOCUS       KB894273              120953 bp    DNA     linear   CON 21-MAR-2015
+DEFINITION  Riemerella columbina DSM 16469 genomic scaffold
+            C237DRAFT_scaffold_6.7, whole genome shotgun sequence.
+ACCESSION   KB894273 ARFT01000000
+VERSION     KB894273.1
+DBLINK      BioProject: PRJNA174178
+            BioSample: SAMN02441030
+KEYWORDS    WGS; GSC:MIGS:2.1; IMPROVED_HIGH_QUALITY_DRAFT.
+SOURCE      Riemerella columbina DSM 16469
+  ORGANISM  Riemerella columbina DSM 16469
+            Bacteria; Bacteroidetes; Flavobacteriia; Flavobacteriales;
+            Weeksellaceae; Riemerella.
+REFERENCE   1  (bases 1 to 120953)
+  AUTHORS   Kyrpides,N., Huntemann,M., Han,J., Chen,A., Mavromatis,K.,
+            Markowitz,V., Palaniappan,K., Ivanova,N., Schaumberg,A., Pati,A.,
+            Liolios,K., Nordberg,H.P., Cantor,M.N., Hua,S.X. and Woyke,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-APR-2013) DOE Joint Genome Institute, 2800 Mitchell
+            Drive, Walnut Creek, CA 94598-1698, USA
+COMMENT     URL -- http://www.jgi.doe.gov
+            JGI Project ID: 405833
+            Source DNA and organism available from Hans-Peter Klenk at the
+            German Collection of Microorganisms and Cell Cultures (DSMZ)
+            (hans-peter.klenk@dsmz.de)
+            Contacts: Nikos  Kyrpides (nckyrpides@lbl.gov)
+                      Tanja Woyke (microbe@cuba.jgi-psf.org)
+            Whole genome sequencing and draft assembly at JGI-PGF
+            Annotation by JGI-PGF and JGI-ORNL
+            The JGI and collaborators endorse the principles for the
+            distribution and use of large scale sequencing data adopted by the
+            larger genome sequencing community and urge users of this data to
+            follow them. It is our intention to publish the work of this
+            project in a timely fashion and we welcome collaborative
+            interaction on the project and analysis.
+            (http://www.genome.gov/page.cfm?pageID=10506376)
+            Full annotations are available from IMG.
+            
+            ##MIGS-Data-START##
+            investigation_type       :: bacteria_archaea
+            project_name             :: Riemerella columbina DSM 16469
+            collection_date          :: Missing
+            lat_lon                  :: Missing
+            depth                    :: Missing
+            alt_elev                 :: Missing
+            country                  :: Germany
+            num_replicons            :: Missing
+            ref_biomaterial          :: DSM 16469
+            biotic_relationship      :: Missing
+            rel_to_oxygen            :: Missing
+            isol_growth_condt        :: Missing
+            assembly                 :: Velvet v. 1.1.04; ALLPATHS v. r41043
+            finishing_strategy       :: Missing
+            environment              :: Host
+            trophic_level            :: Missing
+            sequencing_meth          :: WGS
+            GOLD Stamp ID            :: Gi11855
+            Current Finishing Status :: Level 2: High-Quality Draft
+            Type Strain              :: Yes
+            Funding Program          :: DOE-CSP 2012
+            Gene Calling Method      :: Prodigal
+            Isolation Site           :: pigeon palatine cleft
+            Host Name                :: pigeons
+            Host Health              :: Associated with respiratory disease in
+                                        pigeons
+            Gram Staining            :: Gram-
+            ##MIGS-Data-END##
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: Improved High-Quality Draft
+            Current Finishing Status :: Improved High-Quality Draft
+            Assembly Method          :: Velvet v. 1.1.04; ALLPATHS v. r41043
+            Genome Coverage          :: Unknown
+            Sequencing Technology    :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..120953
+                     /organism="Riemerella columbina DSM 16469"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="C237DRAFT_scaffold_6.7"
+                     /strain="DSM 16469"
+                     /culture_collection="DSM:16469"
+                     /type_material="type strain of Riemerella columbina"
+                     /db_xref="taxon:1123058"
+CONTIG      join(ARFT01000009.1:1..120953)
+//
+

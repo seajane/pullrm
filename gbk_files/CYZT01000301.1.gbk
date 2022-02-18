@@ -1,0 +1,158 @@
+LOCUS       CYZT01000301            4481 bp    DNA     linear   BCT 19-MAY-2016
+DEFINITION  Flavonifractor plautii strain 2789STDY5608854 genome assembly,
+            contig: SCcontig000301, whole genome shotgun sequence.
+ACCESSION   CYZT01000301 CYZT01000000
+VERSION     CYZT01000301.1
+DBLINK      BioProject: PRJEB10915
+            BioSample: SAMEA3545262
+KEYWORDS    WGS.
+SOURCE      Flavonifractor plautii
+  ORGANISM  Flavonifractor plautii
+            Bacteria; Firmicutes; Clostridia; Clostridiales; Flavonifractor.
+REFERENCE   1
+  CONSRTM   Pathogen Informatics
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-SEP-2015) WTSI, Wellcome Trust Sanger Institute, CB10
+            1SA, United Kingdom
+FEATURES             Location/Qualifiers
+     source          1..4481
+                     /organism="Flavonifractor plautii"
+                     /mol_type="genomic DNA"
+                     /strain="2789STDY5608854"
+                     /isolation_source="faeces"
+                     /db_xref="taxon:292800"
+                     /country="United Kingdom"
+                     /collection_date="2013"
+                     /note="contig: SCcontig000301"
+     gene            complement(225..1700)
+                     /locus_tag="ERS852411_02915"
+     CDS             complement(225..1700)
+                     /locus_tag="ERS852411_02915"
+                     /inference="ab initio prediction:Prodigal:2.60"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="EcoKI restriction-modification system protein
+                     HsdS"
+                     /protein_id="CUP26949.1"
+                     /translation="MVKSNLAYKAQDTVVPEVVVNESPIKWCAVALSDVIARGKRLEA
+                     SVFDVEAKQARSLIAKGKYTQSFIGGASGMASSYVCGRFKRIWVEKSDMPIYQPSSIV
+                     DIKPTPDGYISAKTKTNIGNLRVKENQILMTCSGTIGKVSFVSRTLANKIFSHDLLRI
+                     DCRKPDEAGYIYAFLKSKIGNKILLTNSYGAVITHIEPEHLATVPIPDAPTMLKKKIH
+                     DLIVRSYELRDESNDLIDQATALLIGELKLPDIDAFDVGLYKKAAPVDTFSVRLSEMS
+                     GRLDASYHVPIVDAIIEHLKRYAEEVTTVGDPRISREVILPGRFKRVYVDEGYGRVLI
+                     GGKQLSELDPSSKKYLSTAKHDKMLKKLEVHEGTTLITRSGTIGKITIVPKHWEHYIP
+                     SDHIIRVIPANKDIAGYLNIFLASDYGKVLITRFTYGSVVDEIDDNHVRQIAIPLLKN
+                     HTVQKKINDLALEANEKRYQAYLLEQEALQIMDRDVIYAKK"
+     gene            complement(1694..3715)
+                     /locus_tag="ERS852411_02916"
+     CDS             complement(1694..3715)
+                     /locus_tag="ERS852411_02916"
+                     /EC_number="2.1.1.72"
+                     /inference="ab initio prediction:Prodigal:2.60"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Probable type I restriction enzyme BthVORF4518P
+                     M protein"
+                     /protein_id="CUP26989.1"
+                     /translation="MPSEQKIIVIPDGKICDYIDGKFRNDTPEEYVRQTIEKRLVNEH
+                     KYLPEQIRIEYTLQVGSNKPRADIVIWEEGADQTQGTIKLIIECKKETVDARNAKDGI
+                     AQLKSYMSVCPNCEWGMWTNSVQKYVFRKAVDAAGNITFMEYNDIPAADGNLDEVNRP
+                     SRTSLKNAYDDNLLFVFKTCHNHIYVNDGMQKQPAFFELLKVIFCKIEDERNIPNPLE
+                     FYTTSEERSNPDGQLTVQKRIGKIFQRVKKRHGKIFDANDEIKLSPRSLAYIVSELQR
+                     YSLLNTKIDIKGKAYEEIVGANLRGDRGEFFTPRNVMKMVVEMVNPQVDEHVLDSSCG
+                     TGGFLVMAMTHVIDQLEQRFSTSLGIKRENWDSDTLRAFQDRISEMASSNYFGFDINP
+                     DLVKATKMNMVMNNDGSGNILQTNSLLPPHEWYDDFRSRLAEALGINKNTLRNHSSIG
+                     YFNVIVTNPPFGSKIPIKDKNILEQFELAHIWDCDKETGVWKKTSRLQSSVPPEILFI
+                     ERCTQFLAPGGRMGIVLPDSILGSPGLGYIREWIIQNHRIVASIDLNADTFQPRNGTQ
+                     TSVLILQKKTQEQRDAEEKSGKMADYNIFMAMVEKVGHDKRGNPLFKRDKEGNEILVP
+                     DTNSVLVLGETGEGQRTVSHEQKVKVEDDQTPDVPAIFAEWKRQEGLGW"
+     gene            complement(3733..4062)
+                     /locus_tag="ERS852411_02917"
+     CDS             complement(3733..4062)
+                     /locus_tag="ERS852411_02917"
+                     /inference="ab initio prediction:Prodigal:2.60"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Uncharacterised protein"
+                     /protein_id="CUP27034.1"
+                     /translation="MVENEQSFGEYLRQLIRDSGITQHKFYTELGIRKPYFYDILAGR
+                     TNPPPYPLQLKAMEILQASNETRERFFDLAAKGRNELPADIARYIDENPDALKSIREK
+                     MKLASCQ"
+ORIGIN      
+        1 aaagtggctc caagccacct tgcttgccaa gtgtgaagcc ggcagggttc gcaggttggc
+       61 aagcagcaaa gagggccctc tttgccctgc ttgccacatt agttcaccat gttagatttc
+      121 gttcgcggga gcagagaaag gcaatccggc ggtgttcctt atagaaaccg ttggactgcc
+      181 ttttgcaacg ctaaatggag ttaaaatcag cttagcaacc gcagtcactt ctttgcatag
+      241 ataacatccc tgtccatgat ttgcaatgct tcctgctcca gaagataggc ttgatatcgc
+      301 ttctcatttg cctccagtgc aagatcattt atctttttct gaaccgtgtg gtttttgagc
+      361 aaaggaatcg ctatctgacg aacatgattg tcgtcaattt cgtcaacaac cgaaccgtat
+      421 gtaaaccggg taataagcac tttcccgtaa tccgatgcaa gaaagatatt caaatagccg
+      481 gctatatcct tgtttgcagg aatgacgcgg ataatatggt cagatggaat atagtgctcc
+      541 cagtgtttag ggacaatcgt aatttttcct attgtaccac ttcttgtaat cagtgtcgtg
+      601 ccttcgtgta cttccaactt cttcaacatc ttatcgtgct ttgcggtgga gaggtacttt
+      661 tttgaagaag ggtcaagttc gcttaattgt ttgcccccaa ttagcacccg tccatacccc
+      721 tcgtcaacat atacgcgctt gaagcggccc ggcaggataa cctctcggct gatacgaggg
+      781 tcaccgactg tcgtcacttc ctcggcatac cgcttcagat gttcaatgat agcgtcaaca
+      841 atcggcacat ggtaggaggc gtcaagtcgt ccggacatct cactcagcct tacgctgaag
+      901 gtgtccaccg gggcggcttt tttgtagagg ccaacatcaa aagcgtcgat atcaggcagc
+      961 ttcagctcgc cgattaacaa tgcggtagct tggtcaatca ggtcgttgga ttcatcacgc
+     1021 agctcgtaag aacgcacaat cagatcatgg attttctttt tgagcatcgt cggcgcatcg
+     1081 ggaataggaa ctgtggcaag atgctccggc tcaatgtgag tgattacggc tccataacta
+     1141 ttggtaagca gtatcttgtt gcctattttg cttttaagga aggcgtatat ataaccagcc
+     1201 tcatccggct ttctgcaatc aattctcaac agatcgtgac taaaaatctt gtttgcgagt
+     1261 gtccgtgaca caaaggagac ttttccaatt gttccagaac aagtcatcag aatttgattt
+     1321 tcttttacac gcagattgcc gatattcgtt ttcgttttcg ctgaaatgta tccatcggga
+     1381 gttggcttaa tatcgacaat gctggatggc tgataaatgg gcatatctga tttttctacc
+     1441 catatgcgct taaatcgacc gcaaacatac gacgatgcca ttccgcttgc tccaccgatg
+     1501 aagctctgag tatacttgcc cttcgcaatc aacgaacgtg cctgttttgc ctcaacatca
+     1561 aatacgctcg cttcaagcct tttcccgcgg gctatgacat cggaaagtgc aaccgcacac
+     1621 cacttgattg gactttcatt cacaacgact tccggcacaa ctgtatcctg tgctttgtaa
+     1681 gcaagatttg attttaccat cccaatccct cctgcctttt ccactcagcg aatatcgccg
+     1741 ggacatcggg ggtctggtcg tcctcaacct tcaccttttg ctcatgtgac acggtgcgct
+     1801 gaccttctcc cgtttctcca agcacaagca cactgtttgt atccggcaca aggatttcgt
+     1861 tgccctcctt gtcacgcttg aacaggggat tgcctcgctt gtcatgcccg accttttcga
+     1921 ccatcgccat aaaaatgttg tagtcagcca ttttgccgct cttttcttcc gcatctctct
+     1981 gctcctgcgt tttcttttgc aggatcagaa cggaggtctg cgtcccgttg cgaggctgga
+     2041 atgtatcagc attcaagtcg atgctggcaa cgattctgtg attttgtata atccattcgc
+     2101 ggatatagcc caagccggga gaaccgagaa tcgaatccgg cagcacgata cccatacgcc
+     2161 cgcccggtgc gagaaattga gtgcagcgct caatgaacaa aatttccggc ggcacggagg
+     2221 attgcaggcg cgaggttttc ttccaaacgc ccgtttcttt gtcgcaatcc caaatatgcg
+     2281 caagctcaaa ttgctcaagg atgttcttgt ccttgatcgg tattttgctc ccaaagggtg
+     2341 ggttggtgac gattacattg aagtagccaa tcgaactatg gttacggagc gtatttttat
+     2401 ttataccaag ggcttcggca aggcgtgagc ggaagtcatc ataccactca tgcggaggaa
+     2461 gcagggaatt tgtttgcaga atgtttccac tgccatcgtt attcatgacc atattcatct
+     2521 ttgtggcctt taccaggtcg ggattgatgt caaagccgaa atagttagag gatgccatct
+     2581 cggagatcct gtcctgaaaa gcccggagag tatccgaatc ccagttttcc cgcttgatgc
+     2641 cgagagaagt tgaaaaccgc tgctcaagct ggtcaattac atgtgtcatt gccataacga
+     2701 ggaaaccgcc cgtaccgcag gaactgtcca atacatgctc gtcaacttgt ggatttacca
+     2761 tctcaaccac cattttcata acattgcgag gcgtgaaaaa ctcaccgcga tcaccgcgga
+     2821 gattagcccc tacgatttcc tcgtaggctt tgcccttgat gtcaattttg gtattgagca
+     2881 ggctgtatcg ctgcaactcg ctgacgatat atgcgaggct cctcgggctg agtttaattt
+     2941 cgtcattggc atcgaaaatt tttccatgac gtttcttaac tcgctgaaag atttttccga
+     3001 ttctcttttg aacggtcaac tgtccgtcgg ggttagaacg ctcctctgat gtcgtataaa
+     3061 actcaagcgg attcggaata ttacgctcat cctcaatttt gcagaaaata accttgagca
+     3121 gttcaaaaaa cgcaggttgc ttttgcatgc catcattcac ataaatgtga ttatggcaag
+     3181 tcttgaaaac gaataaaaga ttgtcgtcat aagcgttttt taagctcgtt ctgctgggtc
+     3241 ggttgacctc atccaaatta ccgtctgcgg cgggaatatc gttgtactcc atgaatgtaa
+     3301 tatttccggc ggcatcaaca gctttgcgga aaacatactt ttggacactg ttggtccaca
+     3361 tgccccactc acagtttggg caaacagaca tatatgattt tagctgcgca atgccatcct
+     3421 tggcattacg agcgtcaacc gtctcttttt tgcattcgat tatcaacttg attgtaccct
+     3481 gcgtttggtc tgcaccttct tcccagatta caatgtctgc gcgaggtttg tttgaaccaa
+     3541 cctgcaaggt atattcgatt ctaatttgct ccggcagata cttatgctcg ttcacgagtc
+     3601 gtttctcgat agtttgccga acgtactctt ccggggtatc gttacggaat ttgccgtcaa
+     3661 tatagtcaca tatttttccg tccgggatta cgatgatctt ctgttcactt ggcatcgtta
+     3721 cttctccttt gcttattggc atgatgccaa tttcattttt tcccgaatgc ttttgagcgc
+     3781 atccggattt tcatcaatgt accttgctat atctgccggc aactcatttc tgccttttgc
+     3841 cgccaagtca aaaaatctct ctctggtttc attgcttgct tgcagtattt ccattgcctt
+     3901 taactgaagc ggatatggtg gtgggttagt tctcccggcg agaatatcat aaaagtatgg
+     3961 cttccggata cccagttctg tgtagaattt atgctgcgtt atcccggagt ctcttatcag
+     4021 ctggcgaaga tactctccaa agctctgctc gttttcaacc attcttttcg cctcccaata
+     4081 ggtatgcttg tatacatact aacatacttt tttgcatcgg tcaacaagat attgcaaaga
+     4141 ccatagctcg cgccgaagga tttattatat tttgggggcg ggcaggcaca agctgtgctt
+     4201 gcccgccttg tctgccaaaa agcgcggcgg gcggcggcag tcaatggcgc gaagcgttca
+     4261 tcttgaccat tgacggctgg cggctgctgc gctacggccc tttccaattt gcaatccaca
+     4321 gaacaatttc ggtagccgct gccaaaatta cactgtcagc cgctccattc cagtggtatt
+     4381 gacgtgcagc cccatcgctg ctataatgaa aacacaattt cagacacagg acaccatgca
+     4441 gacgcagacg ggctgaaagg cttgacaggc ggctgcattt t
+//
+

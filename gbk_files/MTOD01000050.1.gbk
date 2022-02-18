@@ -1,0 +1,137 @@
+LOCUS       MTOD01000050            5254 bp    DNA     linear   ENV 02-MAR-2017
+DEFINITION  MAG: Thermoanaerobacterales bacterium JdFR-68
+            JGI24020J35080_1004302, whole genome shotgun sequence.
+ACCESSION   MTOD01000050 MTOD01000000
+VERSION     MTOD01000050.1
+DBLINK      BioProject: PRJNA269163
+            BioSample: SAMN06226385
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG.
+SOURCE      Thermoanaerobacterales bacterium JdFR-68 (subsurface metagenome)
+  ORGANISM  Thermoanaerobacterales bacterium JdFR-68
+            Bacteria; Firmicutes; Clostridia; Thermoanaerobacterales.
+REFERENCE   1  (bases 1 to 5254)
+  AUTHORS   Jungbluth,S.P., Amend,J.P. and Rappe,M.S.
+  TITLE     Metagenome sequencing and 98 microbial genomes from Juan de Fuca
+            Ridge flank subsurface fluids
+  JOURNAL   Sci Data 4, 170037 (2017)
+   PUBMED   28350381
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 5254)
+  AUTHORS   Jungbluth,S.P. and Rappe,M.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-JAN-2017) Center for Dark Energy Biosphere
+            Investigations, University of Southern California, 3651 Trousdale
+            Parkway ZHS, Los Angeles, CA 90089, USA
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Method        :: SOAPdenovo v. 1.05; Newbler v. 2.7;
+                                      minimus2 (AMOS) v. 3.1.0
+            Genome Representation  :: Full
+            Expected Final Version :: No
+            Genome Coverage        :: 21.1x
+            Sequencing Technology  :: Illumina HiSeq
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..5254
+                     /organism="Thermoanaerobacterales bacterium JdFR-68"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="JGI24020J35080_1004302"
+                     /isolate="JdFR-68"
+                     /isolation_source="basaltic crustal fluids"
+                     /db_xref="taxon:1935151"
+                     /environmental_sample
+                     /country="Pacific Ocean"
+                     /lat_lon="47.76 N 127.76 W"
+                     /collection_date="12-Jul-2011"
+                     /metagenome_source="subsurface metagenome"
+                     /note="metagenomic"
+ORIGIN      
+        1 ttatcctatt ttaatcttta gaataaagtt ctattaatat tgtttttaga aactatattg
+       61 attgttttaa aatacaggta accacaaaaa aaatcggagt tattgcccaa aatcaacaac
+      121 cccgatttat tataacctat tcatcacttt gacttacatt tttcccctta aaactaaaaa
+      181 gcatgcctgc agcaagtgcg gttaaaggta ttgctaaaat caatcctatg cttgctgata
+      241 aggctcttac aaattctgtt gcaatcaggt caaggttgat tatttttgta tatgacatat
+      301 tgtatgccat aaataacaaa agtaagggaa cagaagcacc ggtataagct agaatcaatg
+      361 tgtttgacat tgtacccata atgtctctac cgatactaat cccggacttt attaacttgc
+      421 tcattgatat tgaaggatta gattttttta tttcctccag ggatgaagca atagacatgg
+      481 ctacatccat taccgctcca agggcaccta ttataattcc tgtaaaaagc agatctctaa
+      541 agttaaattt tatgttttgt ggaatataca tcaacatctg tgcttcttcg ctgctcattc
+      601 ccgttaaatg ggctgctctg ccaacaatca ttgatataag ggcagctatt agcactcctc
+      661 cggctgtgcc tactgtggct gcagcagcct tttttgtaaa accgctgatc aacacaaacg
+      721 ttatagtggt ggaaattatt gccacaataa tagcaagcat aataggatta tatcccttta
+      781 atattaatgg taacagcatc ttacctatta acactatggt aatgattaat gaaaatacag
+      841 ctttaattcc ttttcctttt ccgattacta tcagtaaaat tataaacaac cctatcaata
+      901 aataaatata attatctctt acataatcgg caaggtaagc attgcctatt tcaccttcat
+      961 atagctctaa ttctaaaagc actttatctc cgggttttac tttcatatca taagcgatat
+     1021 tccctgaagt tgtattttca acctcaacta ttttaccttt gtatttagaa gaaaggattt
+     1081 cggctgtaaa tatttgcctt tcagcagtca ttccaaatcc atgttctatt ttttcctctt
+     1141 caataatttc caaaaccttg gctttaacac tcatagtttc aaaatcttct atgtagtttt
+     1201 cttctccaga aggtgccatt ggttctggct caataaaatc ttcttctaaa ggatccattg
+     1261 aatctgcaaa accaatagaa ttgaataaca atataatcat taatatcagg aaaaggcttt
+     1321 tcttcatatt tctcctcctc gaatatttat aataaaaaat tctatatcta gattacctta
+     1381 gtggagatgt gtatcccgca gccgtccgat tttttaatca ttatattata cgtcctaagc
+     1441 aattttcgtt aatgtttctt caagttgttt tacagcttct tcttcaatct gatttgcctt
+     1501 gtcttttttg ttgtatgctt caattactaa agatccgatt ttttcttgaa cttcactaga
+     1561 tggaatcgga atcttaatct gtcgtatgtg atcttctgtc aaatgatcga taactccacc
+     1621 gaaaatttct cttttaagct gatattgtcc atagggagaa tggaggtaag ctagtaaata
+     1681 acctctatgc aaatcctcag ttggtacaat acgtgcaaaa ttattacttc cataccatcc
+     1741 tgtaataaaa ggagttacaa ttgatgccca tccaatagta ccatctgtta caactaaaat
+     1801 atctccttcc ttcaaccgat ataaatcaca atttttgaat gtttttgcaa aatatttagg
+     1861 ctcaaaatac ttgatcatag gtaaatcaga gggtcgaata tatcttatac cttcatcttg
+     1921 atttcccaca tagggacgtt tgaagcgagg tggaatgaaa acactttcta atttattacc
+     1981 taaaatctga acatctactt tgattttagc taaatatttc tcaatcattt ttattatggg
+     2041 taaatgatac gaaacatcca gtctataatt caattcactt gctttgactt caaaagcctt
+     2101 aacaagtctc ccaatttcat cgccaaaata ttcaacatca tcctcattta ttttgggtaa
+     2161 tccaagttct gaatatatca tttcttctgc ttttaaaagg agttcttgag cttcttctcg
+     2221 taacttgtgg gtttcaagga tttttttgtt tatctcttcc tccaaatctt gtatgcgtgg
+     2281 gataggaata ttagcgacat ggtgagtttc tatatgctta actgttgctc catactggtc
+     2341 tttggtgaga aatgcctggc ctatccaagt atttaaataa gcatataggt aacctatctt
+     2401 tttatatccc ttttcatttg ggacaattct aattacattg ggcgacacaa ctttatcttt
+     2461 gaacaattta ttcattaata agcatcgtcc aggagttccc gattgtgtaa ttaaaatagt
+     2521 aaaaggttta acccaccagt tttctaaatc ttttgtttct ttccttaccc actttcttgg
+     2581 cttcaaatta aacataaaca aatctattgg cataaggtaa ggaattcctt ctttggaatt
+     2641 ggtaaatagt ctctttaccc ttgccccaac gaatattttc tctgataggt tgtttactga
+     2701 ttcaaccgaa gttcgctttt taatagattc aataagttct cttgctttta ttgattcaaa
+     2761 cgagtaggag gatgcattga gcctaatttc tttatcttgg aaaatccact tgcttttaag
+     2821 tgtaacccaa ttaagatcta tcagttgagc caccatcata tcatcccttt ccttctcaac
+     2881 cattcttcaa atgctttagc aaccaaaggt aaataatctt ctactattgg atttccattt
+     2941 tcatcaagct ttatttctcc accgggtgta gttttgtaga tgagattacc cctgcggtca
+     3001 tgtccaactt tttctgggat agccatgaat atttcataat cttcctgtaa tttctgttgc
+     3061 acaggagtct tctttttaag aataagaata cttgtctgcg ttcctgtatg tggctcaaat
+     3121 gtttccacag gcaggtctat actcgctatg atatatgctt tttgaagtat ccattctctt
+     3181 atccatttta ggcccggatt gctcaatata ctatcaggaa gaacaatacc aagataacca
+     3241 ccaggtttaa gaaagtctaa acatctttca acaaacagtt gttcgggagg caaggctgtt
+     3301 cgtgatgagt ttgctccaaa cgttgttaat tcaaattgac ttagtatatc aggattatct
+     3361 attactgctt tcgttccaaa tggaggattg gtaactacca aatcaaattc tccaaatttt
+     3421 atcttttctt ttgcttcact attccagtta gcagaatctt caagagaatt agcatgaaca
+     3481 atgttggctg aaccatcacc atgcataacc atattcatct gagcaacttt caccaaaaac
+     3541 ggattaaaat ctattccata aaaattagca ttggcaacat ccctcactaa atctcgtaat
+     3601 tgatcatatc taaatccacg atttaagaac aattgcttta ttttctgaac gcctgcaatt
+     3661 agaaaacctc ctgtgccaac cgcaggatca aggattttca taccacctgg acttgtaagt
+     3721 ttgtcctcgg gaataagaga gaacatcatt tcaatagtca tattgcatac attacgaggc
+     3781 gtaaaaaatt ctcctctatc acctcttaaa ttgggaccaa caatttcttc gtaagcctcc
+     3841 cctttcacat cggtttccgt gtccacaagg ctaaatcttt gaagttcaga aaccacatat
+     3901 tttaaaactg tatcgtttag ttcaataatc tcattgcctt taaagatgta tttgtaacga
+     3961 ttctggactt tcttaaagag tttatttaat ctttctctta ctttgctaac atcttctccg
+     4021 ggaaggatat aaaattgcaa agaaggactg tattgttcgt cataaacttt aatgaaaatt
+     4081 aattttaaaa gctcttcaaa ggctttatct ttttgaaacc cttgattagc atagatataa
+     4141 ttatggattc ttttaaaaac ctgttttaag tttacagcag gaacaagtga accacgagtt
+     4201 ggttttggaa tcgttgtttc acctttcttg ggtatatcgg gaatttctac tagttttctc
+     4261 cttccctttt cttccacagc tttaaacgct aacctttcac taccaaccca gagggcaaat
+     4321 tgagtattga tacatgccgc aacatagctt tttagttgtt caataccttc tttcttgtca
+     4381 gatggtttaa cattttcagt tttaacttct acaattatgt aaatattttc ttgtctatgc
+     4441 tcatcccctt cctcaaatat gacaatatcg tttcttttct tggctctacc tattttgata
+     4501 ggaaactcaa tatcaatgtc atccttattg tatccatatt cctcaacaaa actccttgcc
+     4561 acatcttgac ggatcctttc ttccggagta tcttttctaa gtttcccagt aataaaacat
+     4621 ttaatctttc ctgggggaat tacctctatt gttcccactt catcttctat cagttttagt
+     4681 tgtttttcct tcggcatgtt tacacctcct taagacggct gggaacgtgt cgcctaacta
+     4741 agtatatcat attcttttaa caaaagtcag attatttttt taaacccagg agccaagggt
+     4801 gtttttttgt tttagttaag tccgtataat atggttcaat ataaaatcac cattgattct
+     4861 gaacttttgc actatctatt tttaaaagag tatgtgtcaa gtcttagtcg gccaagagac
+     4921 ttcgcaacat tattttcgtt tcaagtgtga aatcactctt tctgcataga ccattctaac
+     4981 cgaagcggcc ttgccccgtc aagggaagct tcgcccggct tcgccggccc ttgactgggc
+     5041 aagtcgcttc ggttcctata taactaacag aaagaagtgg cattcagcca atatgactaa
+     5101 gcctgctcaa ctccctaagt gcttttaccc acggctttgt cttggaatta agggcagggt
+     5161 attgacatca acaattgaat gaggtatgct aatggtgagg gcgatgttct taccatcgct
+     5221 tctcatgaga cctcgctcct ttctttttgg ttgc
+//
+

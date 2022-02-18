@@ -1,0 +1,561 @@
+LOCUS       KQ959911               27129 bp    DNA     linear   CON 08-FEB-2016
+DEFINITION  Gemella asaccharolytica strain KA00071 genomic scaffold
+            Scaffold449, whole genome shotgun sequence.
+ACCESSION   KQ959911 LSDB01000000
+VERSION     KQ959911.1
+DBLINK      BioProject: PRJNA246515
+            BioSample: SAMN04324897
+KEYWORDS    WGS; HIGH_QUALITY_DRAFT.
+SOURCE      Gemella asaccharolytica
+  ORGANISM  Gemella asaccharolytica
+            Bacteria; Firmicutes; Bacilli; Bacillales; Bacillales Family XI.
+            Incertae Sedis; Gemella.
+REFERENCE   1  (bases 1 to 27129)
+  AUTHORS   Mitreva,M., Pepin,K.H., Mihindukulasuriya,K.A., Fulton,R.,
+            Fronick,C., O'Laughlin,M., Miner,T., Herter,B., Rosa,B.A.,
+            Cordes,M., Tomlinson,C., Wollam,A., Palsikar,V.B., Mardis,E.R. and
+            Wilson,R.K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-JAN-2016) McDonnell Genome Institute, Washington
+            University School of Medicine, 4444 Forest Park, St. Louis, MO
+            63108, USA
+COMMENT     Bacteria and source DNA were provide by David N. Fredricks MD,
+            (dfredric@fhcrc.org), Fred Hutchinson Cancer Research Center 1100
+            Fairview Ave North, Box 358080, E4-100, Seattle, WA 98109.
+            Collection of this isolate was funded in part by the National
+            Institutes of Health Human Microbiome Project grant, 5 R01
+            HG005816-03.
+            
+            Coding sequences were predicted using GeneMark and Glimmer3.
+            Intergenic regions not spanned by GeneMark and Glimmer3 were
+            blasted against NCBI's non-redundant (NR) database and predictions
+            generated based on protein alignments. tRNA genes were determined
+            using tRNAscan-SE and non-coding RNA genes by RNAmmer and Rfam. The
+            final gene set is processed through several programs such as Kegg,
+            psortB and Interproscan to determine possible function. Gene
+            product names are determined by BER. Gene names are generated at
+            the contig level and may not necessarily reflect any known order or
+            orientation between contigs.
+            
+            This is a reference genomes for the Human Microbiome Project and
+            the work was funded  by the National Institutes of Health (NIH)
+            grant U54 HG004968.
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: High-Quality Draft
+            Current Finishing Status :: High-Quality Draft
+            Assembly Method          :: Velvet v. 1.1.06
+            Genome Coverage          :: 180x
+            Sequencing Technology    :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..27129
+                     /organism="Gemella asaccharolytica"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="Scaffold449"
+                     /strain="KA00071"
+                     /isolation_source="vagina"
+                     /host="Homo sapiens"
+                     /db_xref="HMP:1871"
+                     /db_xref="taxon:502393"
+     gene            complement(222..1496)
+                     /locus_tag="HMPREF1871_01194"
+     CDS             complement(222..1496)
+                     /locus_tag="HMPREF1871_01194"
+                     /inference="protein motif:HMMPfam:IPR001179"
+                     /inference="protein motif:HMMPfam:IPR008880"
+                     /inference="protein motif:HMMPfam:IPR008881"
+                     /inference="protein motif:HMMTigr:IPR005215"
+                     /note="KEGG: bsr:I33_2873 3.1e-102 tig; trigger factor
+                     K03545;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="trigger factor"
+                     /protein_id="KXB55130.1"
+                     /db_xref="InterPro:IPR001179"
+                     /db_xref="InterPro:IPR005215"
+                     /db_xref="InterPro:IPR008880"
+                     /db_xref="InterPro:IPR008881"
+                     /translation="MSEIIKKEDGKITITFNSSAEELNKALDKAFKKVVKRINVHGFR
+                     KGKLPRNVFNKMYGEESLYQEAVDSILPEGYKKAVEELKINPLAMPDVDVRKIDKKDG
+                     VEFEAQIVVRPEVKLGEYKNLGIKKEKVKVTDKDVDERIKQILSRQAEWTLKETASEK
+                     GDIVVIDFKGYKDGEPFEGGEANGYELELGSNSFIPGFEDQLVGKVAPCDVEVNVVFP
+                     ENYQVKNLAGQKAKFDVKIHDVKGKEVPELTDELVKDLTKELTDNVADYKVKLKDQIT
+                     LEEKEKADKKYADDVVIKSVENATVNIPEKLIEQEVDGMYNKFKENMQRQGITMELYE
+                     QFTGKKEKELKDEMKEQASKKIKTSFVLDEISKVEKIEVSEEDAKKEIKKIADSYSMS
+                     EEDVKKNLGTNFDIKSEIIIKKTIDLLKESNK"
+     gene            complement(1595..1960)
+                     /locus_tag="HMPREF1871_01195"
+     CDS             complement(1595..1960)
+                     /locus_tag="HMPREF1871_01195"
+                     /inference="protein motif:HMMPfam:IPR001486"
+                     /note="KEGG: tet:TTHERM_01044760 0.0048
+                     protozoan/cyanobacterial globin family protein K03386;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55131.1"
+                     /db_xref="InterPro:IPR001486"
+                     /translation="MNSLYDQIGEEKIDKLIDVLYDDIISKDDRINLLFYDGYENVKR
+                     EQKKFFRMFLGIESNVFNMPNLKEKHYKIPITKETANYWQEDFEKAIDKIDINGTQRL
+                     FLKQKIKMLTLHMINMIKK"
+     gene            complement(1970..3178)
+                     /locus_tag="HMPREF1871_01196"
+     CDS             complement(1970..3178)
+                     /locus_tag="HMPREF1871_01196"
+                     /inference="protein motif:HMMPfam:IPR022628"
+                     /inference="protein motif:HMMPfam:IPR022629"
+                     /inference="protein motif:HMMPfam:IPR022630"
+                     /inference="protein motif:HMMTigr:IPR002133"
+                     /note="KEGG: sud:ST398NM01_1838 5.1e-141
+                     S-adenosylmethionine synthetase K00789;
+                     Psort location: Cytoplasmic, score: 9.97"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="methionine adenosyltransferase"
+                     /protein_id="KXB55132.1"
+                     /db_xref="InterPro:IPR002133"
+                     /db_xref="InterPro:IPR022628"
+                     /db_xref="InterPro:IPR022629"
+                     /db_xref="InterPro:IPR022630"
+                     /translation="MLPKKKKEKQMAKTYLFTSESVTEGHPDKVADQISDAVLDAVLK
+                     EDPYGRVACETAVNTGLAVLIGEISTKAKIDYQKVVRDTIRNIGYCDFTSGYNADSIA
+                     VLVALDEQSKDIALGVDDAVETKQKKEKEVGAGDQGLMFGFATNETSSYMPLPIYLSH
+                     KLSKRLAEVRKNKILDYLKPDGKVQVTVEYDLNNVAKRIDTVVVSTQHSEEVSQEKIH
+                     KDIKEYVIKPCLDENLLDENTKYFINPTGRFVIGGPVGDAGLTGRKIIVDTYGGYARH
+                     GGGAFSGKDATKVDRSAAYMARYIAKNIVASGVCDKVEVQLAYAIGVANPVSIFIDAF
+                     GTAKVDEGEIVKAIKENFSLTPNGIIKTLDLRRPIFKKTAAYGHFGRDDADFTWEKLD
+                     KVEVFKKLLT"
+     gene            complement(3368..4357)
+                     /locus_tag="HMPREF1871_01197"
+     CDS             complement(3368..4357)
+                     /locus_tag="HMPREF1871_01197"
+                     /inference="protein motif:HMMPfam:IPR002505"
+                     /inference="protein motif:HMMTigr:IPR004614"
+                     /note="KEGG: bae:BATR1942_16795 2.1e-105 eutD;
+                     phosphotransacetylase; K00625 phosphate acetyltransferase;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="phosphate acetyltransferase"
+                     /protein_id="KXB55133.1"
+                     /db_xref="InterPro:IPR002505"
+                     /db_xref="InterPro:IPR004614"
+                     /translation="MVTQRKDLFEEIKEKLEGKKVRIVFPEGDDKRVLLAAVRLSLNS
+                     YVQPVVLGKPEEIKELAHSLFLKTDGLEIIDHLNYDGIEEMVSAFVERRKGKATEQQA
+                     RELLKDPNYFGTMLVYLKKVAGLVSGAAHSTGDTVRPALQIIKTKPGVKRTSGAFIMS
+                     RNATRFIFADCAINPTLDAAGLAEVAVESAKTAKSFNVNPRVAMLSFSTLGSANTPDS
+                     LKVAEATKLFREKAPVIPVVGEVQFDAAFVPGVAKLKCPNSEIQGDANVYIFPSLEAG
+                     NIGYKIAQRLGQFEAIGPILQGLNAPVNDLSRGCDEIDVIKLALITAVQSLQD"
+     gene            complement(4371..4559)
+                     /locus_tag="HMPREF1871_01198"
+     CDS             complement(4371..4559)
+                     /locus_tag="HMPREF1871_01198"
+                     /inference="protein motif:HMMPfam:IPR024596"
+                     /note="Psort location: CytoplasmicMembrane, score: 9.55"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55134.1"
+                     /db_xref="InterPro:IPR024596"
+                     /translation="MEEKSKKKSFIKILWSTIKFFVILFAIAYIGVIIGYSVIGNGKL
+                     IDIFSLRAIKHVLDVINN"
+     gene            complement(4574..5836)
+                     /locus_tag="HMPREF1871_01199"
+     CDS             complement(4574..5836)
+                     /locus_tag="HMPREF1871_01199"
+                     /inference="protein motif:HMMPfam:IPR001986"
+                     /inference="protein motif:HMMTigr:IPR005750"
+                     /note="KEGG: ssp:SSP0784 1.2e-125 UDP-N-acetylglucosamine
+                     1-carboxyvinyltransferase K00790;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="UDP-N-acetylglucosamine
+                     1-carboxyvinyltransferase"
+                     /protein_id="KXB55135.1"
+                     /db_xref="InterPro:IPR001986"
+                     /db_xref="InterPro:IPR005750"
+                     /translation="MNKIVIKGGKPLRGEVYIEGAKNAVLPIVTSALLATEGVSKFYN
+                     VPNLSDVKIISELLTSLGVKINYNKEEKTLEVDARNPLKKEADFEFVSKMRASFLVAA
+                     PILVREKFAKVAMPGGCAIGSRPIEQHLKGFSLLGANIIKDAGYVELKAEKGLTGTTV
+                     FFDFPSVGATQNVIMASCLSKGKTILVNVAQEPEIGDMISFLKKMGAKISGENTSCLV
+                     IEGVEKLHGAEHTIMPDRVEAATYMIAAAATKGNVLVKNARYEDNVALVSKMREMGVQ
+                     IEVNKNEIRVKNDRDYLLPIDVKTLPHPGFLTDMQSIIMVLTLLAKGVSTITETVFEN
+                     RFMHVEELRRMNAKIRIEGRSALIEGGEKLEGTSVKATDLRAGAALVIAGLIANGQTV
+                     VTNIKHIDRGYVNIEEKLRKLGADIIRI"
+     gene            6259..7128
+                     /locus_tag="HMPREF1871_01200"
+     CDS             6259..7128
+                     /locus_tag="HMPREF1871_01200"
+                     /inference="protein motif:HMMPfam:IPR013200"
+                     /inference="protein motif:HMMTigr:IPR000150"
+                     /inference="protein motif:HMMTigr:IPR006379"
+                     /note="KEGG: efc:EFAU004_00650 4.4e-32 HAD superfamily
+                     hydrolase K07024"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Cof-like hydrolase"
+                     /protein_id="KXB55136.1"
+                     /db_xref="InterPro:IPR000150"
+                     /db_xref="InterPro:IPR006379"
+                     /db_xref="InterPro:IPR013200"
+                     /translation="MIKLIASDMDGTLLNSEHFISDENVTAIKNAQKENIEFSIVTGR
+                     AYFETIDILKTNNIKASIIAMNGAISYDKKGEITNIFPLDKKNSLFIIKEAKKLNINF
+                     GVFNKNCFYLKNVKDYIDAFKNLIIDQGHTPNMKKITDEIKNRQKLGYIKEVTNPENY
+                     LDSKNNPVLKIDLMDDNSDKLIKLAKILKNNKEIFVTSSGSKNLEILSSKASKGKALE
+                     IYCKNKNISLNNLMAIGDNTNDLSMIEKAYYSVAMKNANSSLKQKAKFISDYDNNNSG
+                     VGRMIKKLINKKL"
+     gene            7142..7555
+                     /locus_tag="HMPREF1871_01201"
+     CDS             7142..7555
+                     /locus_tag="HMPREF1871_01201"
+                     /inference="protein motif:HMMPfam:IPR002125"
+                     /inference="protein motif:HMMTigr:IPR006262"
+                     /note="KEGG: ere:EUBREC_0294 2.9e-35 cytidine deaminase;
+                     K01489 cytidine deaminase"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="cytidine deaminase"
+                     /protein_id="KXB55137.1"
+                     /db_xref="InterPro:IPR002125"
+                     /db_xref="InterPro:IPR006262"
+                     /translation="MDINKKLINLAIEARKKAYTPYSKFNVGACLLCKNGEIYTGCNI
+                     ENASLTPTVCAERTAIFKAISEGNKDFKKIVVVGGKNEKLNDFCAPCGVCRQVISEFV
+                     NDNFEIILAINENNYKVYNFRRDIFPLGFTKDDLD"
+     gene            7728..9263
+                     /locus_tag="HMPREF1871_01202"
+     CDS             7728..9263
+                     /locus_tag="HMPREF1871_01202"
+                     /inference="protein motif:HMMPfam:IPR001674"
+                     /inference="protein motif:HMMPfam:IPR017926"
+                     /inference="protein motif:HMMPfam:IPR022310"
+                     /inference="protein motif:HMMTigr:IPR001674"
+                     /inference="protein motif:HMMTigr:IPR004739"
+                     /note="KEGG: mcl:MCCL_1941 1.6e-199 guaA; GMP synthase;
+                     K01951 GMP synthase (glutamine-hydrolysing);
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="GMP synthase domain protein"
+                     /protein_id="KXB55138.1"
+                     /db_xref="InterPro:IPR001674"
+                     /db_xref="InterPro:IPR004739"
+                     /db_xref="InterPro:IPR017926"
+                     /db_xref="InterPro:IPR022310"
+                     /translation="MNNHEFILVLDFGSQYNQLITRRVRELGVYSELHDNEISIEKIK
+                     ELNPKGIILSGGPNSVYEENSMSIDKEIFNLGIPILGICYGMQLMQHKLGGVVESATS
+                     REYGTHPINTKEDAVLFKETKSVQNVLMSHSDKVIKVAEGFRVVASSENCPIAAAENI
+                     NKNFYCFQFHPEVRHSEYGYKLIENFIRNVCGCTGDWTMEKFIEENIKKIKDKVGNDK
+                     VLCALSGGVDSSVVAALLHKAIGNQLVCMFVDHGLLRKGEAESVMETFGNKFKMNLIK
+                     VDAKERFLTKLKGVKDPEKKRKIIGNEFIYVFDEECKKLADIPWLAQGTLYTDVIESG
+                     TKNAQTIKSHHNVGGLPKDMKFSLIEPLNTLFKDEVRVLGEALGLPKEIVWRQPFPGP
+                     GLGIRVLGEVTEEKLKIVRDSDYILRDIIKKRGLDNKIWQYFTALPDIRSVGVMGDVR
+                     TYDYTVVVRAVTSIDGMTASWAHIPFEVLEEISARIVNEVGHVNRVVYDITSKPPSTI
+                     EWE"
+     gene            9503..10174
+                     /locus_tag="HMPREF1871_01203"
+     CDS             9503..10174
+                     /locus_tag="HMPREF1871_01203"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55139.1"
+                     /translation="MKISTFNINKFQGPYSNPRTKGGYYNPRNIDFKTPIKHLCSRYL
+                     ENEDDIIFVQEFYDDNKVRTKEYFEKNGYKIFHNLDKILKSHVVAITLKKSLWKDINP
+                     EETEFQNKFIEMELKEKSLKIISFHNTEKEIEDKINNEFKNGYKDIILGDFNNTKWIN
+                     DLHNNPSCKYRDLVTNDMITYKPAQTSIDCIFIKNEYENKIIFNGITETYVSDHNILT
+                     FSFNI"
+     gene            complement(10438..10668)
+                     /locus_tag="HMPREF1871_01204"
+     CDS             complement(10438..10668)
+                     /locus_tag="HMPREF1871_01204"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55140.1"
+                     /translation="MGNISAAFHVNKEYKKESDYPYTEHDLMRFLFKLDDSIKVNIRP
+                     VILNDEDPEYSTTGIYSGSEAILRIRNMLEQW"
+     gene            10802..11185
+                     /locus_tag="HMPREF1871_01205"
+     CDS             10802..11185
+                     /locus_tag="HMPREF1871_01205"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55141.1"
+                     /translation="MYKEQEKFKYLNPDVEDIRYFLEEYKPKSADPNITCFKELTMQG
+                     YQIKSKSFSEIMDNYFQEWIPVRSSKTKRISPSGVSIPVKLYYEKKTENETDFIEVDK
+                     NLLPEEWKKENQLEIDTANQVKIQM"
+     gene            11569..11925
+                     /locus_tag="HMPREF1871_01206"
+     CDS             11569..11925
+                     /locus_tag="HMPREF1871_01206"
+                     /inference="protein motif:HMMPfam:IPR008687"
+                     /note="KEGG: liv:LIV_1279 0.0099 truB; putative tRNA
+                     pseudouridine 55 synthase; K03177 tRNA pseudouridine55
+                     synthase;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55142.1"
+                     /db_xref="InterPro:IPR008687"
+                     /translation="MDNRTRKNQLKIYLTDEEKEIFEKKMKLPNCKTMSHFLRKCVLE
+                     KGIYIVDLEPFRDLQWLLSNATNNINQIAKATNTTGVICKKDIDYMREKIEKLSREIW
+                     DIHSLLLNKSKESSGD"
+     gene            12016..12210
+                     /locus_tag="HMPREF1871_01207"
+     CDS             12016..12210
+                     /locus_tag="HMPREF1871_01207"
+                     /inference="protein motif:HMMPfam:IPR005094"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55143.1"
+                     /db_xref="InterPro:IPR005094"
+                     /translation="MVSSFKCHQSTAHIQFIKTREDNDTKGTVLARHLIQSFLPGEVD
+                     PIKAHEIGMELCKKILKEDY"
+     gene            12496..12996
+                     /locus_tag="HMPREF1871_01208"
+     CDS             12496..12996
+                     /locus_tag="HMPREF1871_01208"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55144.1"
+                     /translation="MINKSNSCEEFLENMKSLDYEIKFGKHIAFRHKDKQRFTRAKII
+                     GEDYTEEKIKERIDLAIKNKANPIKKRVGNVIYISTNEKAQSSKGYEVWARKHNIKTM
+                     ADSIIKLREQGINSITQLDDLIKKSADDRQDLLDKIKKMETKMKSLSQDMENINTINK
+                     YREIYK"
+     gene            13592..14668
+                     /locus_tag="HMPREF1871_01209"
+     CDS             13592..14668
+                     /locus_tag="HMPREF1871_01209"
+                     /inference="protein motif:HMMPfam:IPR012327"
+                     /note="KEGG: smf:Smon_0394 1.0e-64 DNA adenine methylase;
+                     K06223 DNA adenine methylase"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA adenine methylase"
+                     /protein_id="KXB55145.1"
+                     /db_xref="InterPro:IPR012327"
+                     /translation="MKPIIKWPGGKSREFDKIKDLIPQYSRYIDPFFGGGAVFFELMP
+                     SKANINDISSSLMCFYELVRDQNQEFKNILLEYNASFISLINTCDLFSDKILEAYLDD
+                     DDNKSIDNVKFIISKTEVSKDLVLDLDSYTKTIVTSVLDKFKRTKQNNLKRKFNDKDL
+                     LENLITGFTSGFYLHFRNIYNDINLNKLDTSKEFEIANFYFIREYCYGSMFRYNKKGE
+                     FNIPYGGMSYNRKQFTKKIVSLFNVETRNIFENTEIYNLDFEIFLDKIKLTNDDFIFL
+                     DPPYDTDFSDYEGKSFDLDDQIRLCNYLKRVPSKFILIIKNTDFIYNLYKSDFNILSF
+                     EKNYTYNVRSRNERSVTHLIIKNF"
+     gene            complement(14775..15506)
+                     /locus_tag="HMPREF1871_01210"
+     CDS             complement(14775..15506)
+                     /locus_tag="HMPREF1871_01210"
+                     /inference="protein motif:HMMPfam:IPR002941"
+                     /note="KEGG: ppn:Palpr_0287 3.8e-33 DNA methylase N-4/N-6
+                     domain-containing protein; K13581 modification methylase;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA (cytosine-5-)-methyltransferase"
+                     /protein_id="KXB55146.1"
+                     /db_xref="InterPro:IPR002941"
+                     /translation="MRYGRIFNDDCLNHIRTLPNNSIDLILTDPPYNIAQYSRGNIKL
+                     PNRSEVNNDLGEWDHKEINPFEFVDEFKRVLKPEGNIFIFTSYNLIGKWHEAFDKEFD
+                     TFQYFIWHKTNPMPKIYKNGFLNSCEMIICLWNKGHKWNFTNQKEMHNFFESPICMGQ
+                     ERLKTPKHPAQKPLRLIRHLMTIGSDEGDIVYDPFMGVGTTCVAAIETKRKFIGVEID
+                     KEFFYAAERRIMEQIKKLEYANRGL"
+     gene            complement(15503..16624)
+                     /locus_tag="HMPREF1871_01211"
+     CDS             complement(15503..16624)
+                     /locus_tag="HMPREF1871_01211"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="MjaII restriction endonuclease"
+                     /protein_id="KXB55147.1"
+                     /translation="MREDKKNYKLNKNDQVRNLKKDDKIYVDDANDEIKIIKQNEATK
+                     KRVEKNKEKETVVDNDFDEQEIENLDIVDDDSLNVFDKTENLNEMETIVKDIVFAEFS
+                     RLIDTIEDDFVVNYNKKRYNFLLSQLDELVTATMVFVSSFESKSGFAIERVAERVARV
+                     RYGEENVPSIINPRGLEHNIQAEVVNGQIIVTDIDLDHGTLKGEIAKFRASNVASGRG
+                     KNRKESGVTQESIKELIPIGQEYKIDEIKIKPVDLAFYDGENWNILELKAGGDLDSSN
+                     APSNIEKLLSIYTGVNVENAKVYFATLYNKDGEGNTWTGAVKKHMAYPEMFLIGKDLW
+                     NKILPKGIGYERFTELYKIALEEIDLNERIKSMIRSALE"
+     gene            complement(16599..16838)
+                     /locus_tag="HMPREF1871_01212"
+     CDS             complement(16599..16838)
+                     /locus_tag="HMPREF1871_01212"
+                     /note="KEGG: mrb:Mrub_2575 2.0e-05 XRE family
+                     transcriptional regulator;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="putative transcriptional regulator, PvuIIC"
+                     /protein_id="KXB55148.1"
+                     /translation="MIYLLEEFGERVKQLRKNIGLSQEKFALKINMDRTYLASVEAGN
+                     RNISLKNIEKIADGFDMSISELFKGVENERRQKKL"
+     gene            complement(16922..17116)
+                     /locus_tag="HMPREF1871_01213"
+     CDS             complement(16922..17116)
+                     /locus_tag="HMPREF1871_01213"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55149.1"
+                     /translation="MSSKLLKAKEEIKSQDKDKKSILRQIKSFKAEDKVKSNKEDHSK
+                     DIAKMQRDKYRQSSDCFYFF"
+     gene            17653..17877
+                     /locus_tag="HMPREF1871_01214"
+     CDS             17653..17877
+                     /locus_tag="HMPREF1871_01214"
+                     /note="KEGG: aac:Aaci_0066 0.0017 transcriptional
+                     regulator, XRE family;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55150.1"
+                     /translation="MSNEIVFTINEVLNEKNISKNWLEENANLQRSQLNSYANNKVKR
+                     IDLDVLARICIALNVEVGDLIKLQKNKGEL"
+     gene            17878..19902
+                     /locus_tag="HMPREF1871_01215"
+     CDS             17878..19902
+                     /locus_tag="HMPREF1871_01215"
+                     /inference="protein motif:HMMPfam:IPR003356"
+                     /note="KEGG: fbr:FBFL15_0820 9.5e-53 putative type I
+                     modification methyltransferase;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="N-6 DNA Methylase"
+                     /protein_id="KXB55151.1"
+                     /db_xref="InterPro:IPR003356"
+                     /translation="MESKVIVIPEGKVCDYIDGKFRKDTPEEYVRQTIEKRLINEHKY
+                     NRDQISIEYTVQIGSVKKRADIVIFPDGKVDKIQENIKIIIECKSEKIEANNSKDGVA
+                     QLKSYMSACSNAEWGMWTNSKEKFVFKKYIDDTGFIQFMDYNDIPSADGSLDDINRPK
+                     RTTLKNASDDNLLFTFKTCHNHIYVNEGMQKQPAFFELLKVIFCKIEDERNIPKPLEF
+                     YATSEERSNGDGQLTVKNRIEKIFERVKKEKKNAKIFEANDGINLHPRTLSYIVSELQ
+                     KYSLLNTRIDIKGKAYEEIVGANLRGDRGEFFTPRNVMQMVVEMINPTIDEKVLDSSC
+                     GTGGFVVTAMTHAMKQLRSEFTKDIGKDKENWNDYEKKAFQDKISDMAKNNYFGFDIN
+                     PDLVKATKMNMVMNNDGSGNILQTNSLLPPHEWTYDFKTRLSQALQIDKKSIINQYDI
+                     GFFDVIVTNPPFGSKIPIKDHAILSQFELAKIWNQDKKTGKWTMTDRYQSSVSPEILF
+                     IERCYQFLKPGGRMGIVLPDALLGSPGTGYIREWLIKNTKIIASIDLHEDTFQPRNGT
+                     QTSVLILQKKTKEEISKEESTGQMADYNIYMVIVDKIGHDKRGNTLFKRDNEGNEIMV
+                     PEKQNVYRLDETSAGDKTTQMESREKIVDDQTILVPNIFRKWKINEGISW"
+     gene            19896..21365
+                     /locus_tag="HMPREF1871_01216"
+     CDS             19896..21365
+                     /locus_tag="HMPREF1871_01216"
+                     /inference="protein motif:HMMPfam:IPR000055"
+                     /note="KEGG: fte:Fluta_2957 3.3e-34 restriction
+                     modification system DNA specificity domain-containing
+                     protein; K01154 type I restriction enzyme, S subunit;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55152.1"
+                     /db_xref="InterPro:IPR000055"
+                     /translation="MVNSAAKKLEKELIEIVEVPKDDVNWSSVSLSEVIYKGKRLESS
+                     YYGIEYKRIIKTIQNSKYGYSNLQGSKNGIINSYRPGIIKRIFVEPIDNSIPMLVPSQ
+                     VQDIYPKAEKYLSKLMIDKIKDWFVKENEILLTCSGTIGNVTLVTETLKNKCVSQNLI
+                     RIICRDEFYGYVYAFLKSEYGQVQLKNNNYGAVIKHIDPSHLDNVIIPNAPEKIKVII
+                     NKLIIDSYINRDKSNYLIDKATNIMIDELGLPPIEDLKKEAFSHSKDVNSFSTKLSNL
+                     NGRLEGNYHLPLVEVIEKYSSKNANLIKLNSEKITEKIILPARFKRVYLEKGNGKIFL
+                     GGKEIGQLDPSGKKFLSIKHYSDKLIGDITIKRNDILVTRSGTVGKVMMAPKHWENWV
+                     SSDHVIRILSKELYHGLAFIWLSSEYGKELIERQIYGSVVNEITDEQLGDVVIPIFKD
+                     NKINTSILNLIDEANELRYQAYKQEQEAINIMNKEVLGL"
+     gene            21382..22332
+                     /locus_tag="HMPREF1871_01217"
+     CDS             21382..22332
+                     /locus_tag="HMPREF1871_01217"
+                     /inference="protein motif:HMMPfam:IPR022104"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55153.1"
+                     /db_xref="InterPro:IPR022104"
+                     /translation="MGRSISNELLDKSKEAMISAVQIYNNPSIKFKSEMFIITAIISW
+                     TYLMHAYYRKCKIDYRYYKLNGKKKRYDRTKNGAYKHWELERCINEKKSPLDKGTVNN
+                     LKFLIGIRHEIEHQKTDNIDEYIGAKLQACALNYNKELTKMFGKKHSVRDNLSLAIQF
+                     SPISPEQEELLRNEANINIPINVRNFITEFESDLDDEDLKSLSYSYKIVYVPVSVNRA
+                     NQADRAIEFVPENSIDAKDVERVLFKSVEKKKYRPSEIVNIMKNEGFSKFSMHYHTQL
+                     WKSRDGRNPKYNFGVWVSGQWYWYENWVNEVRDYCIKNNF"
+     gene            22821..23078
+                     /locus_tag="HMPREF1871_01218"
+     CDS             22821..23078
+                     /locus_tag="HMPREF1871_01218"
+                     /note="KEGG: fma:FMG_0331 2.1e-11 hypothetical protein;
+                     K01153 type I restriction enzyme, R subunit"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55154.1"
+                     /translation="MKSTSFDKSPGISPLSANNLNYLSFYYYCTTLFITKAIKKGHVE
+                     CTGGELNEILPPTSRKRGARENKKQFLLKKIKKIVEVFAGI"
+     gene            complement(23261..24319)
+                     /locus_tag="HMPREF1871_01219"
+     CDS             complement(23261..24319)
+                     /locus_tag="HMPREF1871_01219"
+                     /note="KEGG: mmt:Metme_1127 5.5e-89 arsenite
+                     methyltransferase;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="methyltransferase domain protein"
+                     /protein_id="KXB55155.1"
+                     /translation="MKDTRKEIKEYYSKITKEKSGKMQTEICSCAADSMPKRLKNIRK
+                     SINKEIVKRFYGCGSPIPFALEGCTVLDLGCGTGLDVYMLSKLVGEQGKVIGVDMNED
+                     QLEIAKKYQNEMAEKFGYKKSNVEFKKGYIEDLKSLGVEDESVDVVVSNCVINLSPFK
+                     EEVFSEIWRILKKGGELYFSDIFADRRMPKELLENSMLQGECIAGAMYIEDFRRLMRK
+                     VGWLDVRYMNTSVSKIGNEEIENLVGNINFTSRTVRAMKIPDFMEDICEQYGQFATYR
+                     GGIEGSEHYFDLDDHHRFYKDLPLSVCGNSCAMVQETRFKKYFDFYGDRTVHFGAFDC
+                     GENTSQKEDSGSCGGGCC"
+     gene            24701..25492
+                     /locus_tag="HMPREF1871_01220"
+     CDS             24701..25492
+                     /locus_tag="HMPREF1871_01220"
+                     /inference="protein motif:HMMPfam:IPR000425"
+                     /note="KEGG: hiq:CGSHiGG_06740 1.1e-33 glpQ;
+                     glycerophosphodiester phosphodiesterase K02440;
+                     Psort location: CytoplasmicMembrane, score: 10.00"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="channel protein, MIP family"
+                     /protein_id="KXB55156.1"
+                     /db_xref="InterPro:IPR000425"
+                     /translation="MNQKSNFLGEFIGTFLMVLFGTAVVCSSIVFDGVITSVFQIGII
+                     WALIISISIYLTRNLSNAHFNPAVTVAMIVTKRMKLKELPSYLLGQFAGAFCGSLVLY
+                     LIYHPAINSFEAKEGIIRGSKESMKTAKMFGEFYINMGSPMQSMLLACLAEGIGTFLL
+                     IFFIFSLTEGANVGRPDNNLAPLFIGLCVGLILCIIAPITQAGLNPARDFAPRLAAHI
+                     LGWGYGAYPDALGGFFFVYILSPLIGAVLAGMFFTKIVEPLMKKN"
+     gene            complement(25811..26833)
+                     /locus_tag="HMPREF1871_01221"
+     CDS             complement(25811..26833)
+                     /locus_tag="HMPREF1871_01221"
+                     /inference="protein motif:HMMPfam:IPR003352"
+                     /note="KEGG: ctc:CTC01841 3.3e-27 PTS system,
+                     fructose-specific IIBC component K07035;
+                     Psort location: CytoplasmicMembrane, score: 10.00"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="KXB55157.1"
+                     /db_xref="InterPro:IPR003352"
+                     /translation="MKNFLKKKGISLSPKVYFIDALGSMAFGLFATLLVGTILNTIGN
+                     VCNIHFLSETIWPLAKAATGPAIAVSIAYSLKAPRLILFSSCVVGIGADKLGGPMGVF
+                     VATLICVEIAKIISGETKIDIVVTPIVTVLSGIFIANLIGPFINKIMISLGEIIMQAT
+                     NEAPFIMGMIVSLIVGIVLTLPISSAALCMMISLSGLAGGAATIGCCCQMIGFAVISF
+                     KENGVQGLVAQGLGTSMLQVPNIIKNPKILLPPSIASIVLAPISTVFLGLENSPIGSG
+                     MGTCGLVGQISTFITMQNYNFSKLLLIIIVMHFILPAIVSLIVYYPLKKIGWIKDGDL
+                     KLNFKR"
+CONTIG      join(LSDB01000075.1:1..27129)
+//
+

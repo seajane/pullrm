@@ -1,0 +1,96 @@
+LOCUS       KB905378             2964157 bp    DNA     linear   CON 16-SEP-2013
+DEFINITION  Halomicrobium katesii DSM 19301 genomic scaffold
+            HalkaDRAFT_scaffold1.1, whole genome shotgun sequence.
+ACCESSION   KB905378 AQZY01000000
+VERSION     KB905378.1
+DBLINK      BioProject: PRJNA88127
+            BioSample: SAMN02261322
+KEYWORDS    WGS; GSC:MIGS:2.1; IMPROVED_HIGH_QUALITY_DRAFT.
+SOURCE      Halomicrobium katesii DSM 19301
+  ORGANISM  Halomicrobium katesii DSM 19301
+            Archaea; Euryarchaeota; Stenosarchaea group; Halobacteria;
+            Halobacteriales; Haloarculaceae; Halomicrobium.
+REFERENCE   1  (bases 1 to 2964157)
+  AUTHORS   Eisen,J., Huntemann,M., Han,J., Chen,A., Kyrpides,N.,
+            Mavromatis,K., Markowitz,V., Palaniappan,K., Ivanova,N.,
+            Schaumberg,A., Pati,A., Liolios,K., Nordberg,H.P., Cantor,M.N.,
+            Hua,S.X. and Woyke,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-APR-2013) DOE Joint Genome Institute, 2800 Mitchell
+            Drive, Walnut Creek, CA 94598-1698, USA
+COMMENT     URL -- http://www.jgi.doe.gov
+            JGI Project ID: 404292
+            Source DNA and organism available from Hans-Peter Klenk at the
+            German Collection of Microorganisms and Cell Cultures (DSMZ)
+            (hans-peter.klenk@dsmz.de)
+            Contacts: Jonathan  Eisen (jaeisen@ucdavis.edu)
+                      Tanja Woyke (microbe@cuba.jgi-psf.org)
+            Whole genome sequencing and draft assembly at JGI-PGF
+            Annotation by JGI-PGF and JGI-ORNL
+            The JGI and collaborators endorse the principles for the
+            distribution and use of large scale sequencing data adopted by the
+            larger genome sequencing community and urge users of this data to
+            follow them. It is our intention to publish the work of this
+            project in a timely fashion and we welcome collaborative
+            interaction on the project and analysis.
+            (http://www.genome.gov/page.cfm?pageID=10506376)
+            Full annotations are available from IMG.
+            
+            ##MIGS-Data-START##
+            investigation_type       :: bacteria_archaea
+            project_name             :: Halomicrobium katesii DSM 19301
+            collection_date          :: Missing
+            lat_lon                  :: -27.566 -70.050
+            depth                    :: Missing
+            alt_elev                 :: Missing
+            country                  :: Chile
+            num_replicons            :: Missing
+            ref_biomaterial          :: DSM 19301
+            biotic_relationship      :: Missing
+            rel_to_oxygen            :: Missing
+            isol_growth_condt        :: Missing
+            assembly                 :: Velvet v. 1.1.05; ALLPATHS v. 39750;
+                                        Phrap v. 4.24
+            finishing_strategy       :: Missing
+            environment              :: Fresh water; Aquatic
+            trophic_level            :: Missing
+            sequencing_meth          :: WGS
+            GOLD Stamp ID            :: Gi13992
+            Current Finishing Status :: Level 3: Improved-High-Quality Draft
+            Type Strain              :: Yes
+            Funding Program          :: DOE-CSP 2011
+            Isolation Site           :: Lake Tebenquiche, Atacama saltern,
+                                        Chile
+            Gram Staining            :: Gram-
+            ##MIGS-Data-END##
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: Improved High-Quality Draft
+            Current Finishing Status :: Improved High-Quality Draft
+            Assembly Method          :: Velvet v. 1.1.05; ALLPATHS v. 39750;
+                                        Phrap v. 4.24
+            Genome Coverage          :: Unknown
+            Sequencing Technology    :: Unknown
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2964157
+                     /organism="Halomicrobium katesii DSM 19301"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="HalkaDRAFT_scaffold1.1"
+                     /strain="DSM 19301"
+                     /culture_collection="DSM:19301"
+                     /type_material="type strain of Halomicrobium katesii"
+                     /db_xref="taxon:1069082"
+CONTIG      join(AQZY01000001.1:1..360878,gap(unk100),AQZY01000002.1:1..21114,
+            gap(unk100),AQZY01000003.1:1..22782,gap(unk100),
+            AQZY01000004.1:1..448689,gap(unk100),AQZY01000005.1:1..420577,
+            gap(unk100),AQZY01000006.1:1..92771,gap(unk100),
+            AQZY01000007.1:1..2466,gap(unk100),AQZY01000008.1:1..137345,
+            gap(unk100),AQZY01000009.1:1..2804,gap(unk100),
+            AQZY01000010.1:1..971085,gap(unk100),AQZY01000011.1:1..265618,
+            gap(unk100),AQZY01000012.1:1..176885,gap(unk100),
+            AQZY01000013.1:1..11016,gap(unk100),AQZY01000014.1:1..15164,
+            gap(unk100),AQZY01000015.1:1..7933,gap(unk100),
+            AQZY01000016.1:1..5530)
+//
+
