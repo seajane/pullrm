@@ -48,11 +48,11 @@ def dataset_input(argv):
 # take inputs
 input_csv,window,gene_folder,output_gbk_path,Entrez_email = dataset_input(sys.argv[1:])
 #print(input_csv,window,gene_folder,output_gbk_path,Entrez_email)
-#input_csv = "OctapusORFpull_Test_HB.csv"
+#input_csv = "odd_gbk.csv"
 #window = 1000
 #output_gbk_path = "genebank_files"
 #gene_folder = "test01"
-#Entrez_email = "hwu@fredhutch.org"
+#Entrez_email = "hbouzek@fredhutch.org"
 # Grab file names and locations
 xldoc = pd.read_csv(input_csv)
 
@@ -102,14 +102,18 @@ if len(df3) > 0:
         print ("count ",n)
         print (' ')
         n+=1
-    contents = os.listdir('./' + 'output_gbk_path')
+    contents = os.listdir('./' + output_gbk_path)
     indices = [i for i, element in enumerate(fileList) if element in contents]
     df2 = df.loc[indices]
     df2 = df2.reset_index(drop = True)
 # extract CDS
 
 def feature_extract (dfrow):
-    gb = SeqIO.read(dfrow['contig_filename'], 'genbank')
+    if type(dfrow['contig_filename']) != str:
+        gb1 = re.sub(r"\d+ ","", dfrow['contig_filename'].to_string())
+    else:
+        gb1 = dfrow['contig_filename']
+    gb = SeqIO.read(gb1.strip(), 'genbank')
     lgb = len(gb.features)
     if lgb < 2:
         print("No CDS found for %s." % gb.id)
@@ -124,17 +128,20 @@ def feature_extract (dfrow):
     else:
         count = 1
         new_cds = pd.DataFrame()
+        # setting col width any lower will cause sequence to be truncated
         pd.set_option("max_colwidth", 9999)
-        for feature in gb.features:
-            if feature.type=='CDS':
+        cds1 = [feature for feature in gb.features if feature.type =="CDS"]
+        for feature in cds1:
                 position = feature.location
                 start = position.start.real
                 stop = position.end.real
                 strand = position.strand.real
-                cds = feature.qualifiers["translation"][0]
+                try:
+                    cds = feature.qualifiers["translation"][0]
+                except KeyError:
+                    cds = ""
                 product = feature.qualifiers['product']
-                new_val = pd.DataFrame({'description':[dfrow['genome_name']],\
-                'gb':[dfrow['genome_id']],'emb':[gb.id], 'start':[start], \
+                new_val = pd.DataFrame({'description':[dfrow['genome_name']],'gb':[dfrow['genome_id']],'emb':[gb.id], 'start':[start], \
                 'stop':[stop], 'strand':[strand], 'product':[product], 'cds':[cds], 'contig_filename':[dfrow['contig_filename']]})
                 new_cds = new_cds.append(new_val, ignore_index = True)
                 count+=1
@@ -171,7 +178,7 @@ with open(ofn, "w") as output_handle:
             id1 = desc1.strip().replace(" ", "_")
             name1 = 'gb|' + gb1.strip() + '|emb|' + emb1.strip()
             desc2 = prod1.strip() + '_' + start1.strip() + '_' + stop1.strip()
-            sr = SeqRecord(Seq(seq1), id = id1, description = desc2)
+            sr = SeqRecord(Seq(seq1), id = id1, description = desc2, name = name1)
             print(sr)
             SeqIO.write(sr, output_handle, 'fasta')
 
