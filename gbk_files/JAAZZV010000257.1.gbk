@@ -1,0 +1,136 @@
+LOCUS       JAAZZV010000257         5048 bp    DNA     linear   ENV 18-AUG-2020
+DEFINITION  MAG: Nitrosopumilus sp. isolate bin101o c_000001516752, whole
+            genome shotgun sequence.
+ACCESSION   JAAZZV010000257 JAAZZV010000000
+VERSION     JAAZZV010000257.1
+DBLINK      BioProject: PRJNA613976
+            BioSample: SAMN14532961
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG.
+SOURCE      Nitrosopumilus sp. (marine metagenome)
+  ORGANISM  Nitrosopumilus sp.
+            Archaea; Thaumarchaeota; Nitrosopumilales; Nitrosopumilaceae;
+            Nitrosopumilus; unclassified Nitrosopumilus.
+REFERENCE   1  (bases 1 to 5048)
+  AUTHORS   Bayer,K., Busch,K., Kenchington,E., Beazley,L., Franzenburg,S.,
+            Michels,J., Hentschel,U. and Slaby,B.M.
+  TITLE     Microbial Strategies for Survival in the Glass Sponge Vazella
+            pourtalesii
+  JOURNAL   mSystems 5 (4), e00473-20 (2020)
+   PUBMED   32788407
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (bases 1 to 5048)
+  AUTHORS   Slaby,B.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-APR-2020) RD3, GEOMAR Helmholtz Centre for Ocean
+            Research Kiel, Duesternbrooker Weg 20, Kiel 24105, Germany
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Method        :: megahit v. v1.1.3
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 3x
+            Sequencing Technology  :: Illumina HiSeq
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..5048
+                     /organism="Nitrosopumilus sp."
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="c_000001516752"
+                     /isolate="bin101o"
+                     /isolation_source="pooled samples from sponge host and sea
+                     water"
+                     /host="Vazella pourtalesii"
+                     /db_xref="taxon:2024843"
+                     /environmental_sample
+                     /country="Canada: Scotian Shelf"
+                     /collection_date="2017"
+                     /collected_by="DFO Canada"
+                     /metagenome_source="marine metagenome"
+                     /note="metagenomic"
+ORIGIN      
+        1 ctctttttta cactctcgac attgcaaggt tatacttttt gccaacggtt caaatcccta
+       61 aaattcacat atcaaagatc ctaatatcaa gttaagtaat acttaactta ttcatgtgta
+      121 atatttagta atatacgatg gaactggtaa gttaacgagg catcgctaca aatcttattg
+      181 ctggtaagta tcgaggcttt tagaagatgc attctgaatt atggtcttcc atttgttatc
+      241 tccttgaata ataatccctg atctgtcagc tggtgtgtcg ccatctaatc cttgatgtgg
+      301 tcttatgtag ttgtgatgaa tctgcatacc cttgagtatt gcagaattgt ctttttttat
+      361 ccccctgaca acttttccct cattcttagc gtgtttgagt taaaggattc catttggttg
+      421 ttattgatat caccagacag atgtatgtgt ctgtgatgtt cagtttcttt atgtagaaag
+      481 ttcttggatt tgtattattt cttccatgcg tgatgaaagt ttacagctcc atcagagatt
+      541 aatgcagttg ggacttttcc tgccttcttt ttggcatctt taaacattgg cgatacatcg
+      601 tcatttccct tgtgttcaga taccatttga gacagccaga atctagtctc tgaatctaac
+      661 attgcaaaga gatatttttt atcgcccttg attttcaggt atagttcatc tgttctccat
+      721 tgctctccta cctatggaat tattttatca agatattttt ccattaatga aacatatttt
+      781 tttatccagt tttgaatggt aacatgagat accttaacac cagtaaggac caaagattgt
+      841 tttacttttc ttgaggattc accgttaaag taaagattca ttgtcattgt tatctgatct
+      901 ggtgttgccc tcattttttc aaatcctaga ttgattgaga atttgcgtgt gcagtcctta
+      961 taacagaata tttggatatt accactcttg ttttttcgta taccacgttt tacaatatct
+     1021 gatgatttac agtatttata acagtcaatt accacttctg aaactacaac atcgtctttt
+     1081 actttctgat gaatgttaat tgagatttct actgcatgaa tgtgtttgca gcaagtctta
+     1141 cggtacaaaa aatcctcaca tgaacaggac caaccatatt cagtagatat aatttcatgt
+     1201 aatttacttc ttgattgaga ttttacagta taatgatttt tatcgattct tgtgatttaa
+     1261 tcttgttttt ctgctatttg ttttcctcta acttctcttt gattcataca gataggttga
+     1321 tagtctgcta tataaagtat aggtagattt atcggtatat gtatagtata ggtagattga
+     1381 tatacatgag gattaatcta ccgatagaaa tggcacgtat gcttccaaat caatcaacag
+     1441 tatcaaaggc aaaatctgat agtatttcag taagaactac aattcctatt ttcattgcca
+     1501 agcagttgaa actagaaatt ggtgatgttt tagattggaa gctagacaaa atatccaatc
+     1561 aatggatagt gaccattgaa aaaggagaat aaaaaatgac tgatgatact cacaaaatag
+     1621 aagattatat ttctggaaaa atggtgaatg atacccctga agagattgaa gcagtacagg
+     1681 ttttttctaa acgtttagtg gaagattttg gttacaagaa aaatcaaata caaacacatc
+     1741 cacaatttag agcaaaaaca gctccttctg gaaaagaaaa atatcctata gacattacta
+     1801 tattcaaatc ggataaaaaa acatacgata atgtctacat aattgttgaa tgcaagcaac
+     1861 catcaagaaa agatggatta gttcaattaa acatctatct gaatttggtt cctagtgtag
+     1921 aatttggaat atggtttaat ggaaaagagc atctctattt acgcaaagtt tctgatccta
+     1981 aacatggatt aacttggcaa gaaattcctg acattccaaa aagaggacaa cgtgttgaag
+     2041 atataggact ctataaacga aaagatttgc taattccagc aaatcttgtt tctgaattta
+     2101 atgatcttcg aaatcatttg gcaggaaatg ttacaggtat aactagagat gaggcatttg
+     2161 cacaagagat catcaatatt cttttttgta aaattcatga tgagatggaa agagctccag
+     2221 aagaacaagt taaattcagg acaggtattg atgaatcaaa aaatattgtt aaagaaagaa
+     2281 tagaagaatt gtttaaagaa gttaaagaaa cttatgatga tgtctttgaa gaaaatgatt
+     2341 caattaagct tgatgatgat gcaattgttt acattgttgg tgcacttcaa aagtttgtca
+     2401 ttaaagatgc tgaacgtgat gcaattggag atgcgtttga agtattcatt ggacctgcat
+     2461 tgagagggag tgatggtcaa tttttcactc cacgaaatgt tgtaaaaatg gctgtagata
+     2521 tgattgatcc tcaaattgat gattatgtaa ttgatccttc atgtggaagt ggagggtttc
+     2581 taattatcgc actggagcat atgtgggata aaattgaaaa aaatggtaaa aagaaaaaat
+     2641 gggatcgtga tacaattaca agaaagaaaa aagaccttgc aaccaagttt atacaaggaa
+     2701 tagacaagga ttcctttttg gcaaaagtga ccaaagcata catggcaatt ataggagatg
+     2761 ggcggggagg gatttttagt gaaaacagtt tgtatcgtaa aagcgaatgg aaagacaaca
+     2821 caaattccaa aatagaatta ggaaagtata atgtactttt caccaatccg ccatttggta
+     2881 ttaaaattcc aataaggggt gaaaatgtat tatcccaatt ccatttggca aaaaaatggc
+     2941 gttatgacaa aaagaaaaat acgtggattg aaggtagcat atatgaaaat aaacgccccc
+     3001 cccaggtttt gttcattgaa agatgtttag aattgttacg agaaggtgga agaatggcta
+     3061 ttgtcttacc tgatagtatt gttgggaaca aaactgatgg ctatattaga aagtttattc
+     3121 tgtcaaaagc aaaacttttg gcagtagtag attgtccaat agagacattt gcaaatcata
+     3181 caaaaaccag tgtattagta ttggaaaaaa agtcagatgg atatacaaaa aaatatccta
+     3241 tttttatggc tatagcaaaa aaatgtggac atgacagaag aggaaaagaa attcacaaaa
+     3301 taaattctaa aggtaaaaaa atacctgatg atgactttcc cttaatttct gagaaataca
+     3361 aagaattcag aagaggaagt agatgaaatc atttcagata tactcaaata aaataaagga
+     3421 tagattcgat cccaaatatt atgatccagt tagatttgaa tccatccaaa aacttgtgaa
+     3481 attatccaaa aaatcagatt ttactttgta tgatttagat gatctcgttg attttaagat
+     3541 tagtgcattt tatgaatcaa tagctccaaa atatacagat aaaggtatac ctttcatcaa
+     3601 agtaatggat gtaaaaaaac tcaccattgg aatgttgaat ctgacttatc ttcctaaagg
+     3661 gtttaaaaat aaaaaaggaa aattaattca tctaaaatca ggggatgttg ttatttcaaa
+     3721 aggaggtacc gttggtaatg ttgccataat tccaaaatcc atgaaagaat gtctaatgtc
+     3781 aagggatctt atcggtattg tttccaaagg taatgtcaat ttatcttata tagcaacttt
+     3841 tctatcatca tcattgggac agattcaaat tcaaaatatt aaaacacaac aaaatcagga
+     3901 acatcttacg ttagaacctt taaaaaaaat taaaatattg gttccaaaga aattacatga
+     3961 taaagtttca aaatcactaa ccacgtcaga tagtcttgaa tctaaagcaa tacaattgat
+     4021 agaaaaagct gttgaaatat tttatgacag catggaaatc aaaattaaaa attattcaga
+     4081 actgacatat caagtcaata gtggtgattt agatgatacg tttattcctt caaactatca
+     4141 tcccacatat ctgacaagta tccaaaaaat gaaaaaaaaa tttgaaacaa tacaattagg
+     4201 gagtttcaca gatataacac gaggtaatga accacaatca aaaaattaca agccacatct
+     4261 acaaaaaaat aaaacagatg tgtcattcat acgaacgtcc gacattatta attatgaaat
+     4321 tgataattat ccagattttg taatatcaaa aaaaatcttt tcagattgca aacaagacct
+     4381 aaaaaaccaa gatattcttt ttactaatga tggaaagatt ggtcttagtg caatggtatt
+     4441 ggacagtgat gaatgtctta tacaaagtca cattaggagg atacgaatca aaagaaacaa
+     4501 gcataaatta tcttctcatt atgtttttgc tttcttgaat actatttttg cctcacacca
+     4561 gattcataaa aaaatcttaa ttcaatcaac tatttctacc atcggtgacg gattacaatc
+     4621 tttattaatt ccaattttac ctgatgaaaa aatcaaagag atagagaaat tggttaaaaa
+     4681 agcatttgtg ttaaaaaata caaaaaagca attgattaag aatgtaattg actcaacaga
+     4741 agcaataatt taattttttt gaagatgccc tatcccgaat tgaattccat tcttagtgta
+     4801 taacagagtt tagaacagta ccataatgtt acagaattcc aaaaagcctc gacacttacc
+     4861 acgaataaga tttgtagcca tgtcccgcta acttaccagt tcctatacga tatcaggcgc
+     4921 ggtatgacaa aaatacacgt aaaaacaaca ggcaggcatg aaggggaaaa ttgtggcact
+     4981 agctacgata ggagcagttg tggcactctc tatagtagca gcctcgctgt gggtgcccca
+     5041 aggaccga
+//
+

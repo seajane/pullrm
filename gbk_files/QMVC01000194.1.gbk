@@ -1,0 +1,160 @@
+LOCUS       QMVC01000194            2690 bp    DNA     linear   ENV 15-OCT-2018
+DEFINITION  MAG: Nanoarchaeota archaeon isolate B36_G17
+            B36_Guay17_scaffold_28715, whole genome shotgun sequence.
+ACCESSION   QMVC01000194 QMVC01000000
+VERSION     QMVC01000194.1
+DBLINK      BioProject: PRJNA362212
+            BioSample: SAMN09215020
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG.
+SOURCE      Nanoarchaeota archaeon (marine sediment metagenome)
+  ORGANISM  Nanoarchaeota archaeon
+            Archaea; Nanoarchaeota.
+REFERENCE   1  (bases 1 to 2690)
+  AUTHORS   Dombrowski,N., Teske,A. and Baker,B.J.
+  TITLE     Extensive metabolic versatility and redundancy in microbially
+            diverse, dynamic hydrothermal sediments
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2690)
+  AUTHORS   Dombrowski,N., Teske,A., Baker,B.J. and Seitz,K.W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUN-2018) Marine Science Institute, The University of
+            Texas at Austin, 750 Channel View Dr, Port Aransas, TX 78373, USA
+COMMENT     Annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (released 2013). Information about the Pipeline can be
+            found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Date          :: APR-2017
+            Assembly Method        :: megahit v. 1.0.6
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 66.1858407079646x
+            Sequencing Technology  :: Illumina HiSeq
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI
+            Annotation Date                   :: 06/30/2018 08:33:21
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS+
+            Annotation Software revision      :: 4.5
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+                                                 repeat_region
+            Genes (total)                     :: 1,089
+            CDS (total)                       :: 1,070
+            Genes (coding)                    :: 1,064
+            CDS (coding)                      :: 1,064
+            Genes (RNA)                       :: 19
+            tRNAs                             :: 19
+            ncRNAs                            :: 0
+            Pseudo Genes (total)              :: 6
+            Pseudo Genes (ambiguous residues) :: 0 of 6
+            Pseudo Genes (frameshifted)       :: 1 of 6
+            Pseudo Genes (incomplete)         :: 6 of 6
+            Pseudo Genes (internal stop)      :: 0 of 6
+            Pseudo Genes (multiple problems)  :: 1 of 6
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2690
+                     /organism="Nanoarchaeota archaeon"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="B36_Guay17_scaffold_28715"
+                     /isolate="B36_G17"
+                     /isolation_source="deep-sea hydrothermal vent sediments
+                     from dive 4571_4 depth 12-15 cm"
+                     /db_xref="taxon:2026764"
+                     /environmental_sample
+                     /country="Mexico: Guaymas Basin, Gulf of California"
+                     /lat_lon="29.52416667 N 113.57000000 W"
+                     /collection_date="02-Dec-2009"
+                     /metagenome_source="marine sediment metagenome"
+                     /note="metagenomic"
+     gene            complement(<1..590)
+                     /locus_tag="DRN63_04835"
+     CDS             complement(<1..590)
+                     /locus_tag="DRN63_04835"
+                     /inference="COORDINATES: protein motif:HMM:PF01420.17"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="RLG15923.1"
+                     /translation="MESDFLDFQSFSLKTSLIDREVRLNASSYSLEYAESRRIVEEIS
+                     RRAEVVKIKDLTRNIFHRPRFKRLYTGKKNGLPFLMPTDVFMFPLKPRKFIMNPPEGL
+                     SVEKGWILVTCSGTVGRTIITTKQISNCVLSHDIIRIVPEKLTGYIYAYLNTWIGQAF
+                     LTKDQYGATVKHIEPEHVANVPIPRIPEVEKEVHEKV"
+     gene            complement(572..2497)
+                     /locus_tag="DRN63_04840"
+     CDS             complement(572..2497)
+                     /locus_tag="DRN63_04840"
+                     /inference="COORDINATES: protein
+                     motif:HMM:PF02384.14,HMM:PF13588.4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="RLG15924.1"
+                     /translation="MSGKQATLTGEIIEETIPTGYIKCFVSGKLRKDTPEERVRQEVA
+                     KSLAYEYGYKVTDMEVEFRIQIGRKKPRADLVIFYENSIHSKENVYIIVETKKPDIKP
+                     SDKDQGVDQLISYLYACPNAKYGLWVGSERIVLEVVEKEGKKSVVQIPDIPPRGETTT
+                     PRPVRSKLVPAINLKQVFKRIHNYIYANQGLQKDKAFEELLKLIFAKVYDEQYSVSLQ
+                     FYILPREDIAQVRKRIESLFEKVKERYSYIFDPNETISLNDRVLAYAMAELQKYSLVD
+                     TDVDIKGEAYEEIVGPNLRGDRGEFFTPRNVCKMTIQMIFSLFDEDRLTSVKILDPAV
+                     GTGGFLISAIHEYKKIFEKRGFKYDQLRGTVKGIAENNIYGIDFNPFLVKVAQMNMVM
+                     HGDGSANMMHANSLEHPANWSDDVLLKLFGRRIGEFGGLEPFRRHLNSLERPEEIDEA
+                     LSIFDIVVTNPPFGTRAVIDDFNILKQYEITFYKAGTPRSSLPPERLFIERCLQFLKP
+                     GGFMAIVLPDSILSNPGLKWLREWILERAYVIASVDLPKETFEPHTGTQTSILILRKK
+                     RPEERKIKEDYEIFMAIPEKVGHNSRGEPVYKLTPDGEIELDENGNPIVEDHLPTVAE
+                     LFRKWVEKKGLRWKAIS"
+ORIGIN      
+        1 actttttcgt gaacttcttt ctcaacctct ggaattctcg gtatcgggac gtttgcgaca
+       61 tgctccggct ctatatgctt gacggtcgca ccatactgat ccttagttaa aaaagcttga
+      121 ccgatccatg tgtttaagta tgcatagata tatccagtta gcttctctgg gacaattctt
+      181 atgatatcat gtgataaaac gcaattggat atctgcttcg tcgttatgat cgttcgtcct
+      241 acagttccag agcaggtgac taatatccaa cctttctcaa cggataaccc ttcaggagga
+      301 ttcattatga attttcttgg ctttaatgga aacatgaaaa catccgtcgg catcaaaaat
+      361 ggtaacccat ttttcttgcc cgtatacagc cttttaaatc ttggacgatg gaaaatattc
+      421 ctcgttaaat ccttaatttt gacgacctca gctctccttg aaatctcttc aacgattctt
+      481 ctcgactctg catattctaa ggagtacgag ctggcgttta acctaacttc cctatctatt
+      541 aaagatgtct tcaagctgaa gctttggaaa tctaggaaat cgctttccat cttaatccct
+      601 ttttttcaac ccatttcctg aaaagctcag ccacggtcgg taaatgatct tccactatcg
+      661 gatttccgtt ttcatctaat tctatttccc catctggtgt gagcttgtaa accggctctc
+      721 ccctactgtt atgtcctact ttctctggaa tcgccatgaa aatctcgtaa tcctccttta
+      781 ttttcctctc ctcaggtctt ttctttctca gaattaatat actcgtctga gttccggtgt
+      841 gaggttcaaa cgtctctttc ggcaaatcta cactcgcaat gacatatgcc ctttcaagta
+      901 tccattctct taaccatttc aacccagggt tgctcaatat actgtctggt agaactattg
+      961 ccataaatcc tccaggtttc aaaaactgca agcatctttc tatgaatagc cgttctggtg
+     1021 gcaaagagga gcgaggcgtg ccggctttgt agaatgtgat ttcgtactgt tttaggatgt
+     1081 taaaatcatc tattacagct ctcgttccaa acggaggatt tgttactact atatcaaaga
+     1141 ttgagagagc ttcgtctatc tcttccggtc tttcgaggga gtttaagtgc cttctgaacg
+     1201 gttctaaccc accaaattct cctatcctcc ttccaaacaa tttcaataaa acatcatcgc
+     1261 tccaattggc tggatgttct aaagaatttg cgtgcatcat gtttgctgat ccatcgccgt
+     1321 gcatcaccat gttcatctgc gctactttaa ccaagaacgg attgaaatct atgccgtata
+     1381 tgttattctc agctattccc ttaacggtcc cccttaattg gtcgtattta aaccctcttt
+     1441 tctcaaaaat cttcttgtat tcatggattg ccgagatcag aaagccaccg gtaccgacgg
+     1501 ctgggtctag tattttcacg ctcgttaatc tgtcttcatc aaagagagaa aagatcattt
+     1561 ggattgtcat cttgcacacg tttctcggcg tgaaaaattc tcccctatcc cctctcaaat
+     1621 tcggacctac aatttcctca tacgcctctc ccttaatatc aacgtccgtg tccacaaggc
+     1681 tgtacttctg aagttcagcc attgcatagg ctaaaactct gtcattgaga cttatcgttt
+     1741 cgttcggatc aaatatgtaa gagtaccgct ctttcacttt ttcgaataaa ctttcaatgc
+     1801 gctttctgac ttgggcaatg tcctctcttg ggagtatata aaattgcaag ctcacgctgt
+     1861 actgttcgtc gtaaaccttt gcaaaaatca gtttcaataa ctcttcaaat gccttatcct
+     1921 tctgcaagcc ttgattggca tatatgtaat tgtgtatcct cttaaagact tgctttaaat
+     1981 taattgcagg tactagcttt gatcttacag gacgaggggt cgtagtttcc cctcttggag
+     2041 gtatatctgg aatctgaacg acgcttttct taccctcttt ttcgacgact tcaagaacta
+     2101 ttctttcgct accaacccaa agaccgtatt tagcatttgg gcacgcataa aggtatgata
+     2161 tcaattgatc taccccttga tccttgtcgg atggtttgat gtctggcttt ttcgtctcaa
+     2221 ctatgatgta cacattttct ttgctgtgaa tgctattctc ataaaatatg actaaatctg
+     2281 cccttggctt tttcctgcct atttgtattc gaaattcaac ttccatatct gtgactttgt
+     2341 atccatattc ataggcgaga ctctttgcaa cctcctgtct aactctctcc tcaggagtgt
+     2401 cttttctcaa ttttcctgaa acaaaacact taatgtagcc cgtaggtatc gtctcttcta
+     2461 taatctctcc tgtaagggtt gcctgtttac cgctcataca ttttcacctg tcagcaactt
+     2521 ggaaataaag ttgacgattt ttaaccaaca actcttccca aatacaggtt atgcttggtc
+     2581 tcaatgattc tcaccttgac gacgcttccc agcggtattt tctcggcgtt tatgagggtg
+     2641 atcgtgcgtt cacgggcgac cgccagcttc tcgttgcgga gccagccttg
+//
+

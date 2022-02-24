@@ -1,0 +1,80 @@
+LOCUS       CM001795             2757856 bp    DNA     circular CON 19-MAR-2015
+DEFINITION  Treponema denticola H-22 chromosome, whole genome shotgun sequence.
+ACCESSION   CM001795 AGDV01000000
+VERSION     CM001795.1
+DBLINK      BioProject: PRJNA64915
+            BioSample: SAMN02596721
+KEYWORDS    WGS; HIGH_QUALITY_DRAFT.
+SOURCE      Treponema denticola H-22
+  ORGANISM  Treponema denticola H-22
+            Bacteria; Spirochaetes; Spirochaetales; Treponemataceae; Treponema.
+REFERENCE   1  (bases 1 to 2757856)
+  AUTHORS   Earl,A., Ward,D., Feldgarden,M., Gevers,D., Blanton,J.M.,
+            Fenno,C.J., Baranova,O.V., Mathney,J., Dewhirst,F.E., Izard,J.,
+            Young,S.K., Zeng,Q., Gargeya,S., Fitzgerald,M., Haas,B.,
+            Abouelleil,A., Alvarado,L., Arachchi,H.M., Berlin,A., Chapman,S.B.,
+            Gearin,G., Goldberg,J., Griggs,A., Gujja,S., Hansen,M., Heiman,D.,
+            Howarth,C., Larimer,J., Lui,A., MacDonald,P.J.P., McCowen,C.,
+            Montmayeur,A., Murphy,C., Neiman,D., Pearson,M., Priest,M.,
+            Roberts,A., Saif,S., Shea,T., Sisk,P., Stolte,C., Sykes,S.,
+            Wortman,J., Nusbaum,C. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     The Genome Sequence of Treponema denticola H-22
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2757856)
+  AUTHORS   Earl,A., Ward,D., Feldgarden,M., Gevers,D., Blanton,J.M.,
+            Fenno,C.J., Baranova,O.V., Mathney,J., Dewhirst,F.E., Izard,J.,
+            Young,S.K., Zeng,Q., Gargeya,S., Fitzgerald,M., Haas,B.,
+            Abouelleil,A., Alvarado,L., Arachchi,H.M., Berlin,A., Chapman,S.B.,
+            Gearin,G., Goldberg,J., Griggs,A., Gujja,S., Hansen,M., Heiman,D.,
+            Howarth,C., Larimer,J., Lui,A., MacDonald,P.J.P., McCowen,C.,
+            Montmayeur,A., Murphy,C., Neiman,D., Pearson,M., Priest,M.,
+            Roberts,A., Saif,S., Shea,T., Sisk,P., Stolte,C., Sykes,S.,
+            Wortman,J., Nusbaum,C. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-JAN-2012) Broad Institute of MIT and Harvard, 7
+            Cambridge Center, Cambridge, MA 02142, USA
+COMMENT     This is a reference genome for the Human Microbiome Project. This
+            project is co-owned with the Human Microbiome Project DACC.
+            Source DNA provided by Jessica M. Blanton, Christopher J. Fenno,
+            Oxana V. Baranova, Jennifer MJ Mathney, Floyd E. Dewhirst, and
+            Jacques Izard. (Molecular Genetics, The Forsyth Institute, Boston,
+            MA 02115, USA).
+            Bacteria provided by Jessica M. Blanton, Christopher J. Fenno,
+            Oxana V. Baranova, Jennifer MJ Mathney, Floyd E. Dewhirst, and
+            Jacques Izard. (Molecular Genetics, The Forsyth Institute, Boston,
+            MA 02115, USA).
+            Please be aware that the annotation is done automatically with
+            little or no manual curation.
+            Gene Calling Method: Prodigal.
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: High-Quality Draft
+            Current Finishing Status :: High-Quality Draft
+            Assembly Method          :: ALLPATHS v. R37753
+            Assembly Name            :: Trep_dent_H-22_V1
+            Genome Coverage          :: 200x
+            Sequencing Technology    :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2757856
+                     /organism="Treponema denticola H-22"
+                     /mol_type="genomic DNA"
+                     /strain="H-22"
+                     /db_xref="HMP:9726"
+                     /db_xref="taxon:999432"
+CONTIG      join(AGDV01000001.1:1..528485,gap(447),AGDV01000002.1:1..3457,
+            gap(100),AGDV01000003.1:1..703,gap(717),AGDV01000004.1:1..68773,
+            gap(100),AGDV01000005.1:1..41459,gap(393),AGDV01000006.1:1..265777,
+            gap(100),AGDV01000007.1:1..17752,gap(100),AGDV01000008.1:1..12010,
+            gap(100),AGDV01000009.1:1..189484,gap(461),
+            AGDV01000010.1:1..261255,gap(100),AGDV01000011.1:1..133105,
+            gap(183),AGDV01000012.1:1..363166,gap(100),AGDV01000013.1:1..1395,
+            gap(100),AGDV01000014.1:1..63394,gap(1698),AGDV01000015.1:1..89658,
+            gap(1221),AGDV01000016.1:1..4658,gap(1528),AGDV01000017.1:1..1152,
+            gap(614),AGDV01000018.1:1..1786,gap(100),AGDV01000019.1:1..1197,
+            gap(1538),AGDV01000020.1:1..278114,gap(270),
+            AGDV01000021.1:1..421006,gap(unk100))
+//
+

@@ -1,0 +1,82 @@
+LOCUS       KB454450             2764492 bp    DNA     linear   CON 19-MAR-2015
+DEFINITION  Treponema denticola US-Trep genomic scaffold acdtB-supercont1.1,
+            whole genome shotgun sequence.
+ACCESSION   KB454450 AGEB01000000
+VERSION     KB454450.1
+DBLINK      BioProject: PRJNA64933
+            BioSample: SAMN02596727
+KEYWORDS    WGS; HIGH_QUALITY_DRAFT.
+SOURCE      Treponema denticola US-Trep
+  ORGANISM  Treponema denticola US-Trep
+            Bacteria; Spirochaetes; Spirochaetales; Treponemataceae; Treponema.
+REFERENCE   1  (bases 1 to 2764492)
+  AUTHORS   Earl,A., Ward,D., Feldgarden,M., Gevers,D., Blanton,J.M.,
+            Fenno,C.J., Baranova,O.V., Mathney,J., Dewhirst,F.E., Izard,J.,
+            Young,S.K., Zeng,Q., Gargeya,S., Fitzgerald,M., Haas,B.,
+            Abouelleil,A., Alvarado,L., Arachchi,H.M., Berlin,A., Chapman,S.B.,
+            Gearin,G., Goldberg,J., Griggs,A., Gujja,S., Hansen,M., Heiman,D.,
+            Howarth,C., Larimer,J., Lui,A., MacDonald,P.J.P., McCowen,C.,
+            Montmayeur,A., Murphy,C., Neiman,D., Pearson,M., Priest,M.,
+            Roberts,A., Saif,S., Shea,T., Sisk,P., Stolte,C., Sykes,S.,
+            Wortman,J., Nusbaum,C. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     The Genome Sequence of Treponema denticola US-Trep
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2764492)
+  AUTHORS   Earl,A., Ward,D., Feldgarden,M., Gevers,D., Blanton,J.M.,
+            Fenno,C.J., Baranova,O.V., Mathney,J., Dewhirst,F.E., Izard,J.,
+            Young,S.K., Zeng,Q., Gargeya,S., Fitzgerald,M., Haas,B.,
+            Abouelleil,A., Alvarado,L., Arachchi,H.M., Berlin,A., Chapman,S.B.,
+            Gearin,G., Goldberg,J., Griggs,A., Gujja,S., Hansen,M., Heiman,D.,
+            Howarth,C., Larimer,J., Lui,A., MacDonald,P.J.P., McCowen,C.,
+            Montmayeur,A., Murphy,C., Neiman,D., Pearson,M., Priest,M.,
+            Roberts,A., Saif,S., Shea,T., Sisk,P., Stolte,C., Sykes,S.,
+            Wortman,J., Nusbaum,C. and Birren,B.
+  CONSRTM   The Broad Institute Genome Sequencing Platform
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-FEB-2013) Broad Institute of MIT and Harvard, 7
+            Cambridge Center, Cambridge, MA 02142, USA
+COMMENT     This is a reference genome for the Human Microbiome Project. This
+            project is co-owned with the Human Microbiome Project DACC.
+            Source DNA provided by Jessica M. Blanton, Christopher J. Fenno,
+            Oxana V. Baranova, Jennifer MJ Mathney, Floyd E. Dewhirst, and
+            Jacques Izard. (Molecular Genetics, The Forsyth Institute, Boston,
+            MA 02115, USA).
+            Bacteria provided by Jessica M. Blanton, Christopher J. Fenno,
+            Oxana V. Baranova, Jennifer MJ Mathney, Floyd E. Dewhirst, and
+            Jacques Izard. (Molecular Genetics, The Forsyth Institute, Boston,
+            MA 02115, USA).
+            Please be aware that the annotation is done automatically with
+            little or no manual curation.
+            Gene Calling Method: Prodigal.
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: High-Quality Draft
+            Current Finishing Status :: High-Quality Draft
+            Assembly Method          :: ALLPATHS v. R37753
+            Assembly Name            :: Trep_dent_US-Trep_V1
+            Genome Coverage          :: 200.0x
+            Sequencing Technology    :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2764492
+                     /organism="Treponema denticola US-Trep"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="acdtB-supercont1.1"
+                     /strain="US-Trep"
+                     /db_xref="HMP:9728"
+                     /db_xref="taxon:999440"
+CONTIG      join(AGEB01000001.1:1..307712,gap(854),AGEB01000002.1:1..125125,
+            gap(2357),AGEB01000003.1:1..307949,gap(489),
+            AGEB01000004.1:1..120897,gap(2081),AGEB01000005.1:1..411846,
+            gap(100),AGEB01000006.1:1..40106,gap(100),AGEB01000007.1:1..113206,
+            gap(100),AGEB01000008.1:1..184163,gap(100),
+            AGEB01000009.1:1..137780,gap(100),AGEB01000010.1:1..25809,gap(100),
+            AGEB01000011.1:1..53315,gap(100),AGEB01000012.1:1..3581,gap(1853),
+            AGEB01000013.1:1..5054,gap(100),AGEB01000014.1:1..28984,gap(1978),
+            AGEB01000015.1:1..1044,gap(100),AGEB01000016.1:1..53269,gap(293),
+            AGEB01000017.1:1..271937,gap(100),AGEB01000018.1:1..109908,
+            gap(100),AGEB01000019.1:1..8757,gap(100),AGEB01000020.1:1..184689,
+            gap(100),AGEB01000021.1:1..258156)
+//
+

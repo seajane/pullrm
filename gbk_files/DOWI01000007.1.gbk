@@ -1,0 +1,161 @@
+LOCUS       DOWI01000007            2544 bp    DNA     linear   ENV 10-SEP-2018
+DEFINITION  MAG TPA_asm: Oscillospiraceae bacterium isolate UBA10552
+            contig_37389, whole genome shotgun sequence.
+ACCESSION   DOWI01000007 DOWI01000000
+VERSION     DOWI01000007.1
+DBLINK      BioProject: PRJNA417962
+            BioSample: SAMN08019694
+            Sequence Read Archive: SRR6482437
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG; Third Party Data; TPA;
+            TPA:assembly.
+SOURCE      Oscillospiraceae bacterium (fermentation metagenome)
+  ORGANISM  Oscillospiraceae bacterium
+            Bacteria; Firmicutes; Clostridia; Eubacteriales; Oscillospiraceae;
+            unclassified Oscillospiraceae.
+REFERENCE   1  (bases 1 to 2544)
+  AUTHORS   Parks,D.H., Chuvochina,M., Waite,D.W., Rinke,C., Skarshewski,A.,
+            Chaumeil,P.A. and Hugenholtz,P.
+  TITLE     A standardized bacterial taxonomy based on genome phylogeny
+            substantially revises the tree of life
+  JOURNAL   Nat. Biotechnol. (2018) In press
+   PUBMED   30148503
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (bases 1 to 2544)
+  AUTHORS   Parks,D.H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-APR-2018) School of Chemistry and Molecular
+            Biosciences, University of Queensland, Chemistry Bld, Cooper Road,
+            St Lucia, Brisbane, Queensland 4072, Australia
+COMMENT     Annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (released 2013). Information about the Pipeline can be
+            found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Method        :: CLC de novo assembler v. 4.4.1
+            Expected Final Version :: yes
+            Genome Coverage        :: 7.19x
+            Sequencing Technology  :: Illumina HiSeq 2000
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI
+            Annotation Date                   :: 05/03/2018 12:08:52
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS+
+            Annotation Software revision      :: 4.5
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+                                                 repeat_region
+            Genes (total)                     :: 3,480
+            CDS (total)                       :: 3,462
+            Genes (coding)                    :: 3,131
+            CDS (coding)                      :: 3,131
+            Genes (RNA)                       :: 18
+            rRNAs                             :: 1, 1, 1 (5S, 16S, 23S)
+            complete rRNAs                    :: 1 (5S)
+            partial rRNAs                     :: 1, 1 (16S, 23S)
+            tRNAs                             :: 11
+            ncRNAs                            :: 4
+            Pseudo Genes (total)              :: 331
+            Pseudo Genes (ambiguous residues) :: 59 of 331
+            Pseudo Genes (frameshifted)       :: 258 of 331
+            Pseudo Genes (incomplete)         :: 38 of 331
+            Pseudo Genes (internal stop)      :: 16 of 331
+            Pseudo Genes (multiple problems)  :: 38 of 331
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2544
+                     /organism="Oscillospiraceae bacterium"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="contig_37389"
+                     /isolate="UBA10552"
+                     /isolation_source="fermentation"
+                     /db_xref="taxon:2485925"
+                     /environmental_sample
+                     /metagenome_source="fermentation metagenome"
+                     /note="metagenomic"
+     gene            166..375
+                     /locus_tag="DEP23_00160"
+     CDS             166..375
+                     /locus_tag="DEP23_00160"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_013271887.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="XRE family transcriptional regulator"
+                     /protein_id="HCA28088.1"
+                     /translation="MITTDLGKRIQELRREKTGLSQEKFALRIGMDRTYFASVEAGRR
+                     NIAIVNIKKIADGIGVTLSELFEGL"
+     gene            461..2482
+                     /locus_tag="DEP23_00165"
+     CDS             461..2482
+                     /locus_tag="DEP23_00165"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_012799153.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="restriction endonuclease subunit M"
+                     /protein_id="HCA28089.1"
+                     /translation="MADTKVIVIPDGKICDYIDGKFRNDTPEEYVRQTIEKRLINEHK
+                     YVPDQIKIEFTLQVGSNKPRADIVVWDKDATEQTQGTIKLIIECKKETVDARNAKDGI
+                     AQLKSYMSVCPNCEWGMWTNSIQKFVFRKGIDEFGNITFMEYNDIPSADGNLDEINRP
+                     SRTSLKNAYDDNLLFVFKTCHNHIYVNDGLQKQPAFFELLKVIFCKIEDERHIPNPLE
+                     FYTTSEERSNPDGQLTVQKRIGKIFERVKKRHGKIFDANDEIKLSPRSLAYIVSELQP
+                     YSLLNTKIDIKGKAYEEIVGANLRGDRGEFFTPRNVMKMVVEMINPQIDEKVLDSSCG
+                     TGGFLVTAMTHVIDQLEKQFSDALGIKRADWDSDTVRTFQDKISEMASSNYFGFDINP
+                     DLVKATKMNMVMNNDGSGNILQTNSLLPPHEWSDEFRTRLAEALHINKNTLRNHNSIG
+                     YFDVIVTNPPFGSKIPIKDKSILEQFALAHIWECEKKTGVWKMTDRLQSSVPPEILFI
+                     ERCTQFLVPGGRLGIVLPDSILGSPGLGYIREWLIQNHRIVASIDLNVDTFQPRNGTQ
+                     TSVLILQKKTQVQKDAEEKSGNMADYNIFMAMVERVGHDKRGNPLFKRDKEGNEILVP
+                     DTNSVLVLGETGEGQRTVSHEQKVKVENDQTPDVPGIFIEWKKQEGLGW"
+ORIGIN      
+        1 ccggcgttga acgcctgtta acgattgtaa ggggtaattt tgggatgatg cctgctgcac
+       61 ctatcacctt agcaaaagaa aaaatacata ttgttgctta taaaccgttg ctttataagc
+      121 cgtgtaccag tacaattact ttgtgttggt gggaggtatg cccttatgat tactacggat
+      181 ttaggaaaac gaattcaaga actgcgaagg gaaaaaactg gactgtcaca ggagaagttc
+      241 gcccttcgta ttggtatgga caggacatat tttgcctcgg tcgaagccgg cagacggaac
+      301 atagcaattg taaacattaa gaaaattgct gacgggattg gcgttactct cagcgagctt
+      361 tttgagggcc tctaagccaa aatcttacaa gctgcgcctc agtgtgcagc ttctatttcg
+      421 gaaaatatac tgattctcag tttgcaaggg agaaagcact atggctgata caaaagtaat
+      481 cgtaatccca gatggtaaaa tatgtgatta cattgacggc aaattccgta atgatacacc
+      541 ggaagaatat gtgcgtcaga caatagaaaa aaggctcata aatgaacata aatatgttcc
+      601 ggaccagatt aagattgaat tcacgctaca ggttggctcc aataagcctc gtgcggatat
+      661 tgttgtttgg gacaaagacg ctactgagca gacacaaggt actattaaac tcattatcga
+      721 gtgcaaaaaa gaaaccgttg atgccaggaa cgccaaggat ggcattgccc agcttaaatc
+      781 ctatatgtcc gtttgcccca actgtgaatg gggaatgtgg acgaacagta tccagaagtt
+      841 tgtgtttcgc aagggtatag atgaatttgg caacatcacc tttatggagt ataatgacat
+      901 tccgtctgct gacggcaatt tggatgaaat aaaccgaccc agcagaacga gtctcaaaaa
+      961 cgcttatgac gacaacctgc tattcgtatt caaaacctgc cataaccata tctatgtgaa
+     1021 tgacggtctt caaaagcaac cagctttctt tgagctactc aaggttatct tctgcaagat
+     1081 cgaggatgag cgtcatattc caaatcctct ggaattctat accacttcag aggagcgctc
+     1141 caatccggac ggccagctta ccgtacagaa gcgaatcggg aaaatatttg agcgggtgaa
+     1201 aaagcgtcat ggtaaaattt ttgatgctaa cgatgaaatc aagctcagtc ctcgcagcct
+     1261 cgcctatatc gtcagtgaac tgcaacctta tagcctgcta aatacgaaaa ttgatatcaa
+     1321 aggcaaagcc tatgaggaaa tagtaggggc caaccttcgg ggtgatcgcg gtgagttctt
+     1381 tactccacgc aatgtaatga agatggtcgt cgaaatgatt aatccgcaga ttgacgagaa
+     1441 agtgctggac agctcctgcg gcaccggcgg ttttcttgta acggcgatga ctcatgttat
+     1501 cgaccagctt gaaaagcagt tttccgatgc gcttggtatt aaacgcgctg attgggattc
+     1561 tgatacagta cgaacatttc aggataagat ttccgaaatg gcgtcgtcca attacttcgg
+     1621 atttgatata aacccggatt tggtcaaggc caccaaaatg aacatggtta tgaacaatga
+     1681 cggcagcggt aatattctgc aaacaaactc gctcctgcct cctcacgaat ggtcggatga
+     1741 attccgtacc agactggcag aagctctcca tatcaataag aatacattgc gcaaccataa
+     1801 ctccattggc tatttcgatg tgattgttac aaacccgccg ttcggcagca aaatcccaat
+     1861 caaagacaag agcattcttg agcagttcgc gctggcacat atttgggagt gcgaaaagaa
+     1921 aaccggtgtg tggaaaatga ccgaccggct tcaatcctct gttcctccgg aaatcctgtt
+     1981 cattgagcgt tgtacacaat ttctggtgcc gggtggaagg ctgggaatcg tattgccgga
+     2041 ttcaattctt ggttctcccg gtttaggata tatccgtgag tggctgatac agaatcaccg
+     2101 cattgtagcc agtattgact taaatgttga tacatttcag cctcgaaatg ggacacagac
+     2161 ttctgtcctt attcttcaaa aaaagacaca ggtacagaag gacgcggagg aaaagagcgg
+     2221 caatatggcc gattacaaca tcttcatggc gatggtcgaa agggtaggtc atgacaagcg
+     2281 tgggaatcct ctgttcaagc gcgacaagga aggtaacgaa attcttgtgc ctgataccaa
+     2341 tagcgtcctt gtcctcggtg aaaccggtga aggacagcgt accgtttccc atgagcagaa
+     2401 ggtcaaagtg gagaacgacc agactccgga tgttcccggc atttttatcg aatggaaaaa
+     2461 gcaggaggga ttgggatggt aaactcaaac ctcgcctata aagttgagtc catatcagtg
+     2521 ccgaacgttg ttgtcaacga aagg
+//
+

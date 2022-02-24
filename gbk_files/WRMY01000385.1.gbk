@@ -1,0 +1,94 @@
+LOCUS       WRMY01000385            2556 bp    DNA     linear   ENV 20-DEC-2019
+DEFINITION  MAG: Desulfovibrionaceae bacterium isolate Th196P4bin15
+            JGI24702J35022_10038428, whole genome shotgun sequence.
+ACCESSION   WRMY01000385 WRMY01000000
+VERSION     WRMY01000385.1
+DBLINK      BioProject: PRJNA560329
+            BioSample: SAMN12582177
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG.
+SOURCE      Desulfovibrionaceae bacterium (termite gut metagenome)
+  ORGANISM  Desulfovibrionaceae bacterium
+            Bacteria; Proteobacteria; Deltaproteobacteria; Desulfovibrionales;
+            Desulfovibrionaceae.
+REFERENCE   1  (bases 1 to 2556)
+  AUTHORS   Herve,V., Liu,P., Dietrich,C., Sillam-Dusses,D., Stiblik,P.,
+            Sobotnik,J. and Brune,A.
+  TITLE     Phylogenomic analysis of 589 metagenome-assembled genomes
+            encompassing all major prokaryotic lineages from the gut of higher
+            termites
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2556)
+  AUTHORS   Herve,V. and Brune,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-OCT-2019) RG Insect Gut Microbiology and Symbiosis,
+            Max Planck Institute for Terrestrial Microbiology,
+            Karl-von-Frisch-Strasse 10, Marburg, Hessen 35043, Germany
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Date          :: SEP-2017
+            Assembly Method        :: IDBA-UD v. 1.1.1
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 41.27x
+            Sequencing Technology  :: Illumina HiSeq
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2556
+                     /organism="Desulfovibrionaceae bacterium"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="JGI24702J35022_10038428"
+                     /isolate="Th196P4bin15"
+                     /isolation_source="P4 gut compartment"
+                     /host="Termes hospes"
+                     /db_xref="taxon:2049043"
+                     /environmental_sample
+                     /country="Republic of the Congo: Pointe-Noire"
+                     /lat_lon="4.42 S 11.4949 E"
+                     /collection_date="2013-08-12"
+                     /metagenome_source="termite gut metagenome"
+                     /note="metagenomic"
+ORIGIN      
+        1 tgcttccacg ccgcaaaaat ttcaggtagt tccggcgttt ggtcatcctc aagttttttc
+       61 ttctgctgcc gcgacacagt tctgccgcct tcggcggtat tccctaaaat gagaatattg
+      121 tcgttgtcag gcacgagaat ttcgtttcct gctttgtcac gcttgaaaat aggattcccg
+      181 cgtttatcat ggccaacttt ttcgatcatc gccatgaaaa tgttataatc agccatcacg
+      241 ccgctttttt cttctttgtc tttttggcct tgtgttttct tttgaagaaa caatacagaa
+      301 gtctgtgtcc cgtttcgcgg ctgaaatgtg tctgcatgta aatcaatgct tgcgacaata
+      361 cgcgtatttc gaatcagcca ttccctgata tatccaagcc ctggcgagcc gagaatggaa
+      421 tccggcagga caatgccaag ccttcctcct ggcttgagga attggacgca ccgttcaata
+      481 aaaagaattt ccggcggcac agacgactgc aggcgagtgg tcataaccca agctccggga
+      541 ttcgacttgt tttcccagat atgcgcaagc tcaaattgtt tgagaatatt ttcgtccttt
+      601 atagggatat tgcttccaaa tggggggttg gtcacaatca catcaaaaaa gccgatggta
+      661 tcctgattgc ggatgtcggt tttatgtacg ccaagagctt ccgcaagttt actcttaaat
+      721 tcgtccaccc attcgtgcgg aggcaacaat gaattggtct gcaaaatatt gccgctgccg
+      781 tcattgttca taaccatgtt catcttcgtg gcttttacaa gatccggatt tatgtcgaaa
+      841 ccaaaataat gcgtttgcgc cagttcatat attctatcct ggtatacgcg caactcctcg
+      901 ttgttccatg tattttttga ctttttaatc tgctttgcaa aatcctgttc aagcgcggcc
+      961 attacatgcg tcatggcact gacaagaaag ccgccggtac cgcaagagct atccagaaca
+     1021 ctatcgcgcg ttgttggatt aatcatggag acagccattt tcataatatt gcggggagta
+     1081 aaaaattcgc cgcggtcgcc gcgaagattc gcgccgacga tttcctcata agccttgcct
+     1141 ttgatgtcta tgttggtgtt gagcaagcta tatttttgca actcgctcac aatatacgcc
+     1201 aaactgcggg gaaccagttt tatttcttca ttggtttcaa aaatctttcc gtgtttcttc
+     1261 ttaacgcgat caaaaatatt ggaaatacgt tttttgactg ttagctgtcc atcagggtta
+     1321 ctacgctctt tcgatgttgc gtagaattca agcggataag gaatgttccg ttcatcctca
+     1381 attttacaaa aaatgacttt gagcaattca aagaatgcgg gctgtttttg taaaccgtca
+     1441 ttcgcatata tatgattatg gcatgttttg aaaacgaata acagattatt atttatattg
+     1501 tcaccatgcg ctgttacaag tgtgttccga tttggcctgt caatctcttc tagatttccg
+     1561 tcagcggacg gaatatcatt gaagtcatca aagataatcc tcccttgctc gttgactgcc
+     1621 ttgcgataaa cttctttatg cttaccattt gtccacatgc cccattcgca gtttccacac
+     1681 gcttgcatat aagatttgag ctgttctacg ccgtcattgg cgttctttgg ctctacagtt
+     1741 tctttcttac attctatgat gatacggata ttttcctgtg tccggtttgt gcagtcacgg
+     1801 tcaaagataa caatatccgc gcgtttcttg ctggatccga gttgcaattt atactcgact
+     1861 ctaatttgag acggaagata cttatgctcg ttaacaaggc gcttttcaat ggtctggcgg
+     1921 acatattctt ccggcgtatc gctacggaat gttccgtcta tatagtcgca gattttccct
+     1981 tccgggatta caattacttt ctgcgcctgt tctgcttttg ccataactgt cacactccgt
+     2041 tcgctttgcg gtctgttttg cgccccttta tgcgatgcaa acgcaacact accagtccag
+     2101 cgtcgttgta aacgcgtatg cgagttcctc cacatcttcg cgcagcagtt cccggcccgc
+     2161 gtgttcgatg cgcaacgcgg ccccatccgt tgtccggccg atgcgagcgc atatctgacc
+     2221 ttcaaaggcg tcttcaaaat cttcgatcat gtcgccgcgc acggaaacga gcaagcggct
+     2281 cgcggattcc gcatagagca gttcggccgg gttcatggct tccagcgcgg tcacgtcgtc
+     2341 aagcctgatg tccgcgccct ggcggccggc cagacacatt tccgcgacag ccacgcccag
+     2401 gccgccgtca gaaaggtcat ggcaggcggt aatcatgcgc cgctgcatgc agcggtgcag
+     2461 cgtacggtag cgaaccaacg cgctttgggc gtccacatgg ggcgcgcggc ctcccgcaag
+     2521 cccctgttcg cttgccgcct cgctgccgcc cagctc
+//
+

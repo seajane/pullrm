@@ -1,0 +1,133 @@
+LOCUS       PMZM01000041            4946 bp    DNA     linear   ENV 25-MAY-2018
+DEFINITION  MAG: Verrucomicrobia subdivision 3 bacterium isolate fen_1390
+            73.20110800_E3D.52_contig_23138, whole genome shotgun sequence.
+ACCESSION   PMZM01000041 PMZM01000000
+VERSION     PMZM01000041.1
+DBLINK      BioProject: PRJNA386568
+            BioSample: SAMN08179079
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG.
+SOURCE      Verrucomicrobia subdivision 3 bacterium (peat metagenome)
+  ORGANISM  Verrucomicrobia subdivision 3 bacterium
+            Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales;
+            Verrucomicrobia subdivision 3.
+REFERENCE   1  (bases 1 to 4946)
+  AUTHORS   Woodcroft,B.J., Singleton,C.M. and Boyd,J.A.
+  TITLE     Genome-centric metagenomic insights into microbial carbon
+            processing across a permafrost thaw gradient
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 4946)
+  AUTHORS   Woodcroft,B.J., Singleton,C.M. and Boyd,J.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-DEC-2017) Australian Centre for Ecogenomics, The
+            University of Queensland, Level 5, Molecular Biosciences Bldg, The
+            University of Queensland, Brisbane, Qld 4072, Australia
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Date          :: 13-MAY-2015
+            Assembly Method        :: CLC Genomics Workbench v. 4.4
+            Assembly Name          :: 20110800_E3D
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 23.92824987x
+            Sequencing Technology  :: Illumina NextSeq
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..4946
+                     /organism="Verrucomicrobia subdivision 3 bacterium"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="73.20110800_E3D.52_contig_23138"
+                     /isolate="fen_1390"
+                     /isolation_source="permafrost active layer soil"
+                     /db_xref="taxon:2052186"
+                     /environmental_sample
+                     /country="Sweden: Stordalen Mire"
+                     /lat_lon="68.3534 N 19.0467 E"
+                     /altitude="363 m"
+                     /collection_date="16-Aug-2011"
+                     /metagenome_source="peat metagenome"
+                     /note="metagenomic"
+ORIGIN      
+        1 aagttcgaga aggtggaaga agtcgaaggc cgagaaggac agatacagga tttcgtctcg
+       61 ggtcactggg tcaaagccgg cccggaagaa gttgaagccg tccagatttt cgcccgacga
+      121 ttggtagagg actacgggta cgccaagagc cagattcaga cgcgtcccca gcaccgggtc
+      181 cgcatccgcc cgtccgacga ggagaagtcc taccccgtcg atatcgccgt cttcaactcg
+      241 gccaaaaaaa ccgaggatga gttattcatg gtggtggagt gcaagaagaa ggagcggaag
+      301 gacggcgagc accaactgcg gctttacatg gacatgtctg ccgccgaagt tggtgtgtgg
+      361 tttaacggcg acgctcactt gtatctccgt aagatccacc acaaggatgg gaaacgcacc
+      421 tatgagacgc ttcccaacat tccccgcaag ggccagcgca ttgaggacat cgggctctac
+      481 aagagaaagg atctcaagaa gccatctaac ctcaaggccg tgttccgcga cctgcggaac
+      541 cacctagctg gcatgactac cgggataacg cgggacgaag cgctcgccca agagataatc
+      601 aacgttttgt tctgcaagat tctcgacgaa caggagacga accctgacga tacggtttcc
+      661 ttccgtgccg gcgtgggcga gtcacccaag gaagtccaga aacgcatcat ggccatgttc
+      721 gagcgcgtaa aggatgcggc ctacggtgac gtgttcgagg tcagcgacac catcaagctc
+      781 gaccccgaca gcctgaccta cgtcgtcggc gaacttcaga attattctat tatggaggcc
+      841 gaccgcgatg ccataggcga cgccttcgag gtgtttattg gcccggccct gcgcggctct
+      901 gaggggcaat ttttcacgcc gcgcaacgtg gttgaaatga tggtgaagat cgtggatccc
+      961 aagccgggcg agcggatcat tgatcccgcg tgcggatcgg gcggctttct gattacggca
+     1021 ctggcgcatg tgtgggggaa attgtgcgac gaggccaaac gcaaagggtg gtccgagcgc
+     1081 cagctggcca agcgggagtt cgaggtggcc accgattgtt tccggggcat cgacaaggac
+     1141 cagttcttgg cgaaggtttg caaagcgtat atggcgctca tcggcgatgg acgcggcggg
+     1201 gtgttctgtg aaaatacgtt ggaacgaatg acgtcctggt ccgatgcgat gcagcataag
+     1261 gtcaaacccg ggaacttcga tgtggtgatg accaatccgc ccttcggcaa gaaaatcgtc
+     1321 gtcaagggcg agccgatcct gtcgcagttt gatttgggct acaagtggaa gcggaacaag
+     1381 gaaaccaaaa ccgtcgagaa gacgggcacg ctccacgacg accagccgcc ccaaatcctg
+     1441 ttccttgaac ggtgcctaca actgctaaag ccgggtggac ggctcggcat cgtgttgccc
+     1501 gaagcggtct ttggcatgcc gacctacgaa tatgtcgtct cctggctaaa gagccgggcc
+     1561 aagattcgcg gcgtcgtgtc aatgcccgaa gcgctcttca agaccagcgg caagggcggc
+     1621 acccacgcca aggtctgcgt cttgttcgtg gaaaacacta agcccaagaa ggacgaggac
+     1681 tacgaaatct tcatggcgga cgtgaagtgg tgcgggcacg actcgcgagg taatccgacc
+     1741 atccggaagg acaagactgg gaatggtgtc ctgttggatg aagtgcccac cgtccaagag
+     1801 agatgggcca aaataattgg aaagtggtga ggagccgcga tcatgaccac aacaaccact
+     1861 caagaccaca ctggttttag gatgaccctc ggagccattc gccgcggtgt cttcctgccc
+     1921 aggtactaca acccagagat tactgcgaga cttgccgact tgcgaaagac gcacgacctc
+     1981 gtagtgttag gcgaactctt agcaaagaag cacattcagg ccgcaaccgg cgacgaaatc
+     2041 ggcaagatgg catacggcac gggcacgatc ccatttgtcc gaacctcgga cgtctctaat
+     2101 ggggaactca agacggacgc caagcaaggc gtcagcgaag atatttatgc tgagtacggt
+     2161 ccatctcagg atgtacgggc cggtgacata ctctttgttc gcgacgggac ctatctgatc
+     2221 gggcaagttg cccttgtgac tgaatccgat ctgccgctgc tctaccaatc gcacttgctt
+     2281 aagtttcggg taaaacagga ctcgccgctc tcgccctggc tcctcctggc ttgcttgagt
+     2341 gcgcctatcg tcaaacgcca gattcgcgcc aagcagttca cagcggacat tatcgatact
+     2401 gtgggcgacc ggttccgcga attggtgctt ccggtcccga aggacagggc acttgccgcg
+     2461 cagatttcgc gcgaagtcaa agatttggtt acggagcggt cacgtctccg cgacaagatt
+     2521 cgcaagatac catattgggt ccaaggttac atcaagacga ttgacgaggt tgtaccggac
+     2581 agcgcggtag cggaggtcgt tgagcacggc aatccgggtt tcgtccgggc gctttcaagc
+     2641 ctccgcaaca gcatcttcat gccgaggtac tacgaccccg agttggaggc ggacattgcc
+     2701 gcgttggggg gggcacaccg tctggaatcc cttgccaagt tggtaaagga tggtgttctc
+     2761 acttgggata cggggattga agtcggcaag atggcctacg ggaccggcga tattccgttc
+     2821 attcgcacat cggacatctc caactgggaa ctcaagggcg accccaagca gaacgtcagc
+     2881 gaggaaatct acgaggacaa caagcaggat gttcgcgccg gggacatctt cgtggtccgc
+     2941 gacggcacgt accttgtggg catctcctgc atcctcaccg aggaggacac caagattctc
+     3001 tattgtggcg gattatataa actgcggatc gtgaagccag agaagatgga cccctacctc
+     3061 ctactcgcac tcctgaatgc gccgatcgtt cgacgccaaa tgcgcgccaa acagttcacg
+     3121 cgcgacatca tcgacaccct aggcaagagg cttttcgagg ttcttctgcc catcccaaag
+     3181 gatgtgggca cgtgcgatag catcgcgaag gaaacacgcg aagtgatcga gacgcgcgca
+     3241 aagctccgcg accgcacaaa ggaaattgcg cttgagattg aaggattgga catagcgtgc
+     3301 gcagaagata tcgacggtct ggatgtcgtg tagctgagac gtaagcgcct gcccacgcac
+     3361 cgctcaggca ggtaaaaagg aggcattgca ttgatcagtc tgatgccaac aattttcttc
+     3421 ggacatggca atccgatgaa tgccatgtcg aagaatagtt acactgaaag ctgggcctct
+     3481 atcggcaaat caattccacg ccccaaggcc gtgcttgccg tgtctgctca ctggtatata
+     3541 ccgtactgcg cggtaacctc aaatcttaac ccgcgcacaa tccacgattt tggcggcttt
+     3601 cccaaagagc tttaccaaat tgaatatcct gcgcccggca gtcttgaact ggcgttgcgt
+     3661 gttcaagctc tgctggcccc tgtttcgata agccttgatg aacgctgggg gcttgatcat
+     3721 ggaacatggg ccgtgttgaa acacgtcttt ccgaaagcgg atatccccat cgtccaactc
+     3781 agcatcaacc agatgcagcc gccatcattc cattatgaat tagggaaaag gctggcgtca
+     3841 ctgcgggaag aaggggtttt aattatcggc agcggcaata ttgttcataa tttatcggcc
+     3901 tattcatggg gtgaaggtga cggtccacct tttgactggg ctgtgcggtt tgaggaacag
+     3961 gcgtgggagt cgttgctcaa aggcgatgat acgccgcttg tcaattacaa gagcttagac
+     4021 cgtgatgcga tgctgtctgt tccgacaccg gatcattatc tgccgctgct ttatgtgctt
+     4081 ggccttcgcc ggaaaaatga gaaggtcagc tttccgatac aagggattga tggcggctca
+     4141 atctcgatgc ttgccgtaca gatgggttaa gggcatcgaa tccagattag aggagaatca
+     4201 tatgaagaaa ttaattctgc agggacattc aacgtatgac ggagccggag ttaaattgaa
+     4261 gcgtattttc gcgcatgacc acacaaaact taccgatccg ttcctgctcc tcgatcattt
+     4321 cggttcagac aatcccgacg attatgtaaa aggtttcccc tggcatcctc atcgcgggat
+     4381 tgaaacagtg acctatatgc ttggtggaac ggttgagcat ggcgacaata tcggtaacgc
+     4441 gggcacgatc gggccggggg atattcaatg gatgaccgcg ggtggcggcg tcattcacca
+     4501 ggaaatgccg aaaccttcca aaggaatgat gcacgggttg cagttgtggg taaatctgcc
+     4561 ggcgaaaaat aagatgatgg agccgcgtta caggggtata ctcgaaaacg aagtgccggt
+     4621 cgtcaagata ccgggcggcg aagtgcgggt tatcgccggt gcttacaaaa atgttaccgg
+     4681 gcccgtgcag aaactgatag tagatgtcga gtatctggat gtccggttaa agaagggaac
+     4741 gtctttatcg catgagtcta aaaaaggata caccagcttt tgttatctga tctccggaac
+     4801 aggcgagttt gatgacacga aactggagca agcacagttg attctgttca cggatgccgg
+     4861 cagcattgcc ataaaggcga ttaatgatat tcattacata tttgttaccg gaaagcagct
+     4921 caacgaaccg attgcctggg gcggcc
+//
+

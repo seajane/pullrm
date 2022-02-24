@@ -1,0 +1,97 @@
+LOCUS       GL878519             1272504 bp    DNA     linear   CON 17-SEP-2013
+DEFINITION  Dialister micraerophilus DSM 19965 genomic scaffold SCAFFOLD1,
+            whole genome shotgun sequence.
+ACCESSION   GL878519 AFBB01000000
+VERSION     GL878519.1
+DBLINK      BioProject: PRJNA53029
+            BioSample: SAMN00260258
+KEYWORDS    WGS; STANDARD_DRAFT.
+SOURCE      Dialister micraerophilus DSM 19965
+  ORGANISM  Dialister micraerophilus DSM 19965
+            Bacteria; Firmicutes; Negativicutes; Veillonellales;
+            Veillonellaceae; Dialister.
+REFERENCE   1  (bases 1 to 1272504)
+  AUTHORS   Muzny,D., Qin,X., Deng,J., Jiang,H., Liu,Y., Qu,J., Song,X.-Z.,
+            Zhang,L., Thornton,R., Coyle,M., Francisco,L., Jackson,L.,
+            Javaid,M., Korchina,V., Kovar,C., Mata,R., Mathew,T., Ngo,R.,
+            Nguyen,L., Nguyen,N., Okwuonu,G., Ongeri,F., Pham,C., Simmons,D.,
+            Wilczek-Boney,K., Hale,W., Jakkamsetti,A., Pham,P., Ruth,R., San
+            Lucas,F., Warren,J., Zhang,J., Zhao,Z., Zhou,C., Zhu,D., Lee,S.,
+            Bess,C., Blankenburg,K., Forbes,L., Fu,Q., Gubbala,S., Hirani,K.,
+            Jayaseelan,J.C., Lara,F., Munidasa,M., Palculict,T., Patil,S.,
+            Pu,L.-L., Saada,N., Tang,L., Weissenberger,G., Zhu,Y., Hemphill,L.,
+            Shang,Y., Youmans,B., Ayvaz,T., Ross,M., Santibanez,J., Aqrawi,P.,
+            Gross,S., Joshi,V., Fowler,G., Nazareth,L., Reid,J., Worley,K.,
+            Petrosino,J., Highlander,S. and Gibbs,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-FEB-2011) Human Genome Sequencing Center, Baylor
+            College of Medicine, One Baylor Plaza, Houston, TX 77030, USA
+COMMENT     Dialister micraerophilus DSM 19965
+            
+             Strain source, body site: Urogenital tract, Vaginal
+            
+             Inquiries should be directed to microbe@hgsc.bcm.tmc.edu
+            
+             This is a reference genome for the Human Microbiome Project. This
+            project is co-owned with the Human Microbiome Project DACC. This
+            sequence is generated as a part of the Human Microbiome Project
+            (HMP), funded by the National Institutes of Health (NIH), National
+            Human Genome Research Institute (NHGRI) Large-Scale Sequencing
+            Research Network and the National Institute of Allergy and
+            Infectious Diseases (NIAID) Microbial Genome Sequencing Centers
+            Program. The mission of the HMP is to generate resources to enable
+            the characterization of the human microbiota, the microbial
+            communities living within human bodies, and analyze the role of
+            these organisms in human health and disease. See
+            http://www.hmpdacc.org/ for more information.
+            
+             The sequenced strain was obtained from DSMZ. The genomic DNA was
+            prepared from a single bacterial isolate. The sequence generated
+            included at least 10 fold coverage of Roche/454 Lifesciences FLX
+            fragment data and at least 8 fold clone coverage of Roche/454
+            Lifesciences paired-end data. The Roche/454 Lifesciences sequence
+            was assembled using the Roche/454 Lifescience Newbler assembler.
+            This draft assembly meets the HMP draft quality standards (more
+            than 90% of the genome is included in contigs, more than 90% of a
+            core set of bacterial genes are found with > 30% identity and > 30%
+            length; more than 90% of the bases in the assembly have more than 5
+            fold sequence coverage, the contig N50 length is greater than 5kb,
+            the scaffold N50 length is greater than 20kb, and there is less
+            than 1 gap per 5kb).
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: Standard Draft
+            Current Finishing Status :: Standard Draft
+            Assembly Method          :: Newbler Assembler v. 2.3-04192010
+            Genome Coverage          :: 67.77x
+            Sequencing Technology    :: 454
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1272504
+                     /organism="Dialister micraerophilus DSM 19965"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="SCAFFOLD1"
+                     /strain="DSM 19965"
+                     /isolation_source="urogenital tract, vaginal"
+                     /host="Homo sapiens"
+                     /culture_collection="DSM:19965"
+                     /type_material="type strain of Dialister micraerophilus"
+                     /db_xref="HMP:9083"
+                     /db_xref="HOMD:tax_843"
+                     /db_xref="taxon:888062"
+CONTIG      join(AFBB01000001.1:1..23853,gap(50),AFBB01000002.1:1..224978,
+            gap(1351),AFBB01000003.1:1..1897,gap(966),AFBB01000004.1:1..5400,
+            gap(972),AFBB01000005.1:1..43051,gap(707),AFBB01000006.1:1..90852,
+            gap(1133),AFBB01000007.1:1..78426,gap(3178),
+            AFBB01000008.1:1..34495,gap(1017),AFBB01000009.1:1..107499,
+            gap(1053),AFBB01000010.1:1..29697,gap(287),AFBB01000011.1:1..10796,
+            gap(3911),AFBB01000012.1:1..86658,gap(475),AFBB01000013.1:1..21903,
+            gap(118),AFBB01000014.1:1..4020,gap(938),AFBB01000015.1:1..4149,
+            gap(376),AFBB01000016.1:1..98593,gap(1098),AFBB01000017.1:1..60821,
+            gap(752),AFBB01000018.1:1..59266,gap(969),AFBB01000019.1:1..19087,
+            gap(525),AFBB01000020.1:1..40980,AFBB01000021.1:1..13367,gap(3883),
+            AFBB01000022.1:1..2536,gap(1391),AFBB01000023.1:1..16389,gap(304),
+            AFBB01000024.1:1..36064,gap(50),AFBB01000025.1:1..126692,gap(237),
+            AFBB01000026.1:1..5294)
+//
+

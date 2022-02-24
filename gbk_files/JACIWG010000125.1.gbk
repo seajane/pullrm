@@ -1,0 +1,227 @@
+LOCUS       JACIWG010000125         4242 bp    DNA     linear   ENV 01-SEP-2020
+DEFINITION  MAG: Nitrososphaeria archaeon isolate MAG-19
+            Nitrososphaeria_E3_bin12_Scaffold_126, whole genome shotgun
+            sequence.
+ACCESSION   JACIWG010000125 JACIWG010000000
+VERSION     JACIWG010000125.1
+DBLINK      BioProject: PRJNA635524
+            BioSample: SAMN15637569
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG.
+SOURCE      Nitrososphaeria archaeon (oil production facility metagenome)
+  ORGANISM  Nitrososphaeria archaeon
+            Archaea; Thaumarchaeota; Nitrososphaeria.
+REFERENCE   1  (bases 1 to 4242)
+  AUTHORS   Liu,Y., Chen,J., Liu,Z., Shou,L., Lin,D., Zhou,L., Yang,S.Z.,
+            Liu,J.F., Li,W., Gu,J.D. and Mu,B.Z.
+  TITLE     Anaerobic degradation of paraffins by thermophilic Actinobacteria
+            under methanogenic conditions
+  JOURNAL   Environ. Sci. Technol. (2020) In press
+   PUBMED   32786606
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (bases 1 to 4242)
+  AUTHORS   Liu,Y.-F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JUL-2020) Bioengineering, East China University of
+            Science and Technology, 130, Meilong Rd, Shanghai 200231, China
+COMMENT     The annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (PGAP). Information about PGAP can be found here:
+            https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Method        :: SPAdes v. 3.11.1
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 7.2013167072x
+            Sequencing Technology  :: HiSeq X Ten
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI
+            Annotation Date                   :: 08/05/2020 21:29:22
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline (PGAP)
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS-2+
+            Annotation Software revision      :: 4.12
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+                                                 repeat_region
+            Genes (total)                     :: 2,174
+            CDSs (total)                      :: 2,126
+            Genes (coding)                    :: 2,091
+            CDSs (with protein)               :: 2,091
+            Genes (RNA)                       :: 48
+            rRNAs                             :: 1, 1 (5S, 16S)
+            complete rRNAs                    :: 1 (5S)
+            partial rRNAs                     :: 1 (16S)
+            tRNAs                             :: 45
+            ncRNAs                            :: 1
+            Pseudo Genes (total)              :: 35
+            CDSs (without protein)            :: 35
+            Pseudo Genes (ambiguous residues) :: 18 of 35
+            Pseudo Genes (frameshifted)       :: 11 of 35
+            Pseudo Genes (incomplete)         :: 4 of 35
+            Pseudo Genes (internal stop)      :: 7 of 35
+            Pseudo Genes (multiple problems)  :: 4 of 35
+            CRISPR Arrays                     :: 4
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..4242
+                     /organism="Nitrososphaeria archaeon"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="Nitrososphaeria_E3_bin12_Scaffold_126"
+                     /isolate="MAG-19"
+                     /isolation_source="Shengli oilfield at Shandong province"
+                     /db_xref="taxon:2268198"
+                     /environmental_sample
+                     /country="China: Dongying"
+                     /lat_lon="38.15 N 118.5 E"
+                     /collection_date="2016-04-11"
+                     /metagenome_source="oil production facility metagenome"
+                     /note="metagenomic"
+     gene            complement(<1..530)
+                     /locus_tag="H5T50_07815"
+     CDS             complement(<1..530)
+                     /locus_tag="H5T50_07815"
+                     /inference="COORDINATES: protein motif:HMM:NF012464.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="recombinase family protein"
+                     /protein_id="MBC7091793.1"
+                     /translation="MRCAIYIRVSTEEQANKEISSLDAQQDLLESYIKNHNYQLVAIY
+                     REEGLSGTNIKNRPQLKQLLLDAKLRKFDIMLVTDLDRISRNLRDFLNIWQVFKENGI
+                     KFIAINQNIDTSTIVGEALVQQLMVFAELESKMNKQRAEQKRKFEITKKGKWYGGTVP
+                     IGFDYDRKAKKLIPNK"
+     gene            complement(533..1894)
+                     /locus_tag="H5T50_07820"
+     CDS             complement(533..1894)
+                     /locus_tag="H5T50_07820"
+                     /inference="COORDINATES: protein motif:HMM:NF013579.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="restriction endonuclease subunit S"
+                     /protein_id="MBC7091794.1"
+                     /translation="MIISEIKYSQMNKRLRFDAEHYQPLFLKTEEILKKVKSVPLREI
+                     ASFSKLRKNPEQEPEKEFKYIDISNVNIFTGEIKVQILKGYEAPTRARKVVRKDDIIL
+                     STVRPNRNAVAIIPEELDNEMCSTGFAVIKAKKVLPHYLFAFLKTKYAINQLIRFTMA
+                     SMYPAVSEEDIGDVLVYVPPPSFQEKIRDLILKAKGKESLAEQKYKEAKLLLNNYLGI
+                     KSYNFKWEKIYVIPYSEIIDHKRCDSIFHNPFFNEIEYLTYQGAKKGLYQLLPLSKIG
+                     VLSKGIEVGSDEYVDKGILFLRVSNITETEIVITDSAEYIRPSLFEQLKDKYQPSPDE
+                     VLFTKDATIGIAFVVQDDFNEFIVSGGIVRIKSEKVNPYYLAIALNSIICRSQAERYS
+                     IGAVIKHLSFSNLKNILIPVIEEKKQEEVAKLVEESLRLKKEAKETLKGAIQQIENLI
+                     HRE"
+     gene            complement(1907..3790)
+                     /locus_tag="H5T50_07825"
+     CDS             complement(1907..3790)
+                     /locus_tag="H5T50_07825"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_000065395.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="N-6 DNA methylase"
+                     /protein_id="MBC7091795.1"
+                     /translation="MAEYVKPKETLLGVDLEIQEGKIKDFLTGTWIRHTPEEEVRQIM
+                     LRRLILEYGYPKDCIQTEFNIQKGSKRIGPADIVVFRDSKKKIQENIWIIVETKRKDR
+                     TDGIDQLKSYLSPCKGAKFGVWFNGSDIAYLEVLDRPPYFKEVFKIPKYGETTIHLPL
+                     KKDLKPAPELKSVFETCHNYIYANEGLLKEKVFNEVLKLIFIKMVDEKSANPQCEFGI
+                     TREEEEQIREGKDSPFIKRILNLFERVKTEYKDVFDPHEQINLKPITLAFVVSQLQDY
+                     SLIKTPADIKGTAFQTFVYAHQRGERGEFFTPYPIVELAVKMLDPKDYELVLDPACGS
+                     GGFLIQAMKHVWDTIDKNRPDLEEKTRLDMKVRYAHTYIRGIDINPDLAKVAKMHMVL
+                     YDDGHTGIFAENALEEFSRIEETTRGPSQITKECADIVMTNPPFGSKGKITDKRILRQ
+                     FELGYKWKYDKKSGKWIKTDQLQNGQTPEILFIERCLQFLKDGGRMAIVLPDGILNNA
+                     SLGYVREFIQQKARILAVVSMPVGTFMHAGVNPKTSILFLQKLNPKELKKLKSQNYPI
+                     FMAVIEKVGYDLNSKTPKILYKKDNRGNIIRDDNGEPIIDTDVPEVIEAFEEFKRKHT
+                     LGF"
+     gene            complement(3805..>4242)
+                     /locus_tag="H5T50_07830"
+     CDS             complement(3805..>4242)
+                     /locus_tag="H5T50_07830"
+                     /inference="COORDINATES: protein motif:HMM:NF015935.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="JAB domain-containing protein"
+                     /protein_id="MBC7091796.1"
+                     /translation="AILAACFEISRRIQSQPETRKVIFKKSEDVAKYYIPLIGSLKKE
+                     VFRVALLDGANKLIKDITVSEGTLNTSIVHPREVFRDALIEATAGIVLVHNHPSGDPT
+                     PSEDDIKITRQLLEASKIFGIKIFDHVIVSSNGFKSLADEGIL"
+ORIGIN      
+        1 ttcttgttag gaatgagttt cttagccttt ctatcataat caaagccaat tggaacagtt
+       61 ccaccatacc atttaccctt ttttgtaatt tcaaattttc ttttttgttc tgctctttgt
+      121 ttattcattt tgctctcaag ttcagcaaaa accattaact gttgaacaag tgcctctccc
+      181 acgatagtag atgtatcaat gttttgattt atagcaatga atttaattcc gttttcttta
+      241 aatacctgcc agatgttaag aaaatctctt aagtttctgc ttatacgatc aaggtctgta
+      301 acaagcatta tgtcaaattt cctcaattta gcatccaaaa gaagttgctt taattgagga
+      361 cgatttttga tatttgttcc agatagacct tcttccctgt aaatggctac aagttggtaa
+      421 ttgtggtttt tgatataact ctcaagcaaa tcttgctggg catcaagaga acttatttct
+      481 ttatttgcct gttcttctgt ggaaactctt atataaattg cacatcgcat gattattctc
+      541 tatgaattaa attttctatt tgctggatag ctccttttaa agtttcttta gcttcttttt
+      601 taagtcgtaa ggattcttca acaagcttgg ctacctcttc ttgctttttt tcttctatta
+      661 caggaataag tatattttta agattagaga aagaaaggtg ttttattacg gcacctattg
+      721 aatatctttc tgcctgactt ctacaaatta ttgaatttaa agcaatagct aaataatatg
+      781 gattcacttt ttcagattta attcttacaa tacccccact aacaatgaac tcattaaaat
+      841 cgtcttggac tacaaaagca attccaatag ttgcgtcttt tgtaaataat acttcatctg
+      901 gtgaaggttg atatttatcc ttaagttgct caaatagaga aggtcttatg tattcagcac
+      961 tatcagtaat aacaatttca gtctcagtaa tatttgacac ccttagaaaa agaattcctt
+     1021 tgtcaacata ttcatcagaa ccaacttcta taccctttga tagtacacct attttagaca
+     1081 acggcaggag ttgatataat cctttttttg ctccttggta agttagatat tctatctcat
+     1141 taaaaaatgg attgtgaaat atggaatcac atcttttatg atctattatt tctgaataag
+     1201 gaattacata aatcttttcc catttaaaat tatagctttt tatacccaaa tagttattta
+     1261 gcaacaattt tgcttcttta tatttttgct ctgccaagct ttcttttcct tttgctttta
+     1321 gtattaaatc tcttatcttt tcctgaaaag atggtggagg aacataaact aaaacatccc
+     1381 ctatatcttc ctctgaaaca gcaggataca tagaagccat agtaaatctt ataagttggt
+     1441 ttattgcata ttttgttttg agaaatgcaa ataaatagtg gggtaatact ttctttgcct
+     1501 taattactgc aaaaccggta gaacacattt cattatctaa ttcttcaggt attatggcta
+     1561 ctgcatttct atttggtctt acagtggaga ggattatatc gtcttttctg acaacttttc
+     1621 ttgctcttgt aggggcttcg tatcctttaa gaatctgaac tttgatttct cctgtaaaaa
+     1681 tgttcacatt gctaatatct atatatttaa attccttttc aggttcttgt tcaggatttt
+     1741 ttctaagttt tgaaaagcta gctatttctc ttaaagggac actctttact tttttaagta
+     1801 tttcctcggt cttaagaaaa agaggctgat agtgttcagc atcaaatctt aatcttttgt
+     1861 tcatttggct gtattttatt tcagaaataa tcatgatatt ctccttttaa aaacctaaag
+     1921 tatgctttct tttaaattct tcaaatgctt ctataacttc tggaacatca gtgtcaataa
+     1981 tcggttcgcc attgtcatcg cggattatat tacctcggtt gtccttctta taaagaatct
+     2041 tcggagtttt tgaattaaga tcatatccta ctttttctat tactgccata aaaatcggat
+     2101 agttctgaga tttcaatttt ttaagttctt ttggattaag tttctgtaag aatagaatgc
+     2161 tggttttagg attaactcct gcgtgcataa atgttcctac tggcatggac actacagcaa
+     2221 gtattcttgc tttttgttga ataaattctc ttacatagcc aagtgaagca ttattcaata
+     2281 ttccatccgg taaaactatt gccattcttc caccatcttt aagaaattga agacaacgct
+     2341 caataaatag tatttctgga gtttgtccgt tttgaagctg gtctgtcttt atccattttc
+     2401 cagatttctt atcatatttc catttatacc caagttcaaa ttgtctaaga attcttttat
+     2461 cagtgatttt acctttactt ccaaaaggtg gattagtcat tacaatatct gcacattctt
+     2521 ttgtaatttg gcttggtcct ctcgttgttt cttcaatccg ggaaaactcc tcaagggcat
+     2581 tctcagcaaa tattcctgta tgtccatcat cataaagaac catatgcatt tttgccacct
+     2641 tagcaaggtc aggatttata tcaattcctc ttatgtaagt atgagcgtat ctgactttca
+     2701 tatccagtct tgtcttttct tctaagtcag gtctgttttt atcaattgta tcccatacat
+     2761 gtttcatagc ctgaataaga aatcctcctg aaccacaagc aggatcaagg actaattcgt
+     2821 aatctttagg gtcaagcatt ttaacagcaa gctcaacaat aggataaggt gtaaagaatt
+     2881 ctcctctttc tcctcgctga tgggcatata caaatgtttg gaaagcggtt ccttttatat
+     2941 ctgctggtgt tttgataaga ctataatcct gtagctgact gactacaaag gcaagagtta
+     3001 taggcttaag attgatttgt tcatgaggat caaaaacatc tttatattct gtttttactc
+     3061 tttcaaacaa gttaagtatt cttttaataa atggactatc tttaccttct cttatttgtt
+     3121 cttcttcttc tcgagttata ccaaattcac attgaggatt ggcacttttc tcatccacca
+     3181 tttttataaa aataagttta aggacttcat taaatacttt ttctttaagt aaaccctcat
+     3241 tagcatagat gtaattgtgg caggtttcaa agacactttt taattctggt gctggtttta
+     3301 aatctttctt taaaggaagg tgtattgtag tctcaccata ttttgggatt ttaaaaactt
+     3361 ctttaaaata gggaggtcta tcaagcactt caaggtaggc tatatctgaa ccgttgaacc
+     3421 atacgccaaa ctttgctcct ttacatggag aaagataact tttgagttga tctattccgt
+     3481 ccgttctatc ctttctttta gtctcaacaa ttatccaaat attctcctga atctttttct
+     3541 ttgaatctct aaaaactaca atgtcggcag gtccaattct tttacttcct ttctgaatgt
+     3601 taaattctgt ttgaatacag tcttttggat atccatattc aagaataagt cttcttaaca
+     3661 ttatctgcct tacttcttct tcaggagtat gccttatcca tgtcccagta aggaagtctt
+     3721 ttatttttcc ttcttggatt tcaaggtcaa ctccgagcag agtttctttt ggttttacat
+     3781 attcagccat atttttcctc cagtttataa tatgccttca tctgcaaggc ttttaaatcc
+     3841 atttgaacta acaattacat gatcaaaaat ttttattcca aaaattttac tagcttcaag
+     3901 aagttgtctt gtgattttta tatcatcttc acttggtgta ggatcgccac tgggatgatt
+     3961 atgaacaagg acaattcctg ctgttgcttc aattaatgca tctctgaata cttctcttgg
+     4021 gtgaacaata cttgtattta aggttccttc agaaacggtt atatctttga taagtttatt
+     4081 tgctccatct aaaagagcta ctctaaaaac ctcttttttg aggctaccta ttaatggtat
+     4141 gtaatacttt gcgacatctt cagatttttt gaaaattacc ttacgagttt cgggctgaga
+     4201 ttgtattctt cttgatattt caaaacaagc ggcaaggata gc
+//
+

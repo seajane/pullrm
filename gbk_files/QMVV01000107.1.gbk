@@ -1,0 +1,189 @@
+LOCUS       QMVV01000107            3121 bp    DNA     linear   ENV 15-OCT-2018
+DEFINITION  MAG: Candidatus Korarchaeota archaeon isolate B68_G1
+            B68_Guay1_scaffold_34624, whole genome shotgun sequence.
+ACCESSION   QMVV01000107 QMVV01000000
+VERSION     QMVV01000107.1
+DBLINK      BioProject: PRJNA362212
+            BioSample: SAMN09214809
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG.
+SOURCE      Candidatus Korarchaeota archaeon (marine sediment metagenome)
+  ORGANISM  Candidatus Korarchaeota archaeon
+            Archaea; Candidatus Korarchaeota.
+REFERENCE   1  (bases 1 to 3121)
+  AUTHORS   Dombrowski,N., Teske,A. and Baker,B.J.
+  TITLE     Extensive metabolic versatility and redundancy in microbially
+            diverse, dynamic hydrothermal sediments
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 3121)
+  AUTHORS   Dombrowski,N., Teske,A., Baker,B.J. and Seitz,K.W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUN-2018) Marine Science Institute, The University of
+            Texas at Austin, 750 Channel View Dr, Port Aransas, TX 78373, USA
+COMMENT     Annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (released 2013). Information about the Pipeline can be
+            found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##Genome-Assembly-Data-START##
+            Assembly Date          :: APR-2017
+            Assembly Method        :: megahit v. 1.0.6
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 91.4585152838428x
+            Sequencing Technology  :: Illumina HiSeq
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI
+            Annotation Date                   :: 06/30/2018 09:14:56
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS+
+            Annotation Software revision      :: 4.5
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+                                                 repeat_region
+            Genes (total)                     :: 1,525
+            CDS (total)                       :: 1,490
+            Genes (coding)                    :: 1,482
+            CDS (coding)                      :: 1,482
+            Genes (RNA)                       :: 35
+            rRNAs                             :: 1, 1 (16S, 23S)
+            complete rRNAs                    :: 1, 1 (16S, 23S)
+            tRNAs                             :: 31
+            ncRNAs                            :: 2
+            Pseudo Genes (total)              :: 8
+            Pseudo Genes (ambiguous residues) :: 0 of 8
+            Pseudo Genes (frameshifted)       :: 3 of 8
+            Pseudo Genes (incomplete)         :: 5 of 8
+            Pseudo Genes (internal stop)      :: 2 of 8
+            Pseudo Genes (multiple problems)  :: 2 of 8
+            CRISPR Arrays                     :: 4
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3121
+                     /organism="Candidatus Korarchaeota archaeon"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="B68_Guay1_scaffold_34624"
+                     /isolate="B68_G1"
+                     /isolation_source="deep-sea hydrothermal vent sediments
+                     from dive 4569_9 depth 0-3 cm"
+                     /db_xref="taxon:2056630"
+                     /environmental_sample
+                     /country="Mexico: Guaymas Basin, Gulf of California"
+                     /lat_lon="27.015 N 111.379 W"
+                     /collection_date="30-Nov-2009"
+                     /metagenome_source="marine sediment metagenome"
+                     /note="metagenomic"
+     gene            5..80
+                     /locus_tag="DRN81_05815"
+     tRNA            5..80
+                     /locus_tag="DRN81_05815"
+                     /product="tRNA-Asn"
+                     /inference="COORDINATES: profile:tRNAscan-SE:1.23"
+                     /anticodon=(pos:38..40,aa:Asn,seq:gtt)
+     gene            762..977
+                     /locus_tag="DRN81_05820"
+     CDS             762..977
+                     /locus_tag="DRN81_05820"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_004254928.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA-binding protein"
+                     /protein_id="RLG43796.1"
+                     /translation="MADKEEKLMTLKEVAEYLRLDEHTVYRMARKGKIPAFKIAGQWR
+                     FKKELIEKWLEQKIKSEAINDTNEEKK"
+     gene            974..2833
+                     /locus_tag="DRN81_05825"
+     CDS             974..2833
+                     /locus_tag="DRN81_05825"
+                     /inference="COORDINATES: protein motif:HMM:PF13588.4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="N-6 DNA methylase"
+                     /protein_id="RLG43797.1"
+                     /translation="MSKRTKQLNLLQDEKDIEVIPPGKIKCFITGKLRKDTPEERIRQ
+                     DVARSLVEEYGYNKDDIDIEFPIKMGRAKKRVDVVIFEEERKHKQENIYTIIEVKTEN
+                     IKPSDKKEGIEQLKSYVAACINTQFALWVGSERLAFKVVEEKGKRKLEEIPDIPKRGE
+                     TTLPKPTRGSIVPAVNLKQVFKRVHNYIYANQGFQKDKAFEELLKLIFIKVYDEQYSP
+                     SLQFYILPGEDISKVRERLNKLFKKVQARYRYIFKGNEIIELNDAVLKYVVSELRRFS
+                     LVDTETDVKGEAYEEIVGPNLRGDRGEFFTPRNVCNMTIEMLFSLIPEDKLTSPGGMK
+                     ILDPAVGTGGFLIAGVQKIKQLFLNRGFRYDQLRDLVRDVANANFYGIDFNPFLVKVA
+                     QMNMVMHGDGSANIVHANSLANPETWEKEAKEIIFPYFGEFDLVVTNPPFGSDKKKKI
+                     VIDDPEILSQYELVKFNSTNPRSSMPPEQLFIERCLDFLKPGGYLGIVLPDSILSNPG
+                     LKWIREWILQKAYIIASIDLPVETFEPHTGTQTSILILKKKTPEQQKLQEDYEMFMAI
+                     PEKVGHDRRGNPVYKTTPDGEIELDENGNPIIEDHLPAVVEAFKEWLRRKGMI"
+     gene            2806..>3121
+                     /locus_tag="DRN81_05830"
+     CDS             2806..>3121
+                     /locus_tag="DRN81_05830"
+                     /inference="COORDINATES: ab initio prediction:GeneMarkS+"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: GeneMarkS+."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="RLG43798.1"
+                     /translation="MAKKERDDMIMEDVQIVDVPVHWINEGEKRLDAGFYAQDVITAR
+                     ILIEKVSQHLEIQSVSDLSSQIFWPGRFKRHYVSKKDGEPFLMPSEVFMFLPKPTKYV
+                     INY"
+ORIGIN      
+        1 aaactccccg gtagctcaat cggcagagcg gtgggctgtt aacccatagg ttgcaggttc
+       61 gagtcctgcc cggggagcca tttaaagttt tcttcgaaac caatcgcctt cggcagattc
+      121 aatcttattt cttcctctgg catttcaaag aaatgaatgg tgatttggga gagagtgaag
+      181 actatctctt taatcagcat ctttaaaagt cctttctgct ccggcgggct taattgagga
+      241 aagatttttg agaagtattt gaaagattct tttataagtt cggcattcag gacatactct
+      301 ttccaccttt ggagttcata ctctacggct ttaagctcct tttccagctt cttcaactgc
+      361 ttatcaatct cctctatctc cttcaacaaa aaccgttccg ccactttccc tttgatttcc
+      421 actaactgcc ttgtatattt ccttccttta tcctcaagct cttttattcg gagcttcagg
+      481 ataattcttt tctcttccag cttatcaacc tttgcttttg cttccgctcg tatgaggctt
+      541 tgcgaacctt caaggatgaa ctgaagatag aggtgacaag aggcaaggga cacccccaag
+      601 aaattaaagt cgttgcctcg tgagtctctc ctttttgaag acagcctcca ctatgagctt
+      661 gactttcttt gaatttttcc atacaattat gaacgatgtt agactttagt atatttgaat
+      721 gtaaaatttt ggcatcataa aacttggagg cttataagga aatggctgat aaagaagaga
+      781 aattgatgac actaaaagaa gtggcagaat acttgagact tgatgagcat acggtttata
+      841 gaatggcaag gaaaggaaaa atccctgctt ttaaaatcgc tggacagtgg cggtttaaaa
+      901 aggaattgat agaaaaatgg ctggaacaga aaataaaaag tgaggctata aatgatacca
+      961 atgaggagaa aaaatgagta aaagaacaaa acagttaaac cttttacagg atgaaaaaga
+     1021 catagaagta attcctcctg gcaaaatcaa atgttttatt actggtaagc ttaggaaaga
+     1081 cacaccagaa gaaagaatac gccaagacgt agcaagaagt ctcgttgagg aatatggata
+     1141 caataaggat gacattgata ttgagtttcc tatcaaaatg ggtagagcca aaaaaagagt
+     1201 tgacgtcgtc atttttgaag aagaaagaaa gcataagcaa gaaaatattt acactattat
+     1261 agaggttaaa actgaaaata ttaaaccttc tgacaaaaag gaaggaatcg aacaactcaa
+     1321 aagctacgtt gcagcgtgta taaacactca atttgcgctt tgggtgggta gtgaaaggtt
+     1381 agcatttaaa gttgtagaag aaaaagggaa aagaaaactg gaagaaattc ctgatattcc
+     1441 aaaaagagga gaaacaacac tacccaaacc cacccgtggt tccattgtcc ctgccgtaaa
+     1501 cttaaaacaa gtatttaaga gagtccataa ctatatctat gccaatcaag gattccaaaa
+     1561 agacaaagca ttcgaggaac tcttaaaact aatttttatc aaggtttacg atgaacaata
+     1621 cagcccatcc ttacaatttt atattctccc tggagaagat ataagtaagg tcagagagcg
+     1681 attaaacaag ctttttaaga aagttcaggc tcggtatagg tacattttca agggcaatga
+     1741 aatcattgaa ttaaatgacg cagtgttaaa gtatgtggtt tcagagcttc gaagatttag
+     1801 cctcgttgat acggaaacag atgttaaagg agaagcctat gaagaaattg ttggtcccaa
+     1861 cttaagagga gacagaggag agtttttcac tccccgtaat gtatgcaaca tgacaattga
+     1921 aatgctgttt tctcttattc ccgaagacaa gctgacaagt cctggtggta tgaaaatcct
+     1981 tgatcctgct gttgggacgg gtggttttct tattgctggg gtgcaaaaga taaaacagtt
+     2041 atttttaaat cgtggattta gatatgatca attaagagat cttgtaaggg atgttgccaa
+     2101 tgccaatttt tatggcatag attttaaccc atttcttgtg aaagtagcac agatgaatat
+     2161 ggttatgcat ggagacggtt cggctaacat tgtgcacgct aattcccttg ctaatccaga
+     2221 gacttgggag aaggaggcaa aagagataat ctttccttat tttggagagt ttgatctagt
+     2281 agttactaat cctccatttg gaagcgataa gaagaaaaaa attgtaattg atgaccctga
+     2341 aatcttgagc caatatgaac ttgtgaaatt caattcaacc aatcctcgtt cttctatgcc
+     2401 tcctgaacaa ctattcatag aaagatgttt agactttctt aaacccggcg gttatcttgg
+     2461 aattgtcctc cctgacagta tattgagcaa tcctggatta aaatggataa gagagtggat
+     2521 acttcagaaa gcatacataa tagcaagcat agacttgccg gtagaaacgt ttgaacctca
+     2581 tacgggaaca caaacaagca tacttattct gaaaaagaaa acgccagaac aacagaaatt
+     2641 acaggaagat tatgaaatgt tcatggctat cccagaaaaa gttgggcatg atagacgggg
+     2701 aaatccagtt tacaaaacta cacctgatgg agagatagag cttgatgaaa acgggaaccc
+     2761 gataattgaa gatcatttac ctgctgttgt tgaggcgttc aaagaatggc taagaaggaa
+     2821 agggatgata tgataatgga agacgtacaa attgttgatg tccctgtcca ttggataaac
+     2881 gaaggggaaa agcgacttga cgctggcttt tatgcacaag acgtaatcac ggcaagaatt
+     2941 cttatagaga aagttagcca acatttagaa atacaatcgg ttagtgatct ttcaagtcag
+     3001 atattttggc ctggaagatt caaaagacat tatgtttcta aaaaagatgg cgaaccattt
+     3061 ttaatgccaa gtgaagtttt catgttttta cctaaaccta ctaaatatgt tattaactat
+     3121 c
+//
+

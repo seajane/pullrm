@@ -1,0 +1,107 @@
+LOCUS       DDYS01000127            3342 bp    DNA     linear   ENV 22-SEP-2017
+DEFINITION  MAG TPA_asm: Deferribacterales bacterium UBA2228
+            UBA2228_contig_207517, whole genome shotgun sequence.
+ACCESSION   DDYS01000127 DDYS01000000
+VERSION     DDYS01000127.1
+DBLINK      BioProject: PRJNA348753
+            BioSample: SAMN06452991
+            Sequence Read Archive: SRR5323313
+KEYWORDS    WGS; Metagenome Assembled Genome; MAG; Third Party Data; TPA;
+            TPA:assembly.
+SOURCE      Deferribacterales bacterium UBA2228 (hydrocarbon metagenome)
+  ORGANISM  Deferribacterales bacterium UBA2228
+            Bacteria; Deferribacteres; Deferribacterales.
+REFERENCE   1  (bases 1 to 3342)
+  AUTHORS   Parks,D.H., Rinke,C., Chuvochina,M., Chaumeil,P.A., Woodcroft,B.J.,
+            Evans,P.N., Hugenholtz,P. and Tyson,G.W.
+  TITLE     Recovery of nearly 8,000 metagenome-assembled genomes substantially
+            expands the tree of life
+  JOURNAL   Nat Microbiol (2017) In press
+   PUBMED   28894102
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (bases 1 to 3342)
+  AUTHORS   Parks,D.H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-AUG-2017) School of Chemistry and Molecular
+            Biosciences, University of Queensland, Chemistry Bld, Cooper Road,
+            St Lucia, Brisbane, Queensland 4072, Australia
+COMMENT     ##Genome-Assembly-Data-START##
+            Assembly Method        :: CLC de novo assembler v. 4.4.1
+            Genome Representation  :: Full
+            Expected Final Version :: Yes
+            Genome Coverage        :: 14.02x
+            Sequencing Technology  :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3342
+                     /organism="Deferribacterales bacterium UBA2228"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="UBA2228_contig_207517"
+                     /isolate="UBA2228"
+                     /isolation_source="suncor tailing pond 6 meters"
+                     /db_xref="taxon:1950941"
+                     /environmental_sample
+                     /country="Canada: Suncor tailings pond 6"
+                     /metagenome_source="hydrocarbon metagenome"
+                     /note="Genome binned from sequencing reads available in
+                     SRX327722 metagenome;
+                     metagenomic"
+ORIGIN      
+        1 aattatacat ttgtgtttta ttttaaacat aataattata gtataatatc gcccataaaa
+       61 taagatatct aaaaactaaa tttatgggct tcattatacg ttcattatat ctcaaaataa
+      121 ttatcaatta tttctctaac ttcttttatc aaaattttct tttcattttt taatttgaaa
+      181 gcttctttta tcattgtcgt aagttgaata atagactctt tatctataat gggtacttcg
+      241 atctcttcta atctttcttc tctcaaatga ggtatagttg aagcaacaac tgttcgtcta
+      301 atagaagggt ataatccggt ttctttcaaa gacaacacta aaaaaatata ttctggggtc
+      361 aaattattct ttttggcttc tgagtttaat cttattcttg aaattccaga agagattatt
+      421 accttatcgt cctttgtaat aattccagtc atcccaattt ttccatcttt tgtaaataat
+      481 atatcgttag gtaaaatatc ttgtttaagt tcttgatatg tctcctcagg aatataataa
+      541 tcagggaact gatcaacttc atagttaata acatcagatg tcctaataaa aggaatatca
+      601 ctattttttt tatctaaata tttattataa tttatactcc cgacttcatc accctttctt
+      661 gtcgtggcta tttctcctag tgggacagta ggaaatttat tttgaataat ttttagtaaa
+      721 tttatataga aagggtatga atatacaggc gtccaaagat caactttcaa aaaacttgag
+      781 agatttacgg aataatattt ttcttttgga attttagaaa aatcaatgtc aattttttta
+      841 tataaaagag actgtgcgtg ctttatgatt aaattcgatt gattttgtaa atctattgat
+      901 ttctttactt ttcctgaaac tttttcaatc agtatttcat catataaaat tttcagtttt
+      961 tttaaagttg gatgatttat accaggggaa acagccccgg atagattatt taaaacctgt
+     1021 tcataaaaaa ctttagaatt taaaaatgct attaggtaat aagggtcggc ttcttcctta
+     1081 atccttagca aaatagcctc tgttccaatt atattatcaa tatcttcttc agtaacaatt
+     1141 gaagatatac ctggtgtacc ttttcttgag aataggatgt cattttgttt taatcttatt
+     1201 ttttggggta ttttacttat tttgactttt tttatatcag aataagataa gaaaaatctt
+     1261 ttcatatccg aaattctaat ataattttca ccctcttcag taaaatctct cacatcgata
+     1321 ccattaattg gccccttttc tagaaactcc tcaagtaaaa ttgaattagg cgaattttct
+     1381 agctttttta aaatatatga atatttaggc gtccattttt ctttttctat ttctaattta
+     1441 ttgatagtta ctaactttaa catctttata acctaaaaac taaaattatt tgcttttgac
+     1501 cattttttaa attcatctgc aatatatgaa atatcatctc cttctttata cttgcctctt
+     1561 ctatcatggc cacaagtatc tgcaatagcc ataaaaattg ggtaatcctc ggggatttca
+     1621 ttttttggca ttttttggag tactaaaatt gtagttttag ttggtgtgtt tggcataaaa
+     1681 gtctcaactg gaacatctat tattgcggct attcttgttt tttcaagaag ccaagcccga
+     1741 atgtaagcta attgtgagtt accatatatc ccatcaggta atactatggc cattctcccg
+     1801 ccatctttta atagttgtaa acttctttca ataaatatta tttggggagc ttcattatct
+     1861 tttatttttc ccatttccca tttagagact tttttattga atttccattc atgtccaagt
+     1921 tcaaattgtt ttaatttatc atcaccacga acaggaattt ttgaaccaaa aggcggatta
+     1981 gttaaaagaa cactaaaatc gtttaagtgt attttagtct tagtagttga gtcccaattg
+     2041 ttagggattt ccaaactatc ttcacaaaaa ataccacttt taccatctcc aattattgcc
+     2101 atatacgctt tagcaacttt tgataagaaa taatctttat ctatgcccct tatcttgttc
+     2161 aaagcaactt ccattttttc ctcttgaaga ttacttttat tccaatgata tttttcccct
+     2221 tcagaatcta gttttctcca aacatgcctc aaagcctcaa ttaaaaaacc tccactgcca
+     2281 caagcgggat ctataattaa atcttcatcg tttggatcta aaatatcaac catcattttt
+     2341 ataacatttc taggggtaaa aaattgcccc tgtccacctt tcaaagcatg acctataaaa
+     2401 gtttcaaaag catctgctat aatatctctt tctgcttcaa taagacaata attttgtaat
+     2461 tcaccaacta cataagctac agaattcgca tccaaagtaa tgttgtcact ttcatctaaa
+     2521 atctctttgt attttctttt tactttttca aaaagatcta aaattctatc ttttatttct
+     2581 tttgtattct cctctattcc agctctaaaa gtaacaatat cgttgggttc tgtgaatctt
+     2641 tcatcatata ttttacagaa aatcaaatta attaattgtt gagctaaaac ttcatctctt
+     2701 gtagctccga ctgtattagc tgccaaatga tttctaattg ccttaaaagt tgcttttaag
+     2761 ttatgggtgg gtttaaggtc ctttcttttg aactttccaa tatcttctac tctttgtcca
+     2821 aatttaggta tatttgggat atcttcgaaa tcgattctac catctctttc aatttttcta
+     2881 agaaatagtc tttcatctcc attaaaccaa acgccaagaa atgcttttga aaatcttaaa
+     2941 taatcttgaa gttgtatttt tccgtctttt ctgtttttct ttttacattc aacaattatt
+     3001 aaaacatcgt cttcttgttt tttattatta ttaaacactg caatgtcaac aggatattct
+     3061 ttctttgtat cagacggcct tgcttttact ctaaattgag gttttgtctg aatatactct
+     3121 tttggataat tataatcttc aaccagttgc ttagcaaata cttgaacagc ctctctttct
+     3181 tctggcgtag ctcttacttc ttgtccagaa atataatcaa taagataatc ttctttgtcc
+     3241 tgttttgcca tatcgacttc tcctctatta agtaataaat agtcatgcct tattataacc
+     3301 ttttctttta atctaatctt ttgtcttatc ctgtaattat tt
+//
+

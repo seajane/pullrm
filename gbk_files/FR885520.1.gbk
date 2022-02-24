@@ -1,0 +1,64 @@
+LOCUS       FR885520                3189 bp    DNA     linear   CON 31-MAY-2013
+DEFINITION  Akkermansia muciniphila CAG:154 genomic scaffold, scf34, whole
+            genome shotgun sequence.
+ACCESSION   FR885520
+VERSION     FR885520.1
+DBLINK      BioProject: PRJEB726
+KEYWORDS    WGS.
+SOURCE      Akkermansia muciniphila CAG:154
+  ORGANISM  Akkermansia muciniphila CAG:154
+            Bacteria; Verrucomicrobia; Verrucomicrobiae; Verrucomicrobiales;
+            Akkermansiaceae; Akkermansia; environmental samples.
+REFERENCE   1
+  AUTHORS   Nielsen,H.B., Almeida,M., Juncker,A.S., Rasmussen,S., Li,J.,
+            Sunagawa,S., Plichta,D., Gautier,L., Le Chatelier,E., Peletier,E.,
+            Bonde,I., Nielsen,T., Manichanh,C., Arumugam,M., Batto,J.,
+            Santos,M.B.Q.D., Blom,N., Borruel,N., Burgdorf,K.S., Boumezbeur,F.,
+            Casellas,F., Dore,J., Guarner,F., Hansen,T., Hildebrand,F.,
+            Kaas,R.S., Kennedy,S., Kristiansen,K., Kultima,J.R., Leonard,P.,
+            Levenez,F., Lund,O., Moumen,B., Le Paslier,D., Pons,N.,
+            Pedersen,O., Prifti,E., Qin,J., Raes,J., Tap,J., Tims,S.,
+            Ussery,D.W., Yamada,T., MetaHit,consortium., Renault,P.,
+            Sicheritz-Ponten,T., Bork,P., Wang,J., Brunak,S. and Ehrlich,S.D.
+  TITLE     Dependencies among metagenomic species, viruses, plasmids and units
+            of genetic variation
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 3189)
+  AUTHORS   Rasmussen,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-MAY-2013) Department of Systems Biology, Technical
+            University of Denmark, Kemitorvet 208, 2800, DENMARK
+FEATURES             Location/Qualifiers
+     source          1..3189
+                     /organism="Akkermansia muciniphila CAG:154"
+                     /mol_type="genomic DNA"
+                     /isolation_source="derived from human gut metagenome"
+                     /db_xref="taxon:1263034"
+                     /environmental_sample
+                     /note="scf34"
+     gene            697..2745
+                     /locus_tag="BN502_00084"
+     CDS             697..2745
+                     /locus_tag="BN502_00084"
+                     /note="product inferred by homology to UniProt"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="type I restriction-modification system M
+                     subunit"
+                     /protein_id="CDB54603.1"
+                     /translation="MPISKGEVTMPSEQKIIVIPDGKICDYIDGKFRNDTPEEYVRQT
+                     IEKRLVNEHKYLPEQIRIEYTLQVGSNKPRADIVIWEKGADQTQGTIKLIIECKKETV
+                     DARNAKDGIAQLKSYMSVCPNCEWGMWTNSVQKYVFRKAVDAAGNITFMEYNDIPSAD
+                     GNLDEVNRPSRTSLKNAYDDNLLFVFKTCHNHIYVNDGMQKQPAFFELLKVIFCKIED
+                     ERNIPNPLEFYTTSEERSNPDGQLTVQKRIGKIFQRVKKRHGKIFDANDEIKLSPRSL
+                     AYIVSELQRYSLLNTKIDIKGKAYEEIVGANLRGDRGEFFTPRNVMKMVVEMINPRID
+                     ERVLDSSCGTGGFLVMAMTHVIDQLEQQFSTSLGIKRENWDSDTVRVFQDRISEMAST
+                     NYFGFDINPDLVKATKMNMVMNNDGSGNILQTNSLLPPHEWTEDFRTGLANALGINKS
+                     VLRNHSSIGYFNVIVTNPPFGSKIPIKDKNILEQFELAHIWECDKKTGVWEKTLRLQS
+                     SVPPEILFIERCTQFLVPGGRMGIVLPDSILGSPGLGYIREWLIQNHRIVASIDLNVD
+                     TFQPRNGTQTSVLILQRKTQEQKDTEEKSGKMADYNIFMAMIEKVGHDKRGNPLFKRD
+                     KEGNEILVPDTNSVLVLGETGDGQRTVSHEQKVKVEDDQTPDVPAIFAEWKKQEGLGW
+                     "
+CONTIG      join(CBDW010000013.1:1..3189)
+//
+

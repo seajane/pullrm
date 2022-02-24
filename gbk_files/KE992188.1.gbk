@@ -1,0 +1,148 @@
+LOCUS       KE992188                4838 bp    DNA     linear   CON 22-MAR-2015
+DEFINITION  Clostridium sp. ATCC BAA-442 genomic scaffold Scaffold1000, whole
+            genome shotgun sequence.
+ACCESSION   KE992188 AWSS01000000
+VERSION     KE992188.1
+DBLINK      BioProject: PRJNA38735
+            BioSample: SAMN02436755
+KEYWORDS    WGS; HIGH_QUALITY_DRAFT.
+SOURCE      Clostridium sp. ATCC BAA-442
+  ORGANISM  Clostridium sp. ATCC BAA-442
+            Bacteria; Firmicutes; Clostridia; Eubacteriales; Clostridiaceae;
+            Clostridium.
+REFERENCE   1  (bases 1 to 4838)
+  AUTHORS   Weinstock,G., Sodergren,E., Lobos,E.A., Fulton,L., Fulton,R.,
+            Courtney,L., Fronick,C., O'Laughlin,M., Godfrey,J., Wilson,R.M.,
+            Miner,T., Farmer,C., Delehaunty,K., Cordes,M., Minx,P.,
+            Tomlinson,C., Chen,J., Wollam,A., Pepin,K.H., Bhonagiri,V.,
+            Zhang,X., Warren,W., Mitreva,M., Mardis,E.R. and Wilson,R.K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JUN-2013) Genome Sequencing Center, Washington
+            University School of Medicine, 4444 Forest Park, St. Louis, MO
+            63108, USA
+COMMENT     This sequenced Clostridium sp is from human feces and was obtained
+            directly from ATCC (ATCC BAA-442). Source was prepared by Michelle
+            Daigneault, Kaitlyn Oliphant and Emma Allen-Vercoe (Department of
+            Molecular and Cellular Biology, University of Guelph, Ontario,
+            Canada), and was funded by the NHGRI (through an HMP Technology
+            Development Grant - 1R21HG005811 - 01).
+            
+            Coding sequences were predicted using GeneMark and Glimmer3.
+            Intergenic regions not spanned by GeneMark and Glimmer3 were
+            blasted against NCBI's non-redundant (NR) database and predictions
+            generated based on protein alignments. tRNA genes were determined
+            using tRNAscan-SE and non-coding RNA genes by RNAmmer and Rfam. The
+            final gene set is processed through several programs such as Kegg,
+            psortB and Interproscan to determine possible function. Gene
+            product names are determined by BER. Gene names are generated at
+            the contig level and may not necessarily reflect any known order or
+            orientation between contigs.
+            
+            This is a reference genome for the Human Microbiome Project. This
+            project is co-owned with the Human Microbiome Project DACC. This
+            work was funded by the National Human Genome Research Institute
+            (NHGRI)/National Institutes of Health (NIH) grant 5U54HG00496804
+            for characterization of this genome.
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: High-Quality Draft
+            Current Finishing Status :: High-Quality Draft
+            Assembly Method          :: Velvet v. 1.1.06
+            Genome Coverage          :: 85x
+            Sequencing Technology    :: Illumina
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..4838
+                     /organism="Clostridium sp. ATCC BAA-442"
+                     /mol_type="genomic DNA"
+                     /submitter_seqid="Scaffold1000"
+                     /strain="ATCC BAA-442"
+                     /isolation_source="gastrointestinal tract"
+                     /host="Homo sapiens"
+                     /culture_collection="ATCC:BAA-442"
+                     /db_xref="HMP:0239"
+                     /db_xref="taxon:649724"
+     gene            complement(186..1661)
+                     /locus_tag="HMPREF0239_03128"
+     CDS             complement(186..1661)
+                     /locus_tag="HMPREF0239_03128"
+                     /inference="protein motif:HMMPfam:IPR000055"
+                     /note="KEGG: fte:Fluta_2957 4.7e-35 restriction
+                     modification system DNA specificity domain-containing
+                     protein; K01154 type I restriction enzyme, S subunit;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="ERI72640.1"
+                     /db_xref="InterPro:IPR000055"
+                     /translation="MVKSNLAYKAQDTVVPEVVVNESPIKWCAVALSDVIARGKRLEA
+                     SVFDVEAKQARSLIAKGKYTQSFIGGASGMASSYVCGRFKRIWVEKSDMPIYQPSSIV
+                     DIKPTPDGYISAKTKTNIGNLRVKENQILMTCSGTIGKVSFVSRTLANKIFSHDLLRI
+                     DCRKPDEAGYIYAFLKSKIGNKILLTNSYGAVITHIEPEHLATVPIPDAPTMLKKKIH
+                     DLIVRSYELRDESNDLIDQATALLIGELKLPDIDAFDVGLYKKAAPVDTFSVRLSEMS
+                     GRLDASYHVPIVDAIIEHLKRYAEEVTTVGDPRISREVILPGRFKRVYVDEGYGRVLI
+                     GGKQLSELDPSSKKYLSTAKHDKMLKKLEVHEGTTLITRSGTIGKITIVPKHWEHYIP
+                     SDHIIRVIPANKDIAGYLNIFLASDYGKVLITRFTYGSVVDEIDDNHVRQIAIPLLKN
+                     HTVQKKINDLALEANEKRYQAYLLEQEALQIMDRDVIYAKK"
+     gene            complement(1655..3676)
+                     /locus_tag="HMPREF0239_03129"
+     CDS             complement(1655..3676)
+                     /locus_tag="HMPREF0239_03129"
+                     /inference="protein motif:HMMPfam:IPR003356"
+                     /note="KEGG: fbr:FBFL15_0820 3.6e-52 putative type I
+                     modification methyltransferase;
+                     Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="N-6 DNA Methylase"
+                     /protein_id="ERI72641.1"
+                     /db_xref="InterPro:IPR003356"
+                     /translation="MPSEQKIIVIPDGKICDYIDGKFRNDTPEEYVRQTIEKRLVNEH
+                     KYLPEQIRIEYTLQVGSNKPRADIVIWEEGADQTQGTIKLIIECKKETVDARNAKDGI
+                     AQLKSYMSVCPNCEWGMWTNSVQKYVFRKAVDAAGNITFMEYNDIPAADGNLDEVNRP
+                     SRTSLKNAYDDNLLFVFKTCHNHIYVNDGMQKQPAFFELLKVIFCKIEDERNIPNPLE
+                     FYTTSEERSNPDGQLTVQKRIGKIFQRVKKRHGKIFDANDEIKLSPRSLAYIVSELQR
+                     YSLLNTKIDIKGKAYEEIVGANLRGDRGEFFTPRNVMKMVVEMVNPQVDEHVLDSSCG
+                     TGGFLVMAMTHVIDQLEQRFSTSLGIKRENWDSDTLRAFQDRISEMASSNYFGFDINP
+                     DLVKATKMNMVMNNDGSGNILQTNSLLPPHEWYDDFRSRLAEALGINKNTLRNHSSIG
+                     YFNVIVTNPPFGSKIPIKDKNILEQFELAHIWDCDKETGVWKKTSRLQSSVPPEILFI
+                     ERCTQFLAPGGRMGIVLPDSILGSPGLGYIREWIIQNHRIVASIDLNADTFQPRNGTQ
+                     TSVLILQKKTQEQRDAEEKSGKMADYNIFMAMVEKVGHDKRGNPLFKRDKEGNEILVP
+                     DTNSVLVLGETGEGQRTVSHEQKVKVEDDQTPDVPAIFAEWKRQEGLGW"
+     gene            complement(3694..4023)
+                     /locus_tag="HMPREF0239_03130"
+     CDS             complement(3694..4023)
+                     /locus_tag="HMPREF0239_03130"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="ERI72642.1"
+                     /translation="MVENEQSFGEYLRQLIRDSGITQHKFYTELGIRKPYFYDILAGR
+                     TNPPPYPLQLKAMEILQASNETRERFFDLAAKGRNELPADIARYIDENPDALKSIREK
+                     MKLASCQ"
+     gene            4224..4343
+                     /locus_tag="HMPREF0239_03131"
+     CDS             4224..4343
+                     /locus_tag="HMPREF0239_03131"
+                     /note="Psort location: Extracellular, score: 8.91"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="ERI72643.1"
+                     /translation="MTIDGWRLLRYGPFQFAIHRTISVAAAKITLSAAPFQWY"
+     gene            4466..4762
+                     /locus_tag="HMPREF0239_03132"
+     CDS             4466..4762
+                     /locus_tag="HMPREF0239_03132"
+                     /note="Psort location: Cytoplasmic, score: 7.50"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="ERI72644.1"
+                     /translation="MRREKKHRRQKTLKTPFLRRTGESCGKKLFRRCNLSRRKKLTNN
+                     SGIPQHEIENIARILLPDILAFYESEEGQREFAEWQAARDGAKTDKDSNGENVA"
+CONTIG      join(AWSS01000365.1:1..4838)
+//
+
