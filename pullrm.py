@@ -24,15 +24,15 @@ def dataset_input(argv):
     output_gbk_path = ''
     window = ''
     try:
-        opts, args = getopt.getopt(argv, "hi:w:g:o:m:", ["help", "input_csv=","window=", "fasta_folder=","output_gbk_path=", "entrez_email="])
+        opts, args = getopt.getopt(argv, "hi:w:f:o:m:", ["help", "input_csv=","window=", "fasta_folder=","output_gbk_path=", "entrez_email="])
     except getopt.GetoptError:
-        print('Error! Usage: python pullrm.py -i <input OCTAPUS csv> -w <contig_search_window> -g <gene_folder> -o <output gbk path> -m <email for ncbi search>' )
-        print('   or: python pullrm.py --input_csv <OTU csv> --window <contig_search_window> --gene_folder <gene_folder> --output <output gbk path> --email <email for ncbi search>')
+        print('Error! Usage: python pullrm.py -i <input OCTAPUS csv> -w <contig_search_window> -f <fasta_folder> -o <output gbk path> -m <email for ncbi search>' )
+        print('   or: python pullrm.py --input_csv <OTU csv> --window <contig_search_window> --fasta_folder <fasta output folder> --output <output gbk path> --email <email for ncbi search>')
         sys.exit(2)
     for opt, arg in opts:
         if opt in ("-h", "--help"):
-            print('Usage: python pullrm.py -i <input OCTAPUS csv> -w <contig_search_window> -g <fasta output path > -o <output gbk path> -m <email for ncbi search>' )
-            print('   or: python pullrm.py --input_csv <OTU csv> --window <contig_search_window> --gene_folder <gene_folder> --output <output gbk path> --email <email for ncbi search>')
+            print('Usage: python pullrm.py -i <input OCTAPUS csv> -w <contig_search_window> -f <fasta output path > -o <output gbk path> -m <email for ncbi search>' )
+            print('   or: python pullrm.py --input_csv <OTU csv> --window <contig_search_window> --fasta_folder <fasta output folder> --output <output gbk path> --email <email for ncbi search>')
             sys.exit()
         elif opt in ("-i", "--input_csv"):
             input_csv = arg
@@ -236,7 +236,11 @@ with open(ofn, "w") as output_handle:
             find_gene.reset_index()
             for index, newrow in find_gene.iterrows():
                 sr = clean_seq(newrow)
-                SeqIO.write(sr, output_handle, 'fasta')
+                print(type(sr))
+                if sr is not None:
+                    SeqIO.write(sr, output_handle, 'fasta')
+                else:
+                    continue
 
 # Find file contents of different bins and save as a data frame
 os.chdir(rp)
