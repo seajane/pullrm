@@ -79,10 +79,6 @@ prp = rp + "/" + "for_prokka"
 if not os.path.exists(prp):
     os.mkdir(prp)
 
-crp = rp + "/" + "contig_shift"
-if not os.path.exists(crp):
-    os.mkdir(crp)
-
 # Function to download gbk files
 def gbk_download(query,output_path):
     filename = output_path + '/'+ query + '.gbk'
@@ -161,7 +157,7 @@ def extract_cds (dfrow, gb, gbk_path, shifted_contig_path):
     return new_cds
 
 # extract CDS
-def feature_extract (dfrow, gbk_path, working_path, prokka_folder_path, shifted_contig_folder_path):
+def feature_extract (dfrow, gbk_path, working_path, prokka_folder_path):
     os.chdir(gbk_path)
     np = prokka_folder_path + "/" + dfrow['contig_filename']
     fn = dfrow['contig_filename'].strip()
@@ -180,7 +176,7 @@ def feature_extract (dfrow, gbk_path, working_path, prokka_folder_path, shifted_
         # Send files with no CDS to "for_prokka" folder
         shutil.copyfile(op, np)
     else:
-        cds = extract_cds(dfrow, gb, grp, crp)
+        cds = extract_cds(dfrow, gb, grp, prp)
         count = len(cds)
         print('%d CDS features collected for %s' % (count, gb.id))
     os.chdir(working_path)
@@ -191,7 +187,7 @@ def yousendme (features_extracted, rowinfo, window, genbank_path, cwd):
     ingbk = genbank_path + "/" + fn
     np = cwd + "/" + "for_prokka" + "/" + fn
     if (features_extracted is None or len(features_extracted) == 0) and exists(ingbk):
-        print(fn + " Needs prokka lookup")
+        print(fn + " Needs prokka lookup.")
         shutil.copyfile(ingbk, np)
     elif (features_extracted is None or len(features_extracted) == 0) and not exists(ingbk):
         return
@@ -237,14 +233,14 @@ with open(ofn, "w") as output_handle:
         ldf = len(df2)
         print("File " + str(index) + " of " str(ldf))
         try:
-            ftx = feature_extract(row, grp, rp, prp, crp)
+            ftx = feature_extract(row, grp, rp, prp)
         except FileNotFoundError:
             try:
                 #look in the "for Prokka" folder
-                ftx = feature_extract(row, prp, rp, prp, crp)
+                ftx = feature_extract(row, prp, rp, prp)
             except FileNotFoundError:
                 # look in the "contig shift" folder
-                ftx = feature_extract(row, crp, rp, prp, crp)
+                ftx = feature_extract(row, prp, rp, prp)
         if ftx is None or len(ftx) == 0:
             print("These aren't the sequences you are looking for " + row['contig_filename'])
             issues = issues.append(row)
@@ -288,7 +284,7 @@ ndf1 = pd.DataFrame({'files':cnts_gbkfolder, 'code':"CDS"})
 cnts_prokka = os.listdir(prp)
 ndf2 = pd.DataFrame({'files':cnts_prokka, 'code':"Prokka"})
 ndf = ndf1.append(ndf2, ignore_index = True)
-cnts_geneshift = os.listdir(crp)
+cnts_geneshift = os.listdir(prp)
 ndf3 = pd.DataFrame({'files':cnts_geneshift, 'code':"Gene Shift"})
 ndf1 = ndf.append(ndf3, ignore_index = True)
 # Print out to csv
