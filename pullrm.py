@@ -231,7 +231,7 @@ issues = pd.DataFrame()
 with open(ofn, "w") as output_handle:
     for index, row in df2.iterrows():
         ldf = len(df2)
-        print("File " + str(index) + " of " str(ldf))
+        print("File " + str(index) + " of " + str(ldf))
         try:
             ftx = feature_extract(row, grp, rp, prp)
         except FileNotFoundError:
