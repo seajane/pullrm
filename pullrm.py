@@ -7,6 +7,7 @@ from Bio.SeqFeature import SeqFeature
 import pandas as pd
 import os, re, sys, getopt
 from os.path import exists
+import shutil
 
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
 ### genome_id - the NCBI identifier for the organism's sequence
@@ -85,7 +86,6 @@ if not os.path.exists(crp):
 # Function to download gbk files
 def gbk_download(query,output_path):
     filename = output_path + '/'+ query + '.gbk'
-    print("Query :",query)
     # Downloading...
     print("Downloading :",query)
     net_handle = Entrez.efetch(db="nucleotide",id=query,rettype="gb", retmode="text")
@@ -140,7 +140,7 @@ def extract_cds (dfrow, gb, gbk_path, shifted_contig_path):
     pd.set_option("max_colwidth", 9999)
     cds1 = [feature for feature in gb.features if feature.type == "CDS"]
     if len(cds1) == 0:
-        os.rename(op, np)
+        shutil.copyfile(op, np)
     else:
         for feature in cds1:
             position = feature.location
@@ -151,7 +151,10 @@ def extract_cds (dfrow, gb, gbk_path, shifted_contig_path):
                 cds = feature.qualifiers["translation"][0]
             except KeyError:
                 cds = ""
-            product = feature.qualifiers['product']
+            try:
+                product = feature.qualifiers['product']
+            except KeyError:
+                product = ""
             new_val = pd.DataFrame({'description':[dfrow['genome_name']],'gb':[dfrow['genome_id']],'emb':[gb.id], 'start':[start], \
             'stop':[stop], 'strand':[strand], 'product':[product], 'cds':[cds], 'contig_filename':[dfrow['contig_filename']]})
             new_cds = new_cds.append(new_val, ignore_index = True)
@@ -163,18 +166,22 @@ def feature_extract (dfrow, gbk_path, working_path, prokka_folder_path, shifted_
     np = prokka_folder_path + "/" + dfrow['contig_filename']
     fn = dfrow['contig_filename'].strip()
     op = "./" + fn
-    gb = SeqIO.read(fn, 'genbank')
+    try:
+        gb = SeqIO.read(fn, 'genbank')
+        print("Genbank file read for " + fn)
+    except ValueError:
+        gb = None
+        print("No records found in handle.")
     # Parse features
     lgb = len(gb.features)
     if lgb < 1:
         print("No CDS found for %s." % gb.id)
         new_cds = None
         # Send files with no CDS to "for_prokka" folder
-        os.rename(op, np)
+        shutil.copyfile(op, np)
     else:
-        count = 1
         cds = extract_cds(dfrow, gb, grp, crp)
-        count += 1
+        count = len(cds)
         print('%d CDS features collected for %s' % (count, gb.id))
     os.chdir(working_path)
     return cds
@@ -183,9 +190,10 @@ def yousendme (features_extracted, rowinfo, window, genbank_path, cwd):
     fn = rowinfo['contig_filename']
     ingbk = genbank_path + "/" + fn
     np = cwd + "/" + "for_prokka" + "/" + fn
-    if len(features_extracted) == 0 and exists(ingbk):
-        os.rename(ingbk, np)
-    elif len(features_extracted) == 0 and not exists(ingbk):
+    if (features_extracted is None or len(features_extracted) == 0) and exists(ingbk):
+        print(fn + " Needs prokka lookup")
+        shutil.copyfile(ingbk, np)
+    elif (features_extracted is None or len(features_extracted) == 0) and not exists(ingbk):
         return
     # find the region within 1000 bases of start and/or 1000 bases of stop
     else:
@@ -195,52 +203,83 @@ def yousendme (features_extracted, rowinfo, window, genbank_path, cwd):
         find_gene = find_gene1[find_gene1['start'] > s_start]
         # put files into a misfit folder
         if len(find_gene) == 0 or len(find_gene['cds']) == 0:
-            os.rename(ingbk, np)
+            shutil.copyfile(ingbk, np)
         else:
             return find_gene
 
 def clean_seq(found_gene_row):
-       print(found_gene_row)
-       seq1 = found_gene_row['cds']
-       if len(seq1) < 1:
-           return None
-       regex = re.compile('[^A-Z]')
-       seq1 = regex.sub('', seq1)
-       gb1 = re.sub(r"\d+ ","", found_gene_row['gb'])
-       emb1 = re.sub(r"\d+ ","", found_gene_row['emb'])
-       desc1 = re.sub(r"\d+ ","", found_gene_row['description'])
-       try:
-            prod1 = re.sub(r"\d+ ","", found_gene_row['product'][0])
-       except KeyError:
-           prod1 = ''
-       start1 = found_gene_row['start']
-       stop1 = found_gene_row['stop']
-       id1 = desc1.strip().replace(" ", "_")
-       name1 = 'gb|' + gb1.strip() + '|emb|' + emb1.strip()
-       desc2 = prod1 + '_' + str(start1) + '_' + str(stop1)
-       sr = SeqRecord(Seq(seq1), id = id1, description = desc2, name = name1)
-       print(sr)
-       return sr
+    seq1 = found_gene_row['cds']
+    if len(seq1) < 2:
+        print("No sequence in the CDS slot. Need prokka.")
+        return None
+    regex = re.compile('[^A-Z]')
+    seq1 = regex.sub('', seq1)
+    gb1 = re.sub(r"\d+ ","", found_gene_row['gb'])
+    emb1 = re.sub(r"\d+ ","", found_gene_row['emb'])
+    desc1 = re.sub(r"\d+ ","", found_gene_row['description'])
+    try:
+        prod1 = re.sub(r"\d+ ","", found_gene_row['product'][0])
+    except KeyError:
+        prod1 = ''
+    start1 = found_gene_row['start']
+    stop1 = found_gene_row['stop']
+    id1 = desc1.strip().replace(" ", "_")
+    name1 = 'gb|' + gb1.strip() + '|emb|' + emb1.strip()
+    desc2 = prod1 + '_' + str(start1) + '_' + str(stop1)
+    sr = SeqRecord(Seq(seq1), id = id1, description = desc2, name = name1)
+    return sr
 
 # use feature_extract parse through df
 ofn = orp + "/" + input_csv[:-4] + ".fasta"
+issues = pd.DataFrame()
 with open(ofn, "w") as output_handle:
     for index, row in df2.iterrows():
-        print(row)
-        ftx = feature_extract(row, grp, rp, prp, crp)
-        op = grp + "/" + row['contig_filename']
-        find_gene = yousendme(ftx, row, window, grp, rp)
-        if find_gene is None:
-            continue
+        ldf = len(df2)
+        print("File " + str(index) + " of " str(ldf))
+        try:
+            ftx = feature_extract(row, grp, rp, prp, crp)
+        except FileNotFoundError:
+            try:
+                #look in the "for Prokka" folder
+                ftx = feature_extract(row, prp, rp, prp, crp)
+            except FileNotFoundError:
+                # look in the "contig shift" folder
+                ftx = feature_extract(row, crp, rp, prp, crp)
+        if ftx is None or len(ftx) == 0:
+            print("These aren't the sequences you are looking for " + row['contig_filename'])
+            issues = issues.append(row)
         else:
-            find_gene.reset_index()
-            for index, newrow in find_gene.iterrows():
-                sr = clean_seq(newrow)
-                print(type(sr))
-                if sr is not None:
-                    SeqIO.write(sr, output_handle, 'fasta')
+            find_gene = yousendme(ftx, row, window, grp, rp)
+            if find_gene is None:
+                print("No genes found")
+                continue
+            else:
+                lfg = len(find_gene)
+                print("Genes found in region: " + str(lfg))
+                if lfg == 1:
+                    sr = clean_seq(find_gene)
+                    if sr is None:
+                        fn = row['contig_filename']
+                        ingbk = grp + "/" + fn
+                        np = prp + "/" + fn
+                        shutil.copyfile(ingbk, np)
+                        print("No sequence record for " + row['contig_filename'])
+                        continue
+                    else:
+                        SeqIO.write(sr, output_handle, 'fasta')
                 else:
-                    continue
+                    find_gene.reset_index()
+                    for index, newrow in find_gene.iterrows():
+                        sr = clean_seq(newrow)
+                        print(sr)
+                        if sr is None:
+                            fn = row['contig_filename']
+                            ingbk = grp + "/" + fn
+                            np = prp + "/" + fn
+                            shutil.copyfile(ingbk, np)
+                            continue
+                        else:
+                            SeqIO.write(sr, output_handle, 'fasta')
 
 # Find file contents of different bins and save as a data frame
 os.chdir(rp)
@@ -253,4 +292,5 @@ cnts_geneshift = os.listdir(crp)
 ndf3 = pd.DataFrame({'files':cnts_geneshift, 'code':"Gene Shift"})
 ndf1 = ndf.append(ndf3, ignore_index = True)
 # Print out to csv
-ndf1.to_csv(rp +"/" + "results.csv")
+ndf1.to_csv(rp + "/" + "results.csv")
+issues.to_csv(rp + "/" + "issues.csv")
