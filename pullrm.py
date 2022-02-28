@@ -40,7 +40,7 @@ def dataset_input(argv):
         elif opt in ("-w", "--window"):
             window = arg
         elif opt in ("-f", "--fasta_folder"):
-            gene_folder = arg
+            fasta_folder = arg
         elif opt in ("-o", "--output"):
             output_gbk_path = arg
         elif opt in ("-m", "--email"):
@@ -279,14 +279,9 @@ with open(ofn, "w") as output_handle:
 
 # Find file contents of different bins and save as a data frame
 os.chdir(rp)
-cnts_gbkfolder = os.listdir(grp)
-ndf1 = pd.DataFrame({'files':cnts_gbkfolder, 'code':"CDS"})
 cnts_prokka = os.listdir(prp)
 ndf2 = pd.DataFrame({'files':cnts_prokka, 'code':"Prokka"})
-ndf = pd.concat([ndf1, ndf2], axis = 1, ignore_index = True)
-cnts_geneshift = os.listdir(prp)
-ndf3 = pd.DataFrame({'files':cnts_geneshift, 'code':"Gene Shift"})
-ndf1 = pd.concat([ndf, ndf3], axis = 1, ignore_index = True)
+
 # Print out to csv
 ndf1.to_csv(rp + "/" + "results.csv")
 issues.to_csv(rp + "/" + "issues.csv")
