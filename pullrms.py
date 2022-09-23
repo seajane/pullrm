@@ -13,8 +13,6 @@ import pandas as pd
 import os, re, sys, getopt
 import shutil
 
-
-
 # user functions
 
 ## the csv must have columns named genome_id, genome_name, contig_name, contig_start, contig_end
@@ -29,11 +27,14 @@ import shutil
 # Function that allows the python code to accept arguments
 # For testing:
 #print(input_csv,window,gene_folder,output_gbk_path,Entrez_email)
-#input_csv = "odd_gbk.csv"
-#window = 1000
+#input_csv = "Odd_ones2.csv"
+#window = 500
 #output_gbk_path = "genbank_files"
 #fasta_folder = "test01"
 #Entrez_email = "hbouzek@fredhutch.org"
+
+# for running on cmdline:
+    ## python3 pullrms.py -i 2022_16_02_NRM_Octapus_full.csv -w 500 -f 'test02' -o 'gbk_files' -m 'hbouzek@fredhutch.org'
 
 def dataset_input(argv):
     #get inputs
@@ -89,15 +90,17 @@ if not os.path.exists(prp):
     os.mkdir(prp)
     
 # 1b. Grab file names, locations, and strand, from the OCTAPUS csv file
-    xldoc = pd.read_csv(input_csv)
+xldoc = pd.read_csv(input_csv)
+if len(xldoc) > 0:
+    print("Imported OCTAPUS file.")
     # Contig name has the genbank file names
-    df = xldoc[['genome_id', 'genome_name', 'strand', 'contig_name', 'contig_start', 'contig_end']]
-    fn = df.loc[:,('contig_name')].map(str)+ '.gbk'
-    df = df.assign(contig_filename = fn)
-    dfs = df.loc[:,('contig_start', 'contig_end')].min(axis = 1)
-    df = df.assign(search_start = dfs)
-    dfe = df.loc[:,('contig_start', 'contig_end')].max(axis = 1)
-    df = df.assign(search_end = dfe)
+df = xldoc[['genome_id', 'genome_name', 'strand', 'contig_name', 'contig_start', 'contig_end']]
+fn = df.loc[:,('contig_name')].map(str)+ '.gbk'
+df = df.assign(contig_filename = fn)
+dfs = df.loc[:,('contig_start', 'contig_end')].min(axis = 1)
+df = df.assign(search_start = dfs)
+dfe = df.loc[:,('contig_start', 'contig_end')].max(axis = 1)
+df = df.assign(search_end = dfe)
 
 ##########
 
@@ -194,15 +197,23 @@ def feature_extract (dfrow, gbk_path, working_path, annotation_folder_path):
             for feature in gene1:
                 start = feature.location.start.real
                 stop = feature.location.end.real
-                seq = gb.seq[start:stop]
-                gene_seq = ''.join(seq)
+                try:
+                    seq = gb.seq[start:stop]
+                    gene_seq = ''.join(seq)
+                except: 
+                    gene_seq = ''
                 new_val = pd.DataFrame({'start':[start],'seq':[gene_seq]})
                 new_gene = pd.concat([new_gene, new_val], axis = 0, ignore_index = True)
             for feature in cds1:
                 start = feature.location.start.real
                 stop = feature.location.end.real
                 strand = feature.location.strand.real
-                product = feature.qualifiers['product'][0]
+                if 'product' in feature.qualifiers:
+                    product = feature.qualifiers['product'][0]
+                elif 'note' in feature.qualifiers:
+                    product = feature.qualifiers['note'][0]
+                else:
+                    product = ''
                 if 'translation' in feature.qualifiers:
                     cdsb = feature.qualifiers["translation"][0]
                 else:
@@ -211,7 +222,7 @@ def feature_extract (dfrow, gbk_path, working_path, annotation_folder_path):
                         record = Seq(gene_seq)
                         if len(record) %3 ==0:
                             cds2 = record
-                        elif (len(record)+1) %3 ==0:
+                        elif (len(record)+1) % 3 == 0:
                             cds2 = record + Seq('N')
                         else:
                             cds2 = record + Seq('NN')
@@ -312,6 +323,10 @@ def store_seq(dataframe, seq_type, output_csv, output_fasta, output_fail_csv, \
             else: 
                 # find RM
                 ftx = ftx.assign(close_start = abs(ftx['start']-int(row['search_start'])))
+                mask = ftx.strand.isnull()
+                column_name = 'close_start'
+                ftx.loc[mask, column_name] = None
+                ftx.loc[ftx.strand.isnull(), 'close_start'] = None
                 minstart = min(ftx['close_start'])
                 ftx = ftx[ftx['close_start'] == minstart]
                 for row1 in ftx.iterrows():
