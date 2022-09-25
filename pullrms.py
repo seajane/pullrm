@@ -247,7 +247,7 @@ def feature_extract (dfrow, gbk_path, working_path, annotation_folder_path):
     os.chdir(working_path)
     return gene_cds
 
-def clean_seq(gene_cds_row, seq_type):
+def clean_seq(gene_cds_row, seq_type): 
     if isinstance(gene_cds_row, pd.DataFrame) or  isinstance(gene_cds_row, pd.Series):
         if seq_type == "DNA":
             seq1 = gene_cds_row["seq"]
@@ -386,17 +386,23 @@ def store_sens(dataframe, seq_type, output_csv, output_fasta, output_fail_csv, \
                     output_fail_csv = pd.concat([output_fail_csv, pd.DataFrame(row).T], axis = 0, ignore_index = True)
             else: 
                 # find Sens
+                # assign an index
                 lft = len(ftx)
-                ftx = ftx.assign(close_start = abs(ftx['start']-int(row['search_start'])))
                 ftx = ftx.assign(indx = list(range(0,lft)))
+                # find the Mtase
+                ftx = ftx.assign(close_start = abs(ftx['start']-int(row['search_start'])))
+                mask = ftx.strand.isnull()
+                column_name = 'close_start'
+                ftx.loc[mask, column_name] = None
+                ftx.loc[ftx.strand.isnull(), 'close_start'] = None
                 minstart = min(ftx['close_start'])
-                ftx['closest'] = ftx['close_start'] == minstart
+                # find the gene in the same direction 
                 f2 = ftx[ftx['close_start'] == minstart]
                 f2sens = int(f2['indx']) + int(f2['strand'])
                 try:
                     ftx  = ftx[ftx['indx']== f2sens]
                 except:
-                    print("Contig doesn't contain Specificity subunit.")
+                    print("Contig doesn't contain Specificity subunit where expected.")
                     output_csv = pd.concat([specificity_lookup, ftx], axis = 0, ignore_index = True)
                     return output_csv
                 # clean up an annotate
@@ -417,7 +423,7 @@ def store_sens(dataframe, seq_type, output_csv, output_fasta, output_fail_csv, \
     output_fail_csv.to_csv(nm_fail)
 
     
-            
+          
 store_sens(dataframe = df2, seq_type = "DNA", output_csv = sens_dna, output_fail_csv = noseq_dna_sens, output_fasta = gene_sens_seq)
 store_sens(dataframe = df2, seq_type = "AA", output_csv = sens_aa, output_fail_csv = noseq_aa_sens, output_fasta = cds_sens_seq)
 
