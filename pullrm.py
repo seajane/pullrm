@@ -40,7 +40,7 @@ def dataset_input(argv):
         elif opt in ("-w", "--window"):
             window = arg
         elif opt in ("-f", "--fasta_folder"):
-            gene_folder = arg
+            fasta_folder = arg
         elif opt in ("-o", "--output"):
             output_gbk_path = arg
         elif opt in ("-m", "--email"):
@@ -153,7 +153,7 @@ def extract_cds (dfrow, gb, gbk_path, shifted_contig_path):
                 product = ""
             new_val = pd.DataFrame({'description':[dfrow['genome_name']],'gb':[dfrow['genome_id']],'emb':[gb.id], 'start':[start], \
             'stop':[stop], 'strand':[strand], 'product':[product], 'cds':[cds], 'contig_filename':[dfrow['contig_filename']]})
-            new_cds = new_cds.append(new_val, ignore_index = True)
+            new_cds = pd.concat([new_cds, new_val], axis = 1, ignore_index = True)
     return new_cds
 
 # extract CDS
@@ -231,7 +231,7 @@ issues = pd.DataFrame()
 with open(ofn, "w") as output_handle:
     for index, row in df2.iterrows():
         ldf = len(df2)
-        print("File " + str(index) + " of " str(ldf))
+        print("File " + str(index) + " of " + str(ldf))
         try:
             ftx = feature_extract(row, grp, rp, prp)
         except FileNotFoundError:
@@ -243,7 +243,7 @@ with open(ofn, "w") as output_handle:
                 ftx = feature_extract(row, prp, rp, prp)
         if ftx is None or len(ftx) == 0:
             print("These aren't the sequences you are looking for " + row['contig_filename'])
-            issues = issues.append(row)
+            issues = pd.concat([issues, row], axis = 1, ignore_index = True)
         else:
             find_gene = yousendme(ftx, row, window, grp, rp)
             if find_gene is None:
@@ -279,14 +279,9 @@ with open(ofn, "w") as output_handle:
 
 # Find file contents of different bins and save as a data frame
 os.chdir(rp)
-cnts_gbkfolder = os.listdir(grp)
-ndf1 = pd.DataFrame({'files':cnts_gbkfolder, 'code':"CDS"})
 cnts_prokka = os.listdir(prp)
 ndf2 = pd.DataFrame({'files':cnts_prokka, 'code':"Prokka"})
-ndf = ndf1.append(ndf2, ignore_index = True)
-cnts_geneshift = os.listdir(prp)
-ndf3 = pd.DataFrame({'files':cnts_geneshift, 'code':"Gene Shift"})
-ndf1 = ndf.append(ndf3, ignore_index = True)
+
 # Print out to csv
 ndf1.to_csv(rp + "/" + "results.csv")
 issues.to_csv(rp + "/" + "issues.csv")
